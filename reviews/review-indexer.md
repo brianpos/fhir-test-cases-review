@@ -18,7 +18,6 @@ Patient.name[0]
 ```
 
 ### Coverage
-
 2 tests found for `[]` (testIndexer1, testIndexer2).
 
 **Covered:**

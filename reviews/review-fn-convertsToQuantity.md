@@ -28,7 +28,6 @@ If the `unit` argument is provided, it must be the string representation of a UC
 ```
 
 ### Coverage
-
 9 tests found for `convertsToQuantity` (testIntegerLiteralConvertsToQuantity, testDecimalLiteralConvertsToQuantity, testStringIntegerLiteralConvertsToQuantity, testStringQuantityLiteralConvertsToQuantity, testStringQuantityWeekConvertsToQuantity, testStringQuantityWeekConvertsToQuantityFalse, testStringDecimalLiteralConvertsToQuantityFalse, testStringDecimalLiteralConvertsToQuantity, testBooleanLiteralConvertsToQuantity).
 
 **Covered:**
@@ -64,5 +63,3 @@ If the `unit` argument is provided, it must be the string representation of a UC
 **Summary:**
 - Overall pass rate: 52/54 (96%)
 - Tests: 9
-- Engines with failures: Aidbox.
-- Engines passing all tests: fhirpath.js-4.8.3, Firely-5.12.2, Helios-0.1.32, Ignixa-0.0.151, Java-6.7.8.

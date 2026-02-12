@@ -19,7 +19,6 @@ generalPractitioner.all($this.resolve() is Practitioner)
 ```
 
 ### Coverage
-
 2 tests found for `all` (testAllTrue3, testAllTrue4).
 
 **Covered:**

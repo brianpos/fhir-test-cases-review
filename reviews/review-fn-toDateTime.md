@@ -29,7 +29,6 @@ If the input collection is empty, the result is empty.
 _No examples found in specification._
 
 ### Coverage
-
 0 tests found for `toDateTime`.
 
 **Covered:**

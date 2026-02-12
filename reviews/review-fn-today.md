@@ -12,7 +12,6 @@ Returns the current date.
 _No examples found in specification._
 
 ### Coverage
-
 2 tests found for `today` (testToday1, testToday2).
 
 **Covered:**

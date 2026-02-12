@@ -18,7 +18,6 @@ Returns `false` if both operands evaluate to `false`, `true` if either operand e
 _No examples found in specification._
 
 ### Coverage
-
 9 tests found for `or` (testBooleanLogicOr1, testBooleanLogicOr2, testBooleanLogicOr3, testBooleanLogicOr4, testBooleanLogicOr5, testBooleanLogicOr6, testBooleanLogicOr7, testBooleanLogicOr8, testBooleanLogicOr9).
 
 **Covered:**

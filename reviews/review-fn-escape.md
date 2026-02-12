@@ -20,7 +20,6 @@ If no target is specified, the result is empty.
 _No examples found in specification._
 
 ### Coverage
-
 2 tests found for `escape` (testEscapeHtml, testEscapeJson).
 
 **Covered:**

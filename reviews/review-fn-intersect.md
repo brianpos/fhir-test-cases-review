@@ -12,7 +12,6 @@ Returns the set of items that are in both collections. Duplicate items will be e
 _No examples found in specification._
 
 ### Coverage
-
 4 tests found for `intersect` (testIntersect1, testIntersect2, testIntersect3, testIntersect4).
 
 **Covered:**

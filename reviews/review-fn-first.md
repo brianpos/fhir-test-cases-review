@@ -12,7 +12,6 @@ Returns a collection containing only the first item in the input collection. Thi
 _No examples found in specification._
 
 ### Coverage
-
 1 tests found for `first` (testFirstLast1).
 
 **Covered:**

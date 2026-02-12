@@ -12,7 +12,6 @@ Returns a collection containing all but the first `num` items in the input colle
 _No examples found in specification._
 
 ### Coverage
-
 7 tests found for `skip` (testDollarOrderAllowed, testDollarOrderAllowedA, testDollarOrderNotAllowed, testSkip1, testSkip2, testSkip3, testSkip4).
 
 **Covered:**

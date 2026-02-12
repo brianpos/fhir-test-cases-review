@@ -32,7 +32,6 @@ If the input collection contains multiple items, the evaluation of the expressio
 ```
 
 ### Coverage
-
 12 tests found for `substring` (testSubstring1, testSubstring2, testSubstring3, testSubstring4, testSubstring5, testSubstring7, testSubstring8, testSubstring9, testSubstring10, testSubstring10a, testSubstring11, testSubstring12).
 
 **Covered:**

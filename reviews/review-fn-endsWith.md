@@ -21,7 +21,6 @@ If the input collection contains multiple items, the evaluation of the expressio
 ```
 
 ### Coverage
-
 12 tests found for `endsWith` (testEndsWith1, testEndsWith2, testEndsWith3, testEndsWith4, testEndsWith5, testEndsWith6, testEndsWith7, testEndsWith8, testEndsWith9, testEndsWith10, testEndsWith10a, testEndsWithNonString1).
 
 **Covered:**

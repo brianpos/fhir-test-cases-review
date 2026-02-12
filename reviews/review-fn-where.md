@@ -22,7 +22,6 @@ Patient.telecom.where(use = 'official')
 ```
 
 ### Coverage
-
 5 tests found for `where` (testDollarThis1, testDollarThis2, testWhere2, testWhere3, testWhere4).
 
 **Covered:**

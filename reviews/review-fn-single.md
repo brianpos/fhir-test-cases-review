@@ -16,7 +16,6 @@ Patient.name.single()
 ```
 
 ### Coverage
-
 2 tests found for `single` (testSingle1, testSingle2).
 
 **Covered:**

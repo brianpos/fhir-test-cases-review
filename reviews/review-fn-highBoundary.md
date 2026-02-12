@@ -34,7 +34,6 @@ If the input collection contains multiple items, the evaluation of the expressio
 ```
 
 ### Coverage
-
 24 tests found for `highBoundary` (HighBoundaryDecimalDefault, HighBoundaryDecimal, HighBoundaryDecimal1, HighBoundaryDecimal2, HighBoundaryDecimal3, HighBoundaryDecimal4, HighBoundaryDecimal5, HighBoundaryDecimal6, HighBoundaryDecimal7, HighBoundaryDecimal8, HighBoundaryDecimal9, HighBoundaryDecimal10, HighBoundaryDecimal11, HighBoundaryDecimal12, HighBoundaryDecimal13, HighBoundaryDecimal14, HighBoundaryDecimal15, HighBoundaryDecimal16, HighBoundaryQuantity, HighBoundaryDateMonth, HighBoundaryDateTimeMillisecond1, HighBoundaryDateTimeMillisecond2, HighBoundaryDateTimeMillisecond3, HighBoundaryTimeMillisecond).
 
 **Covered:**

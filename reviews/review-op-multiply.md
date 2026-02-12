@@ -15,7 +15,6 @@ Multiplies both arguments (supported for Integer, Decimal, and Quantity). For mu
 ```
 
 ### Coverage
-
 8 tests found for `*` (testQuantity9, testMixedPrecisionArithmetic2, testMultiply1, testMultiply2, testMultiply3, testMultiplyEmpty1, testMultiplyEmpty2, testMultiplyEmpty3).
 
 **Covered:**

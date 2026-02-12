@@ -28,7 +28,6 @@ If the input collection contains multiple items, the evaluation of the expressio
 ```
 
 ### Coverage
-
 4 tests found for `truncate` (testTruncate1, testTruncate2, testTruncate3, testTruncateEmpty).
 
 **Covered:**

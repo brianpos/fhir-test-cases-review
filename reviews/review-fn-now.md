@@ -12,7 +12,6 @@ Returns the current date and time, including timezone offset.
 _No examples found in specification._
 
 ### Coverage
-
 2 tests found for `now` (testNow1, testNow2).
 
 **Covered:**

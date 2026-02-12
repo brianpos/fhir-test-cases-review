@@ -18,7 +18,6 @@ Returns `true` if the input collection evaluates to `false`, and `false` if it e
 _No examples found in specification._
 
 ### Coverage
-
 8 tests found for `not` (testCollectionNotEmpty, testNotEmpty, testLiteralNotOnEmpty, testLiteralNotTrue, testLiteralNotFalse, testIntegerBooleanNotTrue, testIntegerBooleanNotFalse, testNotInvalid).
 
 **Covered:**

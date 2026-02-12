@@ -22,7 +22,6 @@ If the input collection is empty, the result is empty.
 _No examples found in specification._
 
 ### Coverage
-
 6 tests found for `convertsToDecimal` (testIntegerLiteralConvertsToDecimal, testDecimalLiteralConvertsToDecimal, testStringIntegerLiteralConvertsToDecimal, testStringLiteralConvertsToDecimalFalse, testStringDecimalLiteralConvertsToDecimal, testBooleanLiteralConvertsToDecimal).
 
 **Covered:**

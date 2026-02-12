@@ -24,7 +24,6 @@ If no format is specified, the result is empty.
 _No examples found in specification._
 
 ### Coverage
-
 4 tests found for `encode` (testEncodeBase64A, testEncodeHex, testEncodeBase64B, testEncodeUrlBase64).
 
 **Covered:**

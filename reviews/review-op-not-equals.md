@@ -12,7 +12,6 @@ The converse of the equals operator, returning `true` if equal returns `false`; 
 _No examples found in specification._
 
 ### Coverage
-
 36 tests found for `!=` (testLiteralIntegerNotEqual, testLiteralIntegerCountNotEqual, testDateNotEqual, testDateNotEqualTimezoneOffsetBefore, testDateNotEqualTimezoneOffsetAfter, testDateNotEqualUTC, testDateNotEqualTimeSecond, testDateNotEqualTimeMinute, testCollectionNotEqualEmpty, testQuantity3, testNEquality1, testNEquality2, testNEquality3, testNEquality4, testNEquality5, testNEquality6, testNEquality7, testNEquality8, testNEquality9, testNEquality10, testNEquality11, testNEquality12, testNEquality13, testNEquality14, testNEquality15, testNEquality16, testNEquality17, testNEquality18, testNEquality19, testNEquality20, testNEquality21, testNEquality22, testNEquality23, testNEquality24, testMixedPrecisionNotEquals1, testMixedPrecisionNotEquals2).
 
 **Covered:**

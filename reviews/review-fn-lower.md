@@ -19,7 +19,6 @@ If the input collection contains multiple items, the evaluation of the expressio
 ```
 
 ### Coverage
-
 2 tests found for `lower` (testCase2, testCase4).
 
 **Covered:**

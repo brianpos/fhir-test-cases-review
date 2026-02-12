@@ -27,7 +27,6 @@ If the input collection contains multiple items, the evaluation of the expressio
 ```
 
 ### Coverage
-
 6 tests found for `power` (testPower1, testPower2, testPower3, testPowerEmpty, testPowerEmpty2, testPowerEmpty3).
 
 **Covered:**

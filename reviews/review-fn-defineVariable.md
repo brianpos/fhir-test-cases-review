@@ -40,7 +40,6 @@ group.select(
 ```
 
 ### Coverage
-
 21 tests found for `defineVariable` (defineVariable1, defineVariable2, defineVariable3, defineVariable4, defineVariable5, defineVariable6, defineVariable7, defineVariable8, defineVariable9, defineVariable10, dvRedefiningVariableThrowsError, defineVariable12, defineVariable13, defineVariable14, defineVariable15, defineVariable16, dvCantOverwriteSystemVar, dvConceptMapExample, defineVariable19, dvParametersDontColide, dvUsageOutsideScopeThrows).
 
 **Covered:**

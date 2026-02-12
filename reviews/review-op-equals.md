@@ -85,7 +85,6 @@ Additional functions to support more sophisticated timezone offset comparison (s
 ```
 
 ### Coverage
-
 39 tests found for `=` (testLiteralIntegerEqual, testDateEqual, testLiteralDateTimeTZEqualFalse, testLiteralDateTimeTZEqualTrue, testExpressionsEqual, testQuantity1, testQuantity5, testQuantity6, testEquality1, testEquality2, testEquality3, testEquality4, testEquality5, testEquality6, testEquality7, testEquality8, testEquality9, testEquality10, testEquality11, testEquality12, testEquality13, testEquality14, testEquality15, testEquality16, testEquality17, testEquality18, testEquality19, testEquality20, testEquality21, testEquality22, testEquality23, testEquality24, testEquality25, testEquality26, testEquality27, testEquality28, testMixedPrecisionEquals1, testMixedPrecisionEquals2, testMixedPrecisionEquals3).
 
 **Covered:**

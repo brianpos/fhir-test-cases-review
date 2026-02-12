@@ -19,7 +19,6 @@ Bundle.entry.resource.all($this is Observation implies status = 'finished')
 ```
 
 ### Coverage
-
 47 tests found for `is` (testPolymorphismIsA1, testPolymorphismIsA2, testPolymorphismIsA3, testPolymorphismIsB, testIntegerLiteralIsInteger, testIntegerLiteralIsSystemInteger, testStringLiteralIsNotInteger, testBooleanLiteralIsNotInteger, testDateIsNotInteger, testIntegerLiteralIsNotDecimal, testDecimalLiteralIsDecimal, testStringIntegerLiteralIsNotDecimal, testStringDecimalLiteralIsNotDecimal, testBooleanLiteralIsNotDecimal, testIntegerLiteralIsNotQuantity, testDecimalLiteralIsNotQuantity, testStringIntegerLiteralIsNotQuantity, testStringDecimalLiteralIsNotSystemQuantity, testBooleanLiteralIsNotSystemQuantity, testIntegerLiteralIsNotString, testType5, testType6, testType7, testType8, testType11, testType12, testType13, testType14, testType17, testType18, testType19, testType22, testTypeA1, testTypeA2, testTypeA3, testTypeA4, testTypeA, testFHIRPathIsFunction1, testFHIRPathIsFunction2, testFHIRPathIsFunction3, testFHIRPathIsFunction4, testFHIRPathIsFunction5, testFHIRPathIsFunction6, testFHIRPathIsFunction7, testFHIRPathIsFunction8, testFHIRPathIsFunction9, testFHIRPathIsFunction10).
 
 **Covered:**

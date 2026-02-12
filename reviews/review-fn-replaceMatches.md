@@ -34,7 +34,6 @@ This example locates all the instances of `aa` and surrounds them with double qu
 ```
 
 ### Coverage
-
 7 tests found for `replaceMatches` (testReplaceMatches1, testReplaceMatches2, testReplaceMatches3, testReplaceMatches4, testReplaceMatches5, testReplaceMatches6, testReplaceMatches7).
 
 **Covered:**

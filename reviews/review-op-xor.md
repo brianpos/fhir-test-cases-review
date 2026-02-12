@@ -18,7 +18,6 @@ Returns `true` if exactly one of the operands evaluates to `true`, `false` if ei
 _No examples found in specification._
 
 ### Coverage
-
 9 tests found for `xor` (testBooleanLogicXOr1, testBooleanLogicXOr2, testBooleanLogicXOr3, testBooleanLogicXOr4, testBooleanLogicXOr5, testBooleanLogicXOr6, testBooleanLogicXOr7, testBooleanLogicXOr8, testBooleanLogicXOr9).
 
 **Covered:**

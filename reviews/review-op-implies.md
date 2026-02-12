@@ -43,7 +43,6 @@ wasNotGiven ~ true implies reasonNotGiven.exists()
 ```
 
 ### Coverage
-
 9 tests found for `implies` (testBooleanImplies1, testBooleanImplies2, testBooleanImplies3, testBooleanImplies4, testBooleanImplies5, testBooleanImplies6, testBooleanImplies7, testBooleanImplies8, testBooleanImplies9).
 
 **Covered:**

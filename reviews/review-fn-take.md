@@ -12,7 +12,6 @@ Returns a collection containing the first `num` items in the input collection, o
 _No examples found in specification._
 
 ### Coverage
-
 7 tests found for `take` (testTake1, testTake2, testTake3, testTake4, testTake5, testTake6, testTake7).
 
 **Covered:**

@@ -17,7 +17,6 @@ Bundle.entry.resource.ofType(Patient)
 ```
 
 ### Coverage
-
 10 tests found for `ofType` (testType20, testType21, testType23, testFHIRPathAsFunction16, testFHIRPathAsFunction17, testFHIRPathAsFunction18, testFHIRPathAsFunction19, testFHIRPathAsFunction20, testFHIRPathAsFunction22, testFHIRPathAsFunction24).
 
 **Covered:**

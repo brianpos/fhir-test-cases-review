@@ -36,7 +36,6 @@ If the input collection is empty, the result is empty.
 _No examples found in specification._
 
 ### Coverage
-
 11 tests found for `toString` (testIntegerLiteralToString, testNegativeIntegerLiteralToString, testDecimalLiteralToString, testStringLiteralToString, testBooleanLiteralToString, testQuantityLiteralWkToString, testQuantityLiteralWeekToString, testToString1, testToString3, testToString4, testToString5).
 
 **Covered:**

@@ -14,7 +14,6 @@ If the input is empty, the result is empty.
 _No examples found in specification._
 
 ### Coverage
-
 6 tests found for `trim` (testTrim1, testTrim2, testTrim3, testTrim4, testTrim5, testTrim6).
 
 **Covered:**

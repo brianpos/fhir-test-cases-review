@@ -12,7 +12,6 @@ Returns a collection containing all but the first item in the input collection. 
 _No examples found in specification._
 
 ### Coverage
-
 2 tests found for `tail` (testTail1, testTail2).
 
 **Covered:**

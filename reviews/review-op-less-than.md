@@ -31,7 +31,6 @@ The less than operator (`<`) returns `true` if the first operand is strictly les
 ```
 
 ### Coverage
-
 39 tests found for `<` (testLiteralIntegerLessThanTrue, testLiteralIntegerLessThanFalse, testLiteralDecimalLessThanInteger, testLiteralDecimalLessThanInvalid, testDateNotEqualToday, testLiteralDateTimeTZLess, testQuantity7, testMixedPrecisionLessThan1, testMixedPrecisionLessThan2, testLessThan1, testLessThan2, testLessThan3, testLessThan4, testLessThan5, testLessThan6, testLessThan7, testLessThan8, testLessThan9, testLessThan10, testLessThan11, testLessThan12, testLessThan13, testLessThan14, testLessThan15, testLessThan16, testLessThan17, testLessThan18, testLessThan19, testLessThan20, testLessThan21, testLessThan22, testLessThan23, testLessThan24, testLessThan25, testLessThan26, testLessThan27, testLessThanEmpty1, testLessThanEmpty2, testLessThanEmpty3).
 
 **Covered:**

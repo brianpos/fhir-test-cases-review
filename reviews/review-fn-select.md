@@ -33,7 +33,6 @@ Patient.name.where(use = 'usual').select(given.first() + ' ' + family)
 ```
 
 ### Coverage
-
 3 tests found for `select` (testSelect1, testSelect2, testSelect3).
 
 **Covered:**

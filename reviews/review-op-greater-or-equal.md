@@ -28,7 +28,6 @@ The greater or equal operator (`>=`) returns `true` if the first operand is grea
 ```
 
 ### Coverage
-
 32 tests found for `>=` (testMixedPrecisionGreaterOrEqual1, testMixedPrecisionGreaterOrEqual2, testGreatorOrEqual1, testGreatorOrEqual2, testGreatorOrEqual3, testGreatorOrEqual4, testGreatorOrEqual5, testGreatorOrEqual6, testGreatorOrEqual7, testGreatorOrEqual8, testGreatorOrEqual9, testGreatorOrEqual10, testGreatorOrEqual11, testGreatorOrEqual12, testGreatorOrEqual13, testGreatorOrEqual14, testGreatorOrEqual15, testGreatorOrEqual16, testGreatorOrEqual17, testGreatorOrEqual18, testGreatorOrEqual19, testGreatorOrEqual20, testGreatorOrEqual21, testGreatorOrEqual22, testGreatorOrEqual23, testGreatorOrEqual24, testGreatorOrEqual25, testGreatorOrEqual26, testGreatorOrEqual27, testGreatorOrEqualEmpty1, testGreatorOrEqualEmpty2, testGreatorOrEqualEmpty3).
 
 **Covered:**

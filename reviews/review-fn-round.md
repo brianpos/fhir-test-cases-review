@@ -30,7 +30,6 @@ If the input collection contains multiple items, the evaluation of the expressio
 ```
 
 ### Coverage
-
 3 tests found for `round` (testRound1, testRound2, testRoundEmpty).
 
 **Covered:**

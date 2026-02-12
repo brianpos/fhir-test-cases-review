@@ -12,7 +12,6 @@ Returns the integer count of the number of items in the input collection. Return
 _No examples found in specification._
 
 ### Coverage
-
 5 tests found for `count` (testCount1, testCount2, testCount3, testCount4, testWhere1).
 
 **Covered:**

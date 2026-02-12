@@ -16,7 +16,6 @@ Note that `length()` counts characters (Unicode scalar values), not visual chara
 _No examples found in specification._
 
 ### Coverage
-
 6 tests found for `length` (testLength1, testLength2, testLength3, testLength4, testLength5, testLength6).
 
 **Covered:**

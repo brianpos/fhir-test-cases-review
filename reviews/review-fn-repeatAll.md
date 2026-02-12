@@ -41,7 +41,6 @@ Questionnaire.repeatAll('item') // this is a common mistake where the "expressio
 ```
 
 ### Coverage
-
 0 tests found for `repeatAll`.
 
 **Covered:**

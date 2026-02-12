@@ -21,7 +21,6 @@ If the input collection contains multiple items, the evaluation of the expressio
 ```
 
 ### Coverage
-
 3 tests found for `ln` (testLn1, testLn2, testLnEmpty).
 
 **Covered:**

@@ -40,7 +40,6 @@ Patient.telecom.sort(system, use desc) // sort by system ascending, then by use 
 ```
 
 ### Coverage
-
 10 tests found for `sort` (testSort1, testSort2, testSort3, testSort4, testSort5, testSort6, testSort7, testSort8, testSort9, testSort10).
 
 **Covered:**

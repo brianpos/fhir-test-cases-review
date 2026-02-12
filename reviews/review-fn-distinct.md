@@ -20,7 +20,6 @@ Patient.meta.tag.distinct()
 ```
 
 ### Coverage
-
 4 tests found for `distinct` (testExpressions, testDistinct4, testDistinct5, testDistinct6).
 
 **Covered:**

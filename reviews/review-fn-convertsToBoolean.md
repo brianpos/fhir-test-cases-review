@@ -25,7 +25,6 @@ If the input collection is empty, the result is empty.
 _No examples found in specification._
 
 ### Coverage
-
 10 tests found for `convertsToBoolean` (testIntegerLiteralConvertsToBoolean, testIntegerLiteralConvertsToBooleanFalse, testNegativeIntegerLiteralConvertsToBooleanFalse, testIntegerLiteralFalseConvertsToBoolean, testDecimalLiteralConvertsToBoolean, testStringTrueLiteralConvertsToBoolean, testStringFalseLiteralConvertsToBoolean, testStringFalseLiteralAlsoConvertsToBoolean, testTrueLiteralConvertsToBoolean, testFalseLiteralConvertsToBoolean).
 
 **Covered:**
@@ -60,5 +59,3 @@ _No examples found in specification._
 **Summary:**
 - Overall pass rate: 57/60 (95%)
 - Tests: 10
-- Engines with failures: Aidbox.
-- Engines passing all tests: fhirpath.js-4.8.3, Firely-5.12.2, Helios-0.1.32, Ignixa-0.0.151, Java-6.7.8.

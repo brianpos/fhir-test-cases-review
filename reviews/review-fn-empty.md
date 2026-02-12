@@ -12,7 +12,6 @@ Returns `true` if the input collection is empty (`{ }`) and `false` otherwise.
 _No examples found in specification._
 
 ### Coverage
-
 1 tests found for `empty` (testEmpty).
 
 **Covered:**

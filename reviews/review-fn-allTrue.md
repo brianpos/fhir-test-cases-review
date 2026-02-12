@@ -16,7 +16,6 @@ Observation.select(component.value > 90 'mm[Hg]').allTrue()
 ```
 
 ### Coverage
-
 3 tests found for `allTrue` (testAllTrue1, testAllTrue2, from-zulip-2).
 
 **Covered:**
@@ -39,5 +38,3 @@ Observation.select(component.value > 90 'mm[Hg]').allTrue()
 **Summary:**
 - Overall pass rate: 17/18 (94%)
 - Tests: 3
-- Engines with failures: Aidbox.
-- Engines passing all tests: fhirpath.js-4.8.3, Firely-5.12.2, Helios-0.1.32, Ignixa-0.0.151, Java-6.7.8.

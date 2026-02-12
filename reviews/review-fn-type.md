@@ -48,7 +48,6 @@ Patient.maritalStatus.type()
 ```
 
 ### Coverage
-
 10 tests found for `type` (testType1, testType1a, testType2, testType2a, testType3, testType4, testType9, testType10, testType15, testType16).
 
 **Covered:**

@@ -25,7 +25,6 @@ A.combine( {} ) // 1, 1, 2, 3 - combining an empty collection with a non-empty c
 ```
 
 ### Coverage
-
 5 tests found for `combine` (testCombine1, testCombine2, testCombine3, testUnion6, testUnion7).
 
 **Covered:**
@@ -50,5 +49,3 @@ A.combine( {} ) // 1, 1, 2, 3 - combining an empty collection with a non-empty c
 **Summary:**
 - Overall pass rate: 28/30 (93%)
 - Tests: 5
-- Engines with failures: fhirpath.js-4.8.3.
-- Engines passing all tests: Aidbox, Firely-5.12.2, Helios-0.1.32, Ignixa-0.0.151, Java-6.7.8.

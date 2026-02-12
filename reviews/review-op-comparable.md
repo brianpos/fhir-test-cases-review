@@ -31,7 +31,6 @@ iif(Observation.value.comparable(2 'mg'), Observation.value < 2 'mg', {})
 ```
 
 ### Coverage
-
 3 tests found for `comparable` (Comparable1, Comparable2, Comparable3).
 
 **Covered:**

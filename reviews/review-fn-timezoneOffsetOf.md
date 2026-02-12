@@ -19,7 +19,6 @@ If the input collection contains multiple items, the evaluation of the expressio
 ```
 
 ### Coverage
-
 0 tests found for `timezoneOffsetOf`.
 
 **Covered:**

@@ -20,7 +20,6 @@ If the input collection contains multiple items, the evaluation of the expressio
 ```
 
 ### Coverage
-
 1 tests found for `toChars` (testToChars1).
 
 **Covered:**

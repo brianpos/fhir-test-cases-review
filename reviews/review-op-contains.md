@@ -16,7 +16,6 @@ Patient.name.given contains 'Joe'
 ```
 
 ### Coverage
-
 21 tests found for `contains` (testContainsString1, testContainsString2, testContainsString3, testContainsString4, testContainsString5, testContainsString6, testContainsString7, testContainsString8, testContainsString9, testContainsString10, testContainsString10a, testContainsNonString1, testContainsCollection1, testContainsCollection2, testContainsCollection3, testContainsCollection4, testContainsCollectionEmpty1, testContainsCollectionEmpty2, testContainsCollectionEmpty3, testContainsCollectionEmpty4, testContainsCollectionEmptyDateTime).
 
 **Covered:**

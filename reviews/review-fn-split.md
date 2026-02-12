@@ -22,7 +22,6 @@ The following example illustrates the behavior of the `.split` operator:
 ```
 
 ### Coverage
-
 4 tests found for `split` (testSplit1, testSplit2, testSplit3, testSplit4).
 
 **Covered:**

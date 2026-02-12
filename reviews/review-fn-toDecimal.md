@@ -24,7 +24,6 @@ If the input collection is empty, the result is empty.
 _No examples found in specification._
 
 ### Coverage
-
 8 tests found for `toDecimal` (testIntegerLiteralToDecimal, testDecimalLiteralToDecimal, testDecimalLiteralToDecimalEqual, testBooleanLiteralToDecimal, testToDecimal1, testToDecimal3, testToDecimal4, testToDecimal5).
 
 **Covered:**

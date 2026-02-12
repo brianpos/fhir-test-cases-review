@@ -16,7 +16,6 @@ Observation.select(component.value > 90 'mm[Hg]').anyTrue()
 ```
 
 ### Coverage
-
 0 tests found for `anyTrue`.
 
 **Covered:**

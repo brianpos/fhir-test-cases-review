@@ -27,7 +27,6 @@ If the input collection is empty, the result is empty.
 _No examples found in specification._
 
 ### Coverage
-
 3 tests found for `convertsToDate` (testStringYearConvertsToDate, testStringMonthConvertsToDate, testStringDayConvertsToDate).
 
 **Covered:**

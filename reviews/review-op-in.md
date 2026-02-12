@@ -16,7 +16,6 @@ The following example returns `true` if `'Joe'` is in the list of given names fo
 ```
 
 ### Coverage
-
 8 tests found for `in` (testIn1, testIn2, testIn3, testIn4, testIn5, testInEmptyCollection, testInEmptyValue, testInEmptyBoth).
 
 **Covered:**

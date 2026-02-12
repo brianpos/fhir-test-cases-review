@@ -12,7 +12,6 @@ Returns the current time.
 _No examples found in specification._
 
 ### Coverage
-
 0 tests found for `timeOfDay`.
 
 **Covered:**

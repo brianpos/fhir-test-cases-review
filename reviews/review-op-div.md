@@ -16,7 +16,6 @@ Performs truncated division of the left operand by the right operand (supported 
 ```
 
 ### Coverage
-
 10 tests found for `div` (testMixedPrecisionArithmetic5, testDiv1, testDiv2, testDiv3, testDiv4, testDiv5, testDiv6, testDivEmpty1, testDivEmpty2, testDivEmpty3).
 
 **Covered:**

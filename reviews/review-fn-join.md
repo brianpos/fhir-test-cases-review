@@ -21,7 +21,6 @@ The following example illustrates the behavior of the `.join` operator:
 ```
 
 ### Coverage
-
 1 tests found for `join` (testJoin).
 
 **Covered:**

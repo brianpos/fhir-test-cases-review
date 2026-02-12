@@ -55,7 +55,6 @@ component.code.where(coding.intersect(%resource.code.coding).trace('component', 
 ```
 
 ### Coverage
-
 0 tests found for `pathname`.
 
 **Covered:**

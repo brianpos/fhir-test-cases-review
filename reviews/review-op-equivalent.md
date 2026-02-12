@@ -65,7 +65,6 @@ For strings, equivalence returns `true` if the strings are the same value while 
 ```
 
 ### Coverage
-
 27 tests found for `~` (testIntegerLiteralToDeciamlEquivalent, testQuantity2, testQuantity4, testEquivalent1, testEquivalent2, testEquivalent3, testEquivalent4, testEquivalent5, testEquivalent6, testEquivalent7, testEquivalent8, testEquivalent9, testEquivalent10, testEquivalent11, testEquivalent12, testEquivalent13, testEquivalent14, testEquivalent15, testEquivalent16, testEquivalent17, testEquivalent18, testEquivalent19, testEquivalent20, testEquivalent21, testEquivalent22, testEquivalent23, testEquivalent24).
 
 **Covered:**

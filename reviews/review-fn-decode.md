@@ -16,7 +16,6 @@ If no format is specified, the result is empty.
 _No examples found in specification._
 
 ### Coverage
-
 4 tests found for `decode` (testDecodeBase64A, testDecodeHex, testDecodeBase64B, testDecodeUrlBase64).
 
 **Covered:**

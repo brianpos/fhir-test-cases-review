@@ -25,7 +25,6 @@ The following examples illustrate the behavior of the `avg` function:
 ```
 
 ### Coverage
-
 0 tests found for `avg`.
 
 **Covered:**

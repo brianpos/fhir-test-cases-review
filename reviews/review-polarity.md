@@ -31,7 +31,6 @@ examples:
 ```
 
 ### Coverage
-
 3 tests found for `polarity` (testPolarityPrecedence, testLiteralIntegerLessThanPolarityTrue, testLiteralIntegerLessThanPolarityFalse).
 
 **Covered:**

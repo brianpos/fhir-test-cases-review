@@ -16,7 +16,6 @@ When adding quantities, the dimensions of each quantity must be the same, but no
 ```
 
 ### Coverage
-
 35 tests found for `+` (testMixedPrecisionArithmetic1, testPlus1, testPlus2, testPlus3, testPlus4, testPlus5, testPlusDate1, testPlusDate2, testPlusDate3, testPlusDate4, testPlusDate5, testPlusDate6, testPlusDate7, testPlusDate8, testPlusDate9, testPlusDate10, testPlusDate11, testPlusDate12, testPlusDate13, testPlusDate14, testPlusDate15, testPlusDate16, testPlusDate17, testPlusDate18, testPlusDate19, testPlusDate20, testPlusDate21, testPlusDate22, testPlus6, testPlusTime1, testPlusTime2, testPlusTime3, testPlusEmpty1, testPlusEmpty2, testPlusEmpty3).
 
 **Covered:**

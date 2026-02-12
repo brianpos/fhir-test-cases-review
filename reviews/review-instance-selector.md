@@ -75,7 +75,6 @@ code { value: 'final' }
 ```
 
 ### Coverage
-
 0 tests found for `Instance Selector`.
 
 **Covered:**

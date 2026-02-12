@@ -28,7 +28,6 @@ If the input collection contains multiple items, the evaluation of the expressio
 ```
 
 ### Coverage
-
 4 tests found for `floor` (testFloor1, testFloor2, testFloor3, testFloorEmpty).
 
 **Covered:**

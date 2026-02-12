@@ -14,7 +14,6 @@ Returns a collection with all descendant nodes of all items in the input collect
 _No examples found in specification._
 
 ### Coverage
-
 1 tests found for `descendants` (testRepeat3).
 
 **Covered:**

@@ -32,7 +32,6 @@ The following examples illustrate the behavior of the difference function:
 ```
 
 ### Coverage
-
 0 tests found for `difference`.
 
 **Covered:**

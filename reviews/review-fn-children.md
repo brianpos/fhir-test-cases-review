@@ -12,7 +12,6 @@ Returns a collection with all immediate child nodes of all items in the input co
 _No examples found in specification._
 
 ### Coverage
-
 1 tests found for `children` (testRepeat4).
 
 **Covered:**

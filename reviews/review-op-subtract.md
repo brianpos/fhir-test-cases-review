@@ -16,7 +16,6 @@ When subtracting quantities, the dimensions of each quantity must be the same, b
 ```
 
 ### Coverage
-
 12 tests found for `-` (testMixedPrecisionArithmetic4, testMinus1, testMinus2, testMinus3, testMinus4, testMinus5, testMinus6, testMinus7, testMinus8, testMinusEmpty1, testMinusEmpty2, testMinusEmpty3).
 
 **Covered:**

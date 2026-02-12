@@ -24,7 +24,6 @@ If the input collection is empty, the result is empty.
 _No examples found in specification._
 
 ### Coverage
-
 12 tests found for `toInteger` (testIntegerLiteralToInteger, testStringIntegerLiteralToInteger, testDecimalLiteralToInteger, testDecimalLiteralToIntegerIsEmpty, testBooleanLiteralToInteger, testToInteger1, testToInteger2, testToInteger3, testToInteger4, testToInteger5, testToDecimal2, testToString2).
 
 **Covered:**

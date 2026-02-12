@@ -24,7 +24,6 @@ The following examples illustrate the behavior of the `max` function:
 ```
 
 ### Coverage
-
 0 tests found for `max`.
 
 **Covered:**

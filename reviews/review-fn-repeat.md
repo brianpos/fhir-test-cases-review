@@ -41,7 +41,6 @@ Questionnaire.descendants().select(item)
 ```
 
 ### Coverage
-
 3 tests found for `repeat` (testRepeat1, testRepeat2, testRepeat5).
 
 **Covered:**

@@ -59,7 +59,6 @@ q.toQuantity('g') // changes the value and units in the quantity according to UC
 ```
 
 ### Coverage
-
 9 tests found for `toQuantity` (testIntegerLiteralToQuantity, testDecimalLiteralToQuantity, testStringIntegerLiteralToQuantity, testStringQuantityLiteralToQuantity, testStringQuantityDayLiteralToQuantity, testStringQuantityWeekLiteralToQuantity, testStringQuantityMonthLiteralToQuantity, testStringQuantityYearLiteralToQuantity, testStringDecimalLiteralToQuantity).
 
 **Covered:**

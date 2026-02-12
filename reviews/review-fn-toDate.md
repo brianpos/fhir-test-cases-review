@@ -36,7 +36,6 @@ For example:
 ```
 
 ### Coverage
-
 0 tests found for `toDate`.
 
 **Covered:**

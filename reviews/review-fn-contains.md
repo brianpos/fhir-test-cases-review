@@ -25,7 +25,6 @@ If the input collection contains multiple items, the evaluation of the expressio
 ```
 
 ### Coverage
-
 21 tests found for `contains` (testContainsString1, testContainsString2, testContainsString3, testContainsString4, testContainsString5, testContainsString6, testContainsString7, testContainsString8, testContainsString9, testContainsString10, testContainsString10a, testContainsNonString1, testContainsCollection1, testContainsCollection2, testContainsCollection3, testContainsCollection4, testContainsCollectionEmpty1, testContainsCollectionEmpty2, testContainsCollectionEmpty3, testContainsCollectionEmpty4, testContainsCollectionEmptyDateTime).
 
 **Covered:**
@@ -72,5 +71,3 @@ If the input collection contains multiple items, the evaluation of the expressio
 **Summary:**
 - Overall pass rate: 124/126 (98%)
 - Tests: 21
-- Engines with failures: Aidbox, Firely-5.12.2.
-- Engines passing all tests: fhirpath.js-4.8.3, Helios-0.1.32, Ignixa-0.0.151, Java-6.7.8.

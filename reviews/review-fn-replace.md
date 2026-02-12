@@ -20,7 +20,6 @@ If the input collection contains multiple items, the evaluation of the expressio
 ```
 
 ### Coverage
-
 6 tests found for `replace` (testReplace1, testReplace2, testReplace3, testReplace4, testReplace5, testReplace6).
 
 **Covered:**

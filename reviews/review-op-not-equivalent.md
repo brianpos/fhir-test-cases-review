@@ -12,7 +12,6 @@ The converse of the equivalent operator, returning `true` if equivalent returns 
 _No examples found in specification._
 
 ### Coverage
-
 22 tests found for `!~` (testNotEquivalent1, testNotEquivalent2, testNotEquivalent3, testNotEquivalent4, testNotEquivalent5, testNotEquivalent6, testNotEquivalent7, testNotEquivalent8, testNotEquivalent9, testNotEquivalent10, testNotEquivalent11, testNotEquivalent12, testNotEquivalent13, testNotEquivalent14, testNotEquivalent15, testNotEquivalent16, testNotEquivalent17, testNotEquivalent18, testNotEquivalent19, testNotEquivalent20, testNotEquivalent21, testNotEquivalent22).
 
 **Covered:**

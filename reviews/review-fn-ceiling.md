@@ -28,7 +28,6 @@ If the input collection contains multiple items, the evaluation of the expressio
 ```
 
 ### Coverage
-
 4 tests found for `ceiling` (testCeiling1, testCeiling2, testCeiling3, testCeilingEmpty).
 
 **Covered:**
@@ -53,5 +52,3 @@ If the input collection contains multiple items, the evaluation of the expressio
 **Summary:**
 - Overall pass rate: 22/24 (92%)
 - Tests: 4
-- Engines with failures: Aidbox.
-- Engines passing all tests: fhirpath.js-4.8.3, Firely-5.12.2, Helios-0.1.32, Ignixa-0.0.151, Java-6.7.8.

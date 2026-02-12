@@ -35,7 +35,6 @@ value.aggregate($total + $this, 0) / value.count()
 ```
 
 ### Coverage
-
 4 tests found for `aggregate` (testAggregate1, testAggregate2, testAggregate3, testAggregate4).
 
 **Covered:**
@@ -60,4 +59,4 @@ value.aggregate($total + $this, 0) / value.count()
 **Summary:**
 - Overall pass rate: 20/20 (100%)
 - Tests: 4
-- All implementing engines pass all tests. 1 engine(s) have not implemented this: Aidbox.
+- All implementing engines pass all tests. 1 engine(s) have not implemented this feature.

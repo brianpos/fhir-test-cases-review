@@ -25,7 +25,6 @@ If the input collection is empty, the result is empty.
 _No examples found in specification._
 
 ### Coverage
-
 9 tests found for `convertsToDateTime` (testStringYearConvertsToDateTime, testStringMonthConvertsToDateTime, testStringDayConvertsToDateTime, testStringHourConvertsToDateTime, testStringMinuteConvertsToDateTime, testStringSecondConvertsToDateTime, testStringMillisecondConvertsToDateTime, testStringUTCConvertsToDateTime, testStringTZConvertsToDateTime).
 
 **Covered:**

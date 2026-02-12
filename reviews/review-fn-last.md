@@ -12,7 +12,6 @@ Returns a collection containing only the last item in the input collection. Will
 _No examples found in specification._
 
 ### Coverage
-
 1 tests found for `last` (testFirstLast2).
 
 **Covered:**

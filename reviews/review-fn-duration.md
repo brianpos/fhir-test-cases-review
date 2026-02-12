@@ -30,7 +30,6 @@ The following examples illustrate the behavior of the duration function:
 ```
 
 ### Coverage
-
 0 tests found for `duration`.
 
 **Covered:**

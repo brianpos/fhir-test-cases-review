@@ -46,7 +46,6 @@ coalesce(code.coding.where(system='http://snomed.info/sct'), code.coding).first(
 ```
 
 ### Coverage
-
 0 tests found for `coalesce`.
 
 **Covered:**

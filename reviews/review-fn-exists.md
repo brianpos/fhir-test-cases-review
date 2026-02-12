@@ -35,7 +35,6 @@ Patient.generalPractitioner.exists(resolve() is Practitioner)
 ```
 
 ### Coverage
-
 5 tests found for `exists` (testExists1, testExists2, testExists3, testExists4, testExists5).
 
 **Covered:**

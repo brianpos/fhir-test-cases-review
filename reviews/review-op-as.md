@@ -16,7 +16,6 @@ Observation.component.where(value as Quantity > 30 'mg')
 ```
 
 ### Coverage
-
 11 tests found for `as` (testPolymorphismAsA, testPolymorphismAsAFunction, testPolymorphismAsB, testPolymorphismAsBFunction, testFHIRPathAsFunction11, testFHIRPathAsFunction12, testFHIRPathAsFunction13, testFHIRPathAsFunction14, testFHIRPathAsFunction15, testFHIRPathAsFunction21, testFHIRPathAsFunction23).
 
 **Covered:**

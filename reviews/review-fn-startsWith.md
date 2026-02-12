@@ -21,7 +21,6 @@ If the input collection contains multiple items, the evaluation of the expressio
 ```
 
 ### Coverage
-
 14 tests found for `startsWith` (testStartsWith1, testStartsWith2, testStartsWith3, testStartsWith4, testStartsWith5, testStartsWith6, testStartsWith7, testStartsWith8, testStartsWith9, testStartsWith10, testStartsWith11, testStartsWith12, testStartsWith12a, testStartsWithNonString1).
 
 **Covered:**

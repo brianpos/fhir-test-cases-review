@@ -24,7 +24,6 @@ A.union( { } ) // 1, 2, 3
 ```
 
 ### Coverage
-
 5 tests found for `union` (testUnion4, testUnion5, testUnion8, testUnion10, testUnion11).
 
 **Covered:**

@@ -25,7 +25,6 @@ If the component isn't present in the value, then the result is empty
 ```
 
 ### Coverage
-
 0 tests found for `monthOf`.
 
 **Covered:**

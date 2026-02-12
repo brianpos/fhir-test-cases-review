@@ -32,7 +32,6 @@ For Date and DateTime values, the function returns the number of digits of preci
 ```
 
 ### Coverage
-
 6 tests found for `precision` (PrecisionDecimal, PrecisionYear, PrecisionDateTimeMilliseconds, PrecisionTimeMinutes, PrecisionTimeMilliseconds, PrecisionEmpty).
 
 **Covered:**

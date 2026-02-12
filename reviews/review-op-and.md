@@ -18,7 +18,6 @@ Returns `true` if both operands evaluate to `true`, `false` if either operand ev
 _No examples found in specification._
 
 ### Coverage
-
 10 tests found for `and` (testBooleanLogicAnd1, testBooleanLogicAnd2, testBooleanLogicAnd3, testBooleanLogicAnd4, testBooleanLogicAnd5, testBooleanLogicAnd6, testBooleanLogicAnd7, testBooleanLogicAnd8, testBooleanLogicAnd9, from-zulip-1).
 
 **Covered:**

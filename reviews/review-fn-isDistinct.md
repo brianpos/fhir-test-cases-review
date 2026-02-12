@@ -19,7 +19,6 @@ X.count() = X.distinct().count()
 ```
 
 ### Coverage
-
 3 tests found for `isDistinct` (testDistinct1, testDistinct2, testDistinct3).
 
 **Covered:**

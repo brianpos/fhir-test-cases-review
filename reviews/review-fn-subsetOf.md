@@ -18,7 +18,6 @@ MedicationRequest.contained.meta.tag.subsetOf(MedicationRequest.meta.tag)
 ```
 
 ### Coverage
-
 3 tests found for `subsetOf` (testSubSetOf1, testSubSetOf2, testSubSetOf3).
 
 **Covered:**

@@ -17,7 +17,6 @@ For strings, will concatenate the strings, where an empty operand is taken to be
 ```
 
 ### Coverage
-
 5 tests found for `&` (testConcatenate1, testConcatenate2, testConcatenate3, testConcatenate4, testConcatenate5).
 
 **Covered:**

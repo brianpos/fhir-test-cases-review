@@ -23,7 +23,6 @@ The following examples illustrate the behavior of the `sum` function:
 ```
 
 ### Coverage
-
 0 tests found for `sum`.
 
 **Covered:**

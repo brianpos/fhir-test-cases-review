@@ -38,7 +38,6 @@ birthDate.iif(exists(), toString(), '(unknown)')
 ```
 
 ### Coverage
-
 19 tests found for `iif` (testCollectionBoolean1, testCollectionBoolean2, testCollectionBoolean3, testCollectionBoolean4, testCollectionBoolean5, testCollectionBoolean6, testIif1, testIif2, testIif3, testIif4, testIif5, testIif6, testIif7, testIif8, testIif9, testIif10, testIif11, testIif12, testIndex).
 
 **Covered:**

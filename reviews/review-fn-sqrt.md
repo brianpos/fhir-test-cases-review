@@ -25,7 +25,6 @@ Note that this function is equivalent to raising a number of the power of 0.5 us
 ```
 
 ### Coverage
-
 3 tests found for `sqrt` (testSqrt1, testSqrt2, testSqrtEmpty).
 
 **Covered:**

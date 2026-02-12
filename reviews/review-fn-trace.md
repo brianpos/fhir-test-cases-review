@@ -22,7 +22,6 @@ contained.where(criteria).trace('unmatched', id).empty()
 ```
 
 ### Coverage
-
 2 tests found for `trace` (testTrace1, testTrace2).
 
 **Covered:**

@@ -14,7 +14,6 @@ e.g. `(1 | 2 | 3).exclude(2)` returns `(1 | 3)`.
 _No examples found in specification._
 
 ### Coverage
-
 4 tests found for `exclude` (testExclude1, testExclude2, testExclude3, testExclude4).
 
 **Covered:**

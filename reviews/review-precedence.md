@@ -49,7 +49,6 @@ Use parentheses to ensure the unary negation applies to the `7`:
 ```
 
 ### Coverage
-
 6 tests found for `precedence` (testPrecedence1, testPrecedence2, testPrecedence3, testPrecedence4, testPrecedence5, testPrecedence6).
 
 **Covered:**

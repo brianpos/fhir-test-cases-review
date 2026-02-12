@@ -14,7 +14,6 @@ See the [union](#unionother-collection) function for more detail.
 _No examples found in specification._
 
 ### Coverage
-
 5 tests found for `|` (testUnion1, testUnion2, testUnion3, testUnion9, testUnion12).
 
 **Covered:**

@@ -18,7 +18,6 @@ MedicationRequest.contained.meta.tag.supersetOf(MedicationRequest.meta.tag)
 ```
 
 ### Coverage
-
 2 tests found for `supersetOf` (testSuperSetOf1, testSuperSetOf2).
 
 **Covered:**

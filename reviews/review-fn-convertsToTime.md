@@ -21,7 +21,6 @@ If the input collection is empty, the result is empty.
 _No examples found in specification._
 
 ### Coverage
-
 4 tests found for `convertsToTime` (testStringHourConvertsToTime, testStringMinuteConvertsToTime, testStringSecondConvertsToTime, testStringMillisecondConvertsToTime).
 
 **Covered:**

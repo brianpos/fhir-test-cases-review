@@ -16,7 +16,6 @@ Computes the remainder of the truncated division of its arguments (supported for
 ```
 
 ### Coverage
-
 10 tests found for `mod` (testMixedPrecisionArithmetic6, testMod1, testMod2, testMod3, testMod4, testMod5, testMod6, testModEmpty1, testModEmpty2, testModEmpty3).
 
 **Covered:**

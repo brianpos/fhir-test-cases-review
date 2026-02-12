@@ -19,7 +19,6 @@ For division involving quantities, the resulting quantity will have an appropria
 ```
 
 ### Coverage
-
 12 tests found for `/` (testQuantity10, testQuantity11, testMixedPrecisionArithmetic3, testDivide1, testDivide2, testDivide3, testDivide4, testDivide5, testDivide6, testDivideEmpty1, testDivideEmpty2, testDivideEmpty3).
 
 **Covered:**
