@@ -25,20 +25,26 @@ This repository contains **AI-generated, human-reviewed analyses** of FHIRPath R
 Every review file follows the template in [scripts/review-template.md](scripts/review-template.md):
 
 ```markdown
-## Review <Feature Description>
-Name: <testing attribute value>
-Date: <review date>
-Test Count: <N>
+## Review << Feature Description >>
+Name: << feature name as found in test `testing` attribute, and summary table >>
+Date: << review date >>
+Test Count: << number of tests >>
 
 ### Specification Extract
 Header in specification: << exact header text from index.md that matches the function/operator/feature being reviewed >>
-<relevant spec text copied from FHIRPath index.md>
+<< Extract markdown from the specification, and copy here - local copy to reduce context size for processing >>
 
 ### Example(s) from Specification
-<spec examples or "No examples found">
+<< Where the specification has examples, copy those here >>
 
 ### Coverage
-<test names, what's covered (✅), what's missing (❌)>
+<< `n` tests found (comma seperated list of tests). >>
+
+**Covered:**
+- << ✅ Feature tested (testName) >>
+
+**Gaps:**
+- << ❌ component of feature not covered by a test >>
 
 ### Test Results
 <table: test names × n engines with ✅/❌ per cell>

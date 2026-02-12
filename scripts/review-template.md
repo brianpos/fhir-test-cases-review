@@ -12,5 +12,12 @@ Header in specification: << exact header text from index.md that matches the fun
 << Where the specification has examples, copy those here >>
 
 ### Coverage
+<< `n` tests found (comma seperated list of tests). >>
+
+**Covered:**
+- << ✅ Feature tested (testName) >>
+
+**Gaps:**
+- << ❌ component of feature not covered by a test >>
 
 ### Test Results
