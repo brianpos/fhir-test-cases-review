@@ -47,8 +47,12 @@ Header in specification: << exact header text from index.md that matches the fun
 - << ❌ component of feature not covered by a test >>
 
 ### Test Results
-<table: test names × n engines with ✅/❌ per cell>
-<summary line with pass percentage>
+
+<< Test results table >>
+
+**Summary:** n/total (%) — x tests × y engines
+
+<< overall function status summary >>
 ```
 
 **Naming conventions:**
