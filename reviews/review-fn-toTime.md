@@ -1,0 +1,39 @@
+## Review `toTime() : Time`
+Name: toTime
+Date: 2026-02-11
+Test Count: 0
+
+### Specification Extract 
+Header in specification: toTime() : Time
+
+If the input collection contains a single item, this function will return a single time if:
+
+* the item is a Time
+* the item is a String and is convertible to a Time
+
+If the item is not one of the above types, the result is empty.
+
+If the item is a String, but the string is not convertible to a Time (using the format `hh:mm:ss.fff(+\|-)hh:mm`), the result is empty.
+
+If the item contains a partial time (e.g. `'10:00'`), the result is a partial time.
+
+If the input collection contains multiple items, the evaluation of the expression will end and signal an error to the calling environment.
+
+If the input collection is empty, the result is empty.
+
+### Example(s) from Specification
+_No examples found in specification._
+
+### Coverage
+
+0 tests found for `toTime`.
+
+**Covered:**
+(none)
+
+**Gaps:**
+- ❌ All specification requirements lack test coverage
+
+### Test Results
+
+No tests exist for this function yet. Test results will be added once tests are created.
