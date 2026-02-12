@@ -17,6 +17,10 @@ https://dev.fhirpath-lab.com/FhirPath-engines
 
 > The `Reviewed` column has a check if the review filename has no gaps reported in it, and all tests pass over all engines, indicating that the feature is very mature and well supported.
 
+> **Note:** There may be some tests included here and in the lab screens that aren't in the HL7 repo yet while I work on updating the project.
+> Specifically i've update the local files to include a new attribute on each test that indicates which feature the test covers, and some additional descriptions.
+> This will be contributed soon.
+
 
 ## Test Coverage Summary
 
