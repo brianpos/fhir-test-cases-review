@@ -1,8 +1,8 @@
 """Shared utilities for FHIRPath test review scripts.
 
 Provides common constants, XML parsing, and review-file helpers used
-across check_coverage, dump_all_coverage_data, gen_coverage_data,
-review_set_all_testnames_and_count, and update_test_results.
+across check_coverage, review_set_all_testnames_and_count,
+review_set_covered_and_gaps, and update_test_results.
 """
 
 import os

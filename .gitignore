@@ -1,2 +1,5 @@
 # Python bytecode files
 scripts/__pycache__/
+
+# processing temp files created by LLMs or scripts
+temp/

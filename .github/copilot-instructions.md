@@ -69,7 +69,9 @@ Prompts are run via the Copilot CLI (`copilot` command) with Claude — the `.ps
 |---|---|
 | `fhirpath_utils.py` | Shared utilities: constants, XML parsing (`_iter_tests`, `load_tests_by_testing`, `load_test_names_by_testing`), review-file helpers (`get_feature_name_from_review`), and readme table helpers (`update_summary_table`) |
 | `review_set_all_testnames_and_count.py` | Updates `Test Count:` header and coverage line (count + test names in XML document order) in all review files |
-| `update_test_results.py` | Reads engine result JSON files, updates the `### Test Results` table and `**Summary:**` line in each review file (preserving descriptive text below the summary), and updates the `# Checks` column in `readme.md` |
+| `check_coverage.py` | Extracts FHIRPath tests for coverage analysis. Use `--feature <name>` or `--file <review.md>` for text output, `--list` for feature summary, `--json` for batch JSON |
+| `review_set_covered_and_gaps.py` | Updates Covered/Gaps sub-sections, optional summary text after the Summary line, and optional Reviewed column in `readme.md`. Input via `--stdin` or `--json-file` |
+| `update_test_results.py` | Reads engine result JSON files, updates the `### Test Results` table and `**Summary:**` line in each review file, and updates the `# Checks` column in `readme.md` |
 
 
 ## Summary Table Conventions (readme.md)
@@ -178,3 +180,4 @@ Similarly: `<` → `&lt;`, `>` → `&gt;` in expressions.
 - The test XML at `tests-fhir-r5.xml` is the **single source of truth** for FHIRPath tests; R4 copies exist for distribution only
 - Engine test results come from [fhirpath-lab](https://dev.fhirpath-lab.com/FhirPath-engines): Aidbox, fhirpath.js, Firely, Helios, Ignixa, Java
 - When a test fails in only one engine, it suggests an engine bug rather than a test/spec issue
+- If creating intermediate datafile during processing, create these in the `temp` directory which is excluded from accidental inclusion in version control
