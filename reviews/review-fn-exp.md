@@ -24,12 +24,15 @@ If the input collection contains multiple items, the evaluation of the expressio
 3 tests found for `exp` (testExp1, testExp2, testExp3).
 
 **Covered:**
-- ✅ e^0 returns 1, including negative zero (testExp1, testExp2)
+- ✅ Returns e raised to the power of input for zero (testExp1)
+- ✅ Handles negative zero input (testExp2)
 - ✅ Empty input returns empty (testExp3)
 
 **Gaps:**
-- ❌ No test for positive input value (e.g., 1.exp() ≈ 2.718)
-- ❌ No test for error when input collection contains multiple items
+- ❌ Positive non-zero exponent (e.g., e^1 ≈ 2.718)
+- ❌ Negative exponent
+- ❌ Integer and Long implicit conversion to Decimal
+- ❌ Multiple items in input signals error
 
 ### Test Results
 
@@ -40,5 +43,3 @@ If the input collection contains multiple items, the evaluation of the expressio
 | testExp3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 18/18 (100%) — 3 tests × 6 engines
-
-All tests pass across all engines.

@@ -28,13 +28,13 @@ A.combine( {} ) // 1, 1, 2, 3 - combining an empty collection with a non-empty c
 5 tests found for `combine` (testCombine1, testCombine2, testCombine3, testUnion6, testUnion7).
 
 **Covered:**
-- ✅ Duplicates are preserved when combining (testCombine1, testUnion6, testUnion7)
-- ✅ Combining string collections from FHIR resource elements (testCombine2, testCombine3)
+- ✅ Merges input and other collections into single collection without eliminating duplicates (testCombine1, testUnion6, testUnion7)
+- ✅ Combines items from both input and other collections (testCombine2, testCombine3)
+- ✅ Duplicate values are preserved unlike union (testCombine1, testUnion6, testUnion7)
 
 **Gaps:**
-- ❌ Combining with empty collection returns non-empty collection
-- ❌ preserveOrder parameter not tested
-- ❌ Order preservation behavior without preserveOrder not tested
+- ❌ Combining empty collection with non-empty collection returns non-empty not explicitly tested
+- ❌ preserveOrder parameter not tested (true: appends other to input preserving order; false/omitted: no order expectation)
 
 ### Test Results
 
@@ -47,5 +47,5 @@ A.combine( {} ) // 1, 1, 2, 3 - combining an empty collection with a non-empty c
 | testUnion7 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 28/30 (93%) — 5 tests × 6 engines
-- Overall pass rate: 28/30 (93%)
-- Tests: 5
+
+Two combine tests each fail in 1 engine, suggesting engine-specific bugs with collection combining.

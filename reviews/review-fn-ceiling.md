@@ -31,14 +31,15 @@ If the input collection contains multiple items, the evaluation of the expressio
 4 tests found for `ceiling` (testCeiling1, testCeiling2, testCeiling3, testCeilingEmpty).
 
 **Covered:**
-- ✅ Ceiling of integer value returns same value (testCeiling1)
-- ✅ Ceiling of negative decimal rounds toward zero (testCeiling2)
-- ✅ Ceiling of positive decimal rounds up (testCeiling3)
+- ✅ Returns first integer greater than or equal to input (testCeiling1, testCeiling2, testCeiling3)
+- ✅ Accepts Decimal input type (testCeiling2, testCeiling3)
+- ✅ Decimal input returns Integer result (testCeiling1, testCeiling2, testCeiling3)
+- ✅ Negative decimal correctly rounds toward zero (testCeiling2)
 - ✅ Empty input collection returns empty (testCeilingEmpty)
 
 **Gaps:**
-- ❌ Quantity input type not tested
-- ❌ Multiple items in input collection signals an error
+- ❌ Quantity input type not tested (result should be Quantity with same units and integer value)
+- ❌ Multiple items in input collection signals error not tested
 
 ### Test Results
 
@@ -50,5 +51,5 @@ If the input collection contains multiple items, the evaluation of the expressio
 | testCeilingEmpty | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 22/24 (92%) — 4 tests × 6 engines
-- Overall pass rate: 22/24 (92%)
-- Tests: 4
+
+Two decimal ceiling tests each fail in 1 engine, suggesting engine-specific bugs.

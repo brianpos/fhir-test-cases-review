@@ -39,19 +39,23 @@ _No examples found in specification._
 11 tests found for `toString` (testIntegerLiteralToString, testNegativeIntegerLiteralToString, testDecimalLiteralToString, testStringLiteralToString, testBooleanLiteralToString, testQuantityLiteralWkToString, testQuantityLiteralWeekToString, testToString1, testToString3, testToString4, testToString5).
 
 **Covered:**
-- ✅ Integer to String conversion including negative values (testIntegerLiteralToString, testNegativeIntegerLiteralToString, testToString1, testToString3)
-- ✅ Decimal to String conversion (testDecimalLiteralToString, testToString4)
-- ✅ String identity conversion (testStringLiteralToString)
-- ✅ Boolean true to String 'true' (testBooleanLiteralToString)
-- ✅ Quantity to String with UCUM and calendar duration units (testQuantityLiteralWkToString, testQuantityLiteralWeekToString)
-- ✅ Date to String conversion (testToString5)
+- ✅ Integer converts to string representation (testIntegerLiteralToString, testToString1, testToString3)
+- ✅ Negative integer converts to string (testNegativeIntegerLiteralToString)
+- ✅ Decimal converts to string representation (testDecimalLiteralToString, testToString4)
+- ✅ String input returns itself (testStringLiteralToString)
+- ✅ Boolean true converts to 'true' (testBooleanLiteralToString)
+- ✅ Quantity with UCUM unit converts to string with quoted unit (testQuantityLiteralWkToString)
+- ✅ Quantity with calendar duration unit converts to string without quotes (testQuantityLiteralWeekToString)
+- ✅ Date converts to yyyy-MM-DD format (testToString5)
 
 **Gaps:**
-- ❌ Time to String conversion is not tested
-- ❌ DateTime (with time component) to String conversion is not tested
-- ❌ Boolean `false` converting to `'false'` is not tested
-- ❌ Empty input collection returning empty is not tested
-- ❌ Multiple items in input collection signaling an error is not tested
+- ❌ DateTime converts to string representation
+- ❌ Time converts to string representation
+- ❌ Partial date/time values only include precision present in value
+- ❌ Boolean false converts to 'false'
+- ❌ Non-matching type returns empty
+- ❌ Multiple items in input signals an error
+- ❌ Empty input collection returns empty
 
 ### Test Results
 
@@ -71,4 +75,4 @@ _No examples found in specification._
 
 **Summary:** 61/66 (92%) — 11 tests × 6 engines
 
-3 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification. 1 test(s) fail in multiple (but not all) engines, which may indicate differing interpretations of the specification.
+fhirpath.js fails 2 decimal-to-string tests. Aidbox fails 2 quantity-to-string tests. Firely fails calendar duration quantity-to-string.

@@ -31,13 +31,14 @@ If the input collection contains multiple items, the evaluation of the expressio
 4 tests found for `truncate` (testTruncate1, testTruncate2, testTruncate3, testTruncateEmpty).
 
 **Covered:**
-- ✅ Returns integer portion of Decimal input (testTruncate1, testTruncate2)
-- ✅ Negative decimal truncation toward zero (testTruncate3)
+- ✅ Returns integer portion of whole number Decimal (testTruncate1)
+- ✅ Returns integer portion of fractional Decimal (testTruncate2)
+- ✅ Truncation of negative Decimal toward zero (testTruncate3)
 - ✅ Empty input returns empty (testTruncateEmpty)
 
 **Gaps:**
-- ❌ No tests for Quantity input (result should be Quantity with same units and integer value)
-- ❌ No tests for multiple items in input collection (should signal error)
+- ❌ Quantity input returning Quantity with same units and integer value
+- ❌ Multiple items in input collection signals error
 
 ### Test Results
 
@@ -50,4 +51,4 @@ If the input collection contains multiple items, the evaluation of the expressio
 
 **Summary:** 23/24 (96%) — 4 tests × 6 engines
 
-1 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification.
+testTruncate3 (negative decimal truncation) fails in 1 engine, suggesting an engine-specific bug with negative number handling.

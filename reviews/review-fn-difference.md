@@ -35,11 +35,24 @@ The following examples illustrate the behavior of the difference function:
 0 tests found for `difference`.
 
 **Covered:**
-(none)
+- (none)
 
 **Gaps:**
-- ❌ All specification requirements lack test coverage
+- ❌ Returns number of boundaries crossed for specified precision between input and value
+- ❌ Result is negative if input value is after the value argument
+- ❌ Result is always an integer; fractional boundaries are dropped
+- ❌ Date values: precision must be year, month, week, or day
+- ❌ DateTime values: precision must be year, month, week, day, hour, minute, second, or millisecond
+- ❌ Time values: precision must be hour, minute, second, or millisecond
+- ❌ Input or value of less precision than specified precision returns empty
+- ❌ Sunday is first day of week for week boundary calculations
+- ❌ Normalize timezone for datetime values with different offsets for hour/minute/second/millisecond precision
+- ❌ Empty input or value argument returns empty
+- ❌ Multiple input items or incompatible item signals an error (parent preamble requirement)
 
 ### Test Results
 
-No tests exist for this function yet. Test results will be added once tests are created.
+| Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
+|------|------|------|------|------|------|------|
+
+**Summary:** 0/0 (0%) — 0 tests × 6 engines

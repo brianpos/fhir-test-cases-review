@@ -34,14 +34,16 @@ iif(Observation.value.comparable(2 'mg'), Observation.value < 2 'mg', {})
 3 tests found for `comparable` (Comparable1, Comparable2, Comparable3).
 
 **Covered:**
-- ✅ Comparable quantities with same dimension but different units (Comparable1)
-- ✅ Non-comparable quantities with different dimensions (Comparable2, Comparable3)
+- ✅ Returns true when quantities have comparable UCUM units in same dimension (Comparable1)
+- ✅ Returns false when quantities have incomparable units from different dimensions (Comparable2, Comparable3)
 
 **Gaps:**
-- ❌ No test for same unit comparison (e.g. 1 'mg'.comparable(2 'mg'))
-- ❌ No test for empty input returning empty
-- ❌ No test for non-Quantity input returning empty
-- ❌ No test for integer implicit conversion to Quantity (e.g. 1.comparable(2))
+- ❌ Same unit comparison (e.g. 1 'mg'.comparable(2 'mg'))
+- ❌ Empty input returns empty collection
+- ❌ Non-single Quantity input returns empty collection
+- ❌ Integer implicit conversion to Quantity with unit '1' (spec example: 2 '1'.comparable(3))
+- ❌ Decimal implicit conversion to Quantity (spec example: 1.comparable(2))
+- ❌ Guarding comparison operations with iif pattern
 
 ### Test Results
 
@@ -53,4 +55,4 @@ iif(Observation.value.comparable(2 'mg'), Observation.value < 2 'mg', {})
 
 **Summary:** 15/18 (83%) — 3 tests × 6 engines
 
-3 test(s) are not implemented in some engines, but all implemented tests pass.
+One engine fails all comparable tests, suggesting it has not implemented this STU function.

@@ -34,16 +34,18 @@ examples:
 3 tests found for `polarity` (testPolarityPrecedence, testLiteralIntegerLessThanPolarityTrue, testLiteralIntegerLessThanPolarityFalse).
 
 **Covered:**
-- ✅ Unary `-` applied to integer expression result (testPolarityPrecedence)
-- ✅ Unary `+` on integer literals (testLiteralIntegerLessThanPolarityTrue)
-- ✅ Unary `-` on integer literal (testLiteralIntegerLessThanPolarityFalse)
+- ✅ Unary negation applied to expression result (testPolarityPrecedence)
+- ✅ Unary + with integer literal (testLiteralIntegerLessThanPolarityTrue)
+- ✅ Unary - with integer literal (testLiteralIntegerLessThanPolarityFalse)
 
 **Gaps:**
-- ❌ No test for unary `+` or `-` on Decimal values
-- ❌ No test for unary `-` on Quantity (spec: unit remains unchanged)
-- ❌ No test for empty input returning empty
-- ❌ No test for incompatible type (e.g. string) signaling an error
-- ❌ No test for negation overflow returning empty
+- ❌ Unary + returns operand unchanged explicitly verified (e.g. +5 = 5)
+- ❌ Unary - with Decimal type
+- ❌ Unary - with Quantity type (unit remains unchanged)
+- ❌ Unary operators with Long type
+- ❌ Incompatible type signals error
+- ❌ Empty input returns empty
+- ❌ Result that cannot be represented returns empty
 
 ### Test Results
 
@@ -55,4 +57,4 @@ examples:
 
 **Summary:** 16/18 (89%) — 3 tests × 6 engines
 
-2 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification.
+2 of 3 tests fail in the same single engine, suggesting an engine-specific bug with unary operator handling.

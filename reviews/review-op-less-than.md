@@ -34,21 +34,28 @@ The less than operator (`<`) returns `true` if the first operand is strictly les
 39 tests found for `<` (testLiteralIntegerLessThanTrue, testLiteralIntegerLessThanFalse, testLiteralDecimalLessThanInteger, testLiteralDecimalLessThanInvalid, testDateNotEqualToday, testLiteralDateTimeTZLess, testQuantity7, testMixedPrecisionLessThan1, testMixedPrecisionLessThan2, testLessThan1, testLessThan2, testLessThan3, testLessThan4, testLessThan5, testLessThan6, testLessThan7, testLessThan8, testLessThan9, testLessThan10, testLessThan11, testLessThan12, testLessThan13, testLessThan14, testLessThan15, testLessThan16, testLessThan17, testLessThan18, testLessThan19, testLessThan20, testLessThan21, testLessThan22, testLessThan23, testLessThan24, testLessThan25, testLessThan26, testLessThan27, testLessThanEmpty1, testLessThanEmpty2, testLessThanEmpty3).
 
 **Covered:**
-- ✅ Integer < comparisons: less-than, equal, greater-than cases (testLiteralIntegerLessThanTrue, testLiteralIntegerLessThanFalse, testLessThan1, testLessThan8, testLessThan15)
-- ✅ Decimal < comparisons (testLessThan2, testLessThan9, testLessThan16, testLiteralDecimalLessThanInteger)
-- ✅ String < comparisons with case sensitivity (testLessThan3, testLessThan4, testLessThan10, testLessThan11, testLessThan17, testLessThan18)
-- ✅ Date < comparisons (testLessThan5, testLessThan12, testLessThan19, testDateNotEqualToday)
-- ✅ DateTime < comparisons with timezone (testLessThan6, testLessThan13, testLessThan20, testLiteralDateTimeTZLess)
-- ✅ Time < comparisons (testLessThan7, testLessThan14, testLessThan21)
-- ✅ Quantity < with unit conversion (testLessThan22, testQuantity7)
-- ✅ Mixed precision integer/decimal implicit conversion (testMixedPrecisionLessThan1, testMixedPrecisionLessThan2)
-- ✅ Type mismatch returns execution error (testLiteralDecimalLessThanInvalid)
-- ✅ Different precision dates/dateTimes/times return empty (testLessThan23, testLessThan24, testLessThan25)
-- ✅ Trailing zeroes in dateTime/time ignored (testLessThan26, testLessThan27)
-- ✅ Empty collection propagation (testLessThanEmpty1, testLessThanEmpty2, testLessThanEmpty3)
+- ✅ Integer less-than comparison returning true (testLiteralIntegerLessThanTrue, testLessThan1)
+- ✅ Integer less-than comparison returning false when not less (testLiteralIntegerLessThanFalse, testLessThan8, testLessThan15)
+- ✅ Decimal less-than comparison (testLessThan2, testLessThan9, testLessThan16)
+- ✅ String less-than comparison is case-sensitive and lexical (testLessThan3, testLessThan4, testLessThan10, testLessThan11, testLessThan17, testLessThan18)
+- ✅ Date less-than comparison (testLessThan5, testLessThan12, testLessThan19)
+- ✅ DateTime less-than comparison (testLessThan6, testLessThan13, testLessThan20)
+- ✅ Time less-than comparison (testLessThan7, testLessThan14, testLessThan21)
+- ✅ Implicit conversion between Integer and Decimal operands (testMixedPrecisionLessThan1, testMixedPrecisionLessThan2)
+- ✅ Decimal compared to resource field value (testLiteralDecimalLessThanInteger)
+- ✅ Date field compared to today() (testDateNotEqualToday)
+- ✅ DateTime with timezone offset comparison (testLiteralDateTimeTZLess)
+- ✅ Quantity less-than comparison with unit conversion (testQuantity7, testLessThan22)
+- ✅ Equal values return false (testLessThan8, testLessThan9, testLessThan12, testLessThan13, testLessThan14)
+- ✅ Different date precisions return empty (testLessThan23)
+- ✅ Different dateTime precisions return empty (testLessThan24)
+- ✅ Different time precisions return empty (testLessThan25)
+- ✅ Trailing zeros after decimal in dateTime/time do not affect comparison (testLessThan26, testLessThan27)
+- ✅ Empty operand returns empty (testLessThanEmpty1, testLessThanEmpty2, testLessThanEmpty3)
+- ✅ Invalid type comparison signals error (testLiteralDecimalLessThanInvalid)
 
 **Gaps:**
-- ❌ No test for multi-character string comparison (spec example: `'abc' < 'ABC'`)
+- (none)
 
 ### Test Results
 
@@ -96,4 +103,4 @@ The less than operator (`<`) returns `true` if the first operand is strictly les
 
 **Summary:** 228/234 (97%) — 39 tests × 6 engines
 
-4 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification. 1 test(s) fail in multiple (but not all) engines, which may indicate differing interpretations of the specification.
+5 of 39 tests fail in 1-2 engines each, suggesting engine-specific bugs in timezone handling, quantity unit conversion, and trailing-zero precision for dateTime/time comparisons.

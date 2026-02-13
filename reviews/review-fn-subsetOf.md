@@ -21,13 +21,13 @@ MedicationRequest.contained.meta.tag.subsetOf(MedicationRequest.meta.tag)
 3 tests found for `subsetOf` (testSubSetOf1, testSubSetOf2, testSubSetOf3).
 
 **Covered:**
-- ✅ Subset returns true when input is a subset of other (testSubSetOf1)
-- ✅ Non-subset returns false (testSubSetOf2)
-- ✅ Subset check on complex FHIR resource paths (testSubSetOf3)
+- ✅ Returns true when all input items are members of other collection (testSubSetOf1, testSubSetOf3)
+- ✅ Returns false when input contains items not in other collection (testSubSetOf2)
+- ✅ Membership determined using equals operation (testSubSetOf1, testSubSetOf2, testSubSetOf3)
 
 **Gaps:**
 - ❌ Empty input collection returns true
-- ❌ Empty other collection returns false
+- ❌ Empty other collection returns false when input is non-empty
 
 ### Test Results
 
@@ -39,4 +39,4 @@ MedicationRequest.contained.meta.tag.subsetOf(MedicationRequest.meta.tag)
 
 **Summary:** 17/18 (94%) — 3 tests × 6 engines
 
-1 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification.
+testSubSetOf3 fails in 1 engine (Aidbox), suggesting an engine-specific bug.

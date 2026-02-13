@@ -26,11 +26,17 @@ The following examples illustrate the behavior of the `sum` function:
 0 tests found for `sum`.
 
 **Covered:**
-(none)
+- (none)
 
 **Gaps:**
-- ❌ All specification requirements lack test coverage
+- ❌ Returns sum of all items in input collection
+- ❌ Accepts Integer, Long, Decimal, and Quantity input types
+- ❌ All items must be the same type or exception is thrown
+- ❌ Empty input returns empty
 
 ### Test Results
 
-No tests exist for this function yet. Test results will be added once tests are created.
+| Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
+|------|------|------|------|------|------|------|
+
+**Summary:** 0/0 (0%) — 0 tests × 6 engines

@@ -17,12 +17,13 @@ _No examples found in specification._
 1 tests found for `descendants` (testRepeat3).
 
 **Covered:**
-- ✅ Basic descendants traversal counting descendant nodes (testRepeat3)
+- ✅ Returns descendant nodes from input collection allowing property navigation (testRepeat3)
 
 **Gaps:**
-- ❌ No test verifying input items are excluded from result
-- ❌ No test on empty input collection
-- ❌ No test verifying equivalence with repeat(children())
+- ❌ Result does not include the items in the input collection themselves
+- ❌ Equivalence with repeat(children()) not verified
+- ❌ Behavior with multiple items in input collection
+- ❌ Ordering of children is undefined (not explicitly tested)
 
 ### Test Results
 
@@ -32,4 +33,4 @@ _No examples found in specification._
 
 **Summary:** 5/6 (83%) — 1 tests × 6 engines
 
-1 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification.
+The single test fails in 1 engine, suggesting an engine-specific bug in descendants() traversal.

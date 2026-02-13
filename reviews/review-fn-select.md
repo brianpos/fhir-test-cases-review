@@ -36,13 +36,14 @@ Patient.name.where(use = 'usual').select(given.first() + ' ' + family)
 3 tests found for `select` (testSelect1, testSelect2, testSelect3).
 
 **Covered:**
-- ✅ Basic projection selecting child elements and unions (testSelect1, testSelect2)
-- ✅ Projection with boolean predicate expression (testSelect3)
+- ✅ Evaluates projection expression for each item in input collection (testSelect1, testSelect2, testSelect3)
+- ✅ Results from projection are flattened into output collection (testSelect1, testSelect2)
+- ✅ $this is set for each iteration (testSelect3)
 
 **Gaps:**
+- ❌ Empty projection result adds no item to output collection
 - ❌ Empty input collection returns empty
-- ❌ Flattening behavior when projection returns nested collections
-- ❌ Use of $index variable in projection
+- ❌ $index variable availability in projection
 
 ### Test Results
 
@@ -54,4 +55,4 @@ Patient.name.where(use = 'usual').select(given.first() + ' ' + family)
 
 **Summary:** 16/18 (89%) — 3 tests × 6 engines
 
-2 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification.
+testSelect1 and testSelect2 fail in Aidbox only, suggesting an engine-specific bug with select flattening behavior.

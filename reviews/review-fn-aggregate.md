@@ -38,14 +38,19 @@ value.aggregate($total + $this, 0) / value.count()
 4 tests found for `aggregate` (testAggregate1, testAggregate2, testAggregate3, testAggregate4).
 
 **Covered:**
-- ✅ Sum aggregation with explicit init value (testAggregate1, testAggregate2)
-- ✅ Min aggregation without init, using $total.empty() check (testAggregate3)
-- ✅ Max aggregation without init, using $total.empty() check (testAggregate4)
+- ✅ Performs aggregation by evaluating aggregator expression for each item in input collection (testAggregate1, testAggregate2, testAggregate3, testAggregate4)
+- ✅ $this variable accessible within aggregator expression (testAggregate1, testAggregate2, testAggregate3, testAggregate4)
+- ✅ $total aggregation variable accessible within aggregator expression (testAggregate1, testAggregate2, testAggregate3, testAggregate4)
+- ✅ $total initialized to init value when provided (testAggregate1, testAggregate2)
+- ✅ $total defaults to empty when no init value supplied (testAggregate3, testAggregate4)
+- ✅ Final value of $total returned as result of function (testAggregate1, testAggregate2, testAggregate3, testAggregate4)
+- ✅ Sum expressed using aggregate (testAggregate1, testAggregate2)
+- ✅ Min expressed using aggregate (testAggregate3)
 
 **Gaps:**
-- ❌ $index variable usage not tested
-- ❌ Empty input collection behavior not tested
-- ❌ Aggregation over FHIR resource elements not tested (only literal collections)
+- ❌ $index variable not tested in aggregator expression
+- ❌ Average expressed using aggregate not tested
+- ❌ Init argument evaluated on outer context with access to outer $this values not tested
 
 ### Test Results
 
@@ -57,6 +62,5 @@ value.aggregate($total + $this, 0) / value.count()
 | testAggregate4 | N/A | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 20/24 (83%) — 4 tests × 6 engines
-- Overall pass rate: 20/20 (100%)
-- Tests: 4
-- All implementing engines pass all tests. 1 engine(s) have not implemented this feature.
+
+All 4 tests fail in 1 engine, suggesting an engine-specific bug with aggregate function support.

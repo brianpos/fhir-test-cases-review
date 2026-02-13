@@ -18,15 +18,15 @@ Multiplies both arguments (supported for Integer, Decimal, and Quantity). For mu
 8 tests found for `*` (testQuantity9, testMixedPrecisionArithmetic2, testMultiply1, testMultiply2, testMultiply3, testMultiplyEmpty1, testMultiplyEmpty2, testMultiplyEmpty3).
 
 **Covered:**
-- ✅ Integer multiplication including identity and zero (testMultiply1, testMultiply2)
+- ✅ Integer multiplication (testMultiply1, testMultiply2)
 - ✅ Decimal multiplication (testMultiply3)
-- ✅ Mixed precision decimal * integer (testMixedPrecisionArithmetic2)
-- ✅ Quantity * Quantity with UCUM unit derivation (testQuantity9)
-- ✅ Empty collection propagation (testMultiplyEmpty1, testMultiplyEmpty2, testMultiplyEmpty3)
+- ✅ Quantity multiplication with UCUM unit derivation (testQuantity9)
+- ✅ Mixed precision Integer*Decimal via implicit conversion (testMixedPrecisionArithmetic2)
+- ✅ Empty operand returns empty (testMultiplyEmpty1, testMultiplyEmpty2, testMultiplyEmpty3)
 
 **Gaps:**
-- ❌ No test for integer * integer yielding larger results (e.g. negative numbers)
-- ❌ No test for scalar * quantity (spec example: UCUM unit multiplication rules)
+- ❌ Multiplication of two quantities with same units producing squared unit (e.g., 12 'cm' * 3 'cm' = 36 'cm2')
+- ❌ Multiplication of quantity by quantity with higher-dimension units (e.g., 3 'cm' * 12 'cm2' = 36 'cm3')
 
 ### Test Results
 
@@ -43,4 +43,4 @@ Multiplies both arguments (supported for Integer, Decimal, and Quantity). For mu
 
 **Summary:** 47/48 (98%) — 8 tests × 6 engines
 
-1 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification.
+1 of 8 tests fails in 1 engine - quantity multiplication with different units, suggesting an engine-specific bug.

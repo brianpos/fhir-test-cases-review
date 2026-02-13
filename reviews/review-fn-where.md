@@ -25,14 +25,16 @@ Patient.telecom.where(use = 'official')
 5 tests found for `where` (testDollarThis1, testDollarThis2, testWhere2, testWhere3, testWhere4).
 
 **Covered:**
-- ✅ Filtering items where criteria evaluates to true (testWhere2, testWhere3)
-- ✅ Using  in criteria expression (testDollarThis1, testDollarThis2, testWhere4)
-- ✅ Empty result when no items match criteria (testDollarThis1, testWhere3)
+- ✅ Returns items where criteria evaluates to true (testWhere2, testDollarThis2)
+- ✅ Excludes items where criteria evaluates to false or finds no match (testWhere3, testDollarThis1)
+- ✅ $this implicit scoping in criteria expression (testDollarThis1, testDollarThis2)
+- ✅ Explicit $this reference in criteria (testWhere4)
 
 **Gaps:**
-- ❌ No test for empty input collection returning empty
-- ❌ No test for  parameter in criteria
-- ❌ No test for non-boolean criteria result causing error
+- ❌ $index parameter usage in criteria expression
+- ❌ Empty input returns empty
+- ❌ Non-boolean criteria result signals error
+- ❌ Items where criteria evaluates to empty are excluded
 
 ### Test Results
 
@@ -46,4 +48,4 @@ Patient.telecom.where(use = 'official')
 
 **Summary:** 29/30 (97%) — 5 tests × 6 engines
 
-1 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification.
+testDollarThis2 fails in 1 engine, suggesting an engine-specific bug.

@@ -21,15 +21,15 @@ _No examples found in specification._
 8 tests found for `not` (testCollectionNotEmpty, testNotEmpty, testLiteralNotOnEmpty, testLiteralNotTrue, testLiteralNotFalse, testIntegerBooleanNotTrue, testIntegerBooleanNotFalse, testNotInvalid).
 
 **Covered:**
-- ✅ `not()` on true returns false (testLiteralNotTrue)
-- ✅ `not()` on false returns true (testLiteralNotFalse)
-- ✅ `not()` on empty returns empty (testLiteralNotOnEmpty)
-- ✅ `not()` on boolean resource values (testCollectionNotEmpty, testNotEmpty)
-- ✅ `not()` on integer with implicit boolean conversion (testIntegerBooleanNotTrue, testIntegerBooleanNotFalse)
-- ✅ `not()` on multi-item collection throws error (testNotInvalid)
+- ✅ not() returns false when input is true (testLiteralNotTrue)
+- ✅ not() returns true when input is false (testLiteralNotFalse)
+- ✅ not() on empty returns empty (testLiteralNotOnEmpty)
+- ✅ not() used with empty() to test non-empty collection (testCollectionNotEmpty, testNotEmpty)
+- ✅ Singleton evaluation: single non-boolean node converts to true for not() (testIntegerBooleanNotTrue, testIntegerBooleanNotFalse)
+- ✅ Multiple items input signals error per singleton evaluation (testNotInvalid)
 
 **Gaps:**
-(none)
+- (none)
 
 ### Test Results
 
@@ -45,5 +45,3 @@ _No examples found in specification._
 | testNotInvalid | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 48/48 (100%) — 8 tests × 6 engines
-
-All tests pass across all engines.

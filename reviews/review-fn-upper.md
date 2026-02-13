@@ -22,14 +22,14 @@ If the input collection contains multiple items, the evaluation of the expressio
 2 tests found for `upper` (testCase1, testCase3).
 
 **Covered:**
-- ✅ Converting lowercase character to uppercase (testCase1)
+- ✅ Converts lowercase character to uppercase (testCase1)
 - ✅ Already uppercase character remains unchanged (testCase3)
 
 **Gaps:**
-- ❌ No test for multi-character string conversion (e.g. 'abcdefg'.upper() = 'ABCDEFG')
-- ❌ No test for mixed case string (e.g. 'AbCdefg'.upper())
-- ❌ No test for empty input returning empty
-- ❌ No test for multiple items in collection (should signal error)
+- ❌ Multi-character string conversion (e.g. 'abcdefg' to 'ABCDEFG')
+- ❌ Mixed case string conversion (e.g. 'AbCdefg' to 'ABCDEFG')
+- ❌ Empty input returns empty
+- ❌ Multiple items in input collection signals error
 
 ### Test Results
 
@@ -39,5 +39,3 @@ If the input collection contains multiple items, the evaluation of the expressio
 | testCase3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 12/12 (100%) — 2 tests × 6 engines
-
-All tests pass across all engines.

@@ -24,8 +24,8 @@ _No examples found in specification._
 - ✅ Decoding urlbase64 encoded string (testDecodeUrlBase64)
 
 **Gaps:**
-- ❌ No test for empty input returning empty
-- ❌ No test for missing format parameter returning empty
+- ❌ Empty input returns empty
+- ❌ No format specified returns empty
 
 ### Test Results
 
@@ -38,4 +38,4 @@ _No examples found in specification._
 
 **Summary:** 20/24 (83%) — 4 tests × 6 engines
 
-4 test(s) are not implemented in some engines, but all implemented tests pass.
+All 4 tests fail in 1 engine, suggesting that engine has not yet implemented the decode function.

@@ -38,14 +38,15 @@ Patient.generalPractitioner.exists(resolve() is Practitioner)
 5 tests found for `exists` (testExists1, testExists2, testExists3, testExists4, testExists5).
 
 **Covered:**
-- ✅ Basic exists on non-empty collection returns true (testExists1, testExists5)
-- ✅ Exists with criteria matching no items returns false (testExists2)
-- ✅ Exists with criteria matching items returns true (testExists3)
-- ✅ Exists with complex compound criteria using `and`/`or` (testExists4)
+- ✅ Returns true for non-empty collection without criteria (testExists1, testExists5)
+- ✅ Returns false when criteria is not satisfied by any item (testExists2)
+- ✅ Returns true when criteria is satisfied by at least one item (testExists3)
+- ✅ Criteria with compound conditions using and/or operators (testExists4)
 
 **Gaps:**
-- ❌ No test for empty input collection returning false
-- ❌ No test using `$index` parameter in criteria
+- ❌ Empty input collection returns false
+- ❌ $index parameter usage in criteria
+- ❌ Equivalence to where(criteria).exists() not explicitly demonstrated
 
 ### Test Results
 
@@ -58,5 +59,3 @@ Patient.generalPractitioner.exists(resolve() is Practitioner)
 | testExists5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 30/30 (100%) — 5 tests × 6 engines
-
-All tests pass across all engines.

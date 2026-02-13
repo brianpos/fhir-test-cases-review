@@ -28,7 +28,19 @@ The following examples illustrate the behavior of the `avg` function:
 0 tests found for `avg`.
 
 **Covered:**
-(none)
+- (none)
 
 **Gaps:**
-- ❌ All specification requirements lack test coverage
+- ❌ Returns average of all items in input collection not tested
+- ❌ Accepts Decimal input type not tested
+- ❌ Accepts Quantity input type not tested
+- ❌ Integer and Long arguments implicitly converted to Decimal not tested
+- ❌ All items must be same type, otherwise exception not tested
+- ❌ Empty input returns empty not tested
+
+### Test Results
+
+| Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
+|------|------|------|------|------|------|------|
+
+**Summary:** 0/0 (0%) — 0 tests × 6 engines

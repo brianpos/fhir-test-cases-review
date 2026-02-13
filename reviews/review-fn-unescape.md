@@ -19,12 +19,13 @@ _No examples found in specification._
 2 tests found for `unescape` (testUnescapeHtml, testUnescapeJson).
 
 **Covered:**
-- ✅ HTML unescaping of entities (testUnescapeHtml)
-- ✅ JSON unescaping of escaped characters (testUnescapeJson)
+- ✅ HTML target unescaping of entities (testUnescapeHtml)
+- ✅ JSON target unescaping of backslash sequences (testUnescapeJson)
 
 **Gaps:**
-- ❌ No test for empty input returning empty
-- ❌ No test for missing/unspecified target returning empty
+- ❌ Empty input returns empty
+- ❌ No target specified returns empty
+- ❌ Other escape targets beyond html and json
 
 ### Test Results
 
@@ -35,4 +36,4 @@ _No examples found in specification._
 
 **Summary:** 8/12 (67%) — 2 tests × 6 engines
 
-2 test(s) are not implemented in some engines, but all implemented tests pass.
+Both tests pass in 4 of 6 engines; 2 engines do not appear to implement unescape.

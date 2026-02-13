@@ -27,14 +27,15 @@ _No examples found in specification._
 4 tests found for `encode` (testEncodeBase64A, testEncodeHex, testEncodeBase64B, testEncodeUrlBase64).
 
 **Covered:**
-- ✅ Encoding to base64 format (testEncodeBase64A, testEncodeBase64B)
-- ✅ Encoding to hex format (testEncodeHex)
-- ✅ Encoding to urlbase64 format (testEncodeUrlBase64)
+- ✅ Base64 encoding of string (testEncodeBase64A, testEncodeBase64B)
+- ✅ Hex encoding of string in lowercase (testEncodeHex)
+- ✅ URL-safe base64 encoding with - and _ characters (testEncodeUrlBase64)
+- ✅ Base64 output padded with = (testEncodeBase64A, testEncodeBase64B, testEncodeUrlBase64)
 
 **Gaps:**
-- ❌ No test for ascii encoding format
-- ❌ No test for empty input returning empty
-- ❌ No test for missing format parameter returning empty
+- ❌ ASCII encoding format (characters above 127 replaced with ?)
+- ❌ Empty input returns empty
+- ❌ No format specified returns empty
 
 ### Test Results
 
@@ -47,4 +48,4 @@ _No examples found in specification._
 
 **Summary:** 20/24 (83%) — 4 tests × 6 engines
 
-4 test(s) are not implemented in some engines, but all implemented tests pass.
+One engine does not produce results for any encode test, suggesting it has not implemented the encode function.

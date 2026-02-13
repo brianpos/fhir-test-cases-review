@@ -25,7 +25,19 @@ _No examples found in specification._
 0 tests found for `convertsToLong`.
 
 **Covered:**
-(none)
+- (none)
 
 **Gaps:**
-- ❌ All specification requirements lack test coverage
+- ❌ Integer or Long item returns true not tested
+- ❌ Convertible string returns true not tested
+- ❌ Boolean item returns true not tested
+- ❌ Non-convertible string returns false not tested
+- ❌ Multiple items in input signal an error not tested
+- ❌ Empty input collection returns empty not tested
+
+### Test Results
+
+| Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
+|------|------|------|------|------|------|------|
+
+**Summary:** 0/0 (0%) — 0 tests × 6 engines

@@ -28,13 +28,14 @@ Note that this function is equivalent to raising a number of the power of 0.5 us
 3 tests found for `sqrt` (testSqrt1, testSqrt2, testSqrtEmpty).
 
 **Covered:**
-- ✅ Basic square root of integer (testSqrt1)
-- ✅ Negative input returns empty (testSqrt2)
+- ✅ Returns square root of input number (testSqrt1)
+- ✅ Integer input implicitly converted to Decimal (testSqrt1)
+- ✅ Unrepresentable square root (e.g. negative number) returns empty (testSqrt2)
 - ✅ Empty input returns empty (testSqrtEmpty)
 
 **Gaps:**
-- ❌ Error on multiple items in input collection
-- ❌ Decimal input type (e.g. 6.25.sqrt() = 2.5)
+- ❌ Multiple items in input signals error
+- ❌ Equivalence with power(0.5) not tested
 
 ### Test Results
 
@@ -45,5 +46,3 @@ Note that this function is equivalent to raising a number of the power of 0.5 us
 | testSqrtEmpty | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 18/18 (100%) — 3 tests × 6 engines
-
-All tests pass across all engines.

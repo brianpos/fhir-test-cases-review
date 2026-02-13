@@ -15,18 +15,23 @@ _No examples found in specification._
 22 tests found for `!~` (testNotEquivalent1, testNotEquivalent2, testNotEquivalent3, testNotEquivalent4, testNotEquivalent5, testNotEquivalent6, testNotEquivalent7, testNotEquivalent8, testNotEquivalent9, testNotEquivalent10, testNotEquivalent11, testNotEquivalent12, testNotEquivalent13, testNotEquivalent14, testNotEquivalent15, testNotEquivalent16, testNotEquivalent17, testNotEquivalent18, testNotEquivalent19, testNotEquivalent20, testNotEquivalent21, testNotEquivalent22).
 
 **Covered:**
-- ✅ Integer !~ comparisons (testNotEquivalent1, testNotEquivalent4, testNotEquivalent11, testNotEquivalent12)
-- ✅ String !~ with case-insensitive matching (testNotEquivalent5, testNotEquivalent6, testNotEquivalent7)
-- ✅ Decimal !~ including trailing zeroes (testNotEquivalent8, testNotEquivalent9, testNotEquivalent10, testNotEquivalent13)
-- ✅ Date !~ comparisons including different precisions (testNotEquivalent14, testNotEquivalent15, testNotEquivalent16)
-- ✅ DateTime !~ with trailing zeroes (testNotEquivalent17, testNotEquivalent18)
-- ✅ Empty collection equivalence (testNotEquivalent2, testNotEquivalent3)
-- ✅ Collection !~ comparisons with order independence (testNotEquivalent19, testNotEquivalent20, testNotEquivalent21)
-- ✅ Quantity !~ with unit mismatch (testNotEquivalent22)
+- ✅ Integer not-equivalent returning false for same values (testNotEquivalent1)
+- ✅ Empty collections are equivalent, so !~ returns false (testNotEquivalent2)
+- ✅ Empty vs non-empty returns true (testNotEquivalent3)
+- ✅ Different integers return true (testNotEquivalent4)
+- ✅ String not-equivalent is case-insensitive (testNotEquivalent5, testNotEquivalent6, testNotEquivalent7)
+- ✅ Decimal not-equivalent (testNotEquivalent8, testNotEquivalent9)
+- ✅ Decimal trailing zeros treated as equivalent (testNotEquivalent10, testNotEquivalent11, testNotEquivalent12)
+- ✅ Decimal division precision in not-equivalent (testNotEquivalent13)
+- ✅ Date not-equivalent (testNotEquivalent14, testNotEquivalent15)
+- ✅ Date vs DateTime with different precisions returns true for not-equivalent (testNotEquivalent16)
+- ✅ DateTime trailing zero seconds treated as equivalent (testNotEquivalent17, testNotEquivalent18)
+- ✅ Collection not-equivalent comparing same collections (testNotEquivalent19)
+- ✅ Collection not-equivalent is order-independent (testNotEquivalent20, testNotEquivalent21)
+- ✅ Quantity not-equivalent with different units (testNotEquivalent22)
 
 **Gaps:**
-- ❌ No test for boolean !~ comparisons
-- ❌ No test for quantity !~ with equivalent but different units (e.g. `1000 'g' !~ 1 'kg'`)
+- (none)
 
 ### Test Results
 
@@ -57,4 +62,4 @@ _No examples found in specification._
 
 **Summary:** 128/132 (97%) — 22 tests × 6 engines
 
-2 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification. 1 test(s) fail in multiple (but not all) engines, which may indicate differing interpretations of the specification.
+3 of 22 tests fail in 1-2 engines each — empty vs non-empty equivalence, decimal division precision, and collection order independence, suggesting engine-specific bugs.

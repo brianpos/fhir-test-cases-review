@@ -22,22 +22,25 @@ Bundle.entry.resource.all($this is Observation implies status = 'finished')
 47 tests found for `is` (testPolymorphismIsA1, testPolymorphismIsA2, testPolymorphismIsA3, testPolymorphismIsB, testIntegerLiteralIsInteger, testIntegerLiteralIsSystemInteger, testStringLiteralIsNotInteger, testBooleanLiteralIsNotInteger, testDateIsNotInteger, testIntegerLiteralIsNotDecimal, testDecimalLiteralIsDecimal, testStringIntegerLiteralIsNotDecimal, testStringDecimalLiteralIsNotDecimal, testBooleanLiteralIsNotDecimal, testIntegerLiteralIsNotQuantity, testDecimalLiteralIsNotQuantity, testStringIntegerLiteralIsNotQuantity, testStringDecimalLiteralIsNotSystemQuantity, testBooleanLiteralIsNotSystemQuantity, testIntegerLiteralIsNotString, testType5, testType6, testType7, testType8, testType11, testType12, testType13, testType14, testType17, testType18, testType19, testType22, testTypeA1, testTypeA2, testTypeA3, testTypeA4, testTypeA, testFHIRPathIsFunction1, testFHIRPathIsFunction2, testFHIRPathIsFunction3, testFHIRPathIsFunction4, testFHIRPathIsFunction5, testFHIRPathIsFunction6, testFHIRPathIsFunction7, testFHIRPathIsFunction8, testFHIRPathIsFunction9, testFHIRPathIsFunction10).
 
 **Covered:**
-- ✅ Type test on FHIR resource values with function syntax `is()` and keyword syntax `is` (testPolymorphismIsA1, testPolymorphismIsA2, testPolymorphismIsB)
-- ✅ System type literals: Integer, Decimal, String, Boolean, Date (testIntegerLiteralIsInteger, testDecimalLiteralIsDecimal, testType5, testType7, testIntegerLiteralIsNotString, testStringLiteralIsNotInteger, testBooleanLiteralIsNotInteger, testDateIsNotInteger)
-- ✅ Qualified type names: System.Integer, System.Boolean, FHIR.Patient, FHIR.boolean (testIntegerLiteralIsSystemInteger, testType6, testType8, testType18, testType13)
+- ✅ Returns true when value matches specified type using function syntax (testPolymorphismIsA1)
+- ✅ Returns true when value matches specified type using keyword syntax (testPolymorphismIsA2)
+- ✅ Empty input returns empty via singleton evaluation (testPolymorphismIsA3)
+- ✅ Returns false when value does not match specified type (testPolymorphismIsB)
+- ✅ System primitive type checking: Integer, Decimal, Boolean, String, Quantity (testIntegerLiteralIsInteger, testDecimalLiteralIsDecimal, testType5, testIntegerLiteralIsNotString, testIntegerLiteralIsNotQuantity)
+- ✅ Qualified type specifiers with System prefix (testIntegerLiteralIsSystemInteger, testType6, testType8, testDecimalLiteralIsNotQuantity)
+- ✅ Qualified type specifiers with FHIR prefix (testType13, testType18, testType19, testTypeA1, testTypeA2, testTypeA3)
 - ✅ FHIR vs System type distinction (testType11, testType12, testType14, testType22)
 - ✅ Backtick-quoted type names (testType19)
-- ✅ Subtype checking: uuid is uri, code is string, Age is Quantity (testTypeA4, testFHIRPathIsFunction2, testFHIRPathIsFunction8, testFHIRPathIsFunction9)
-- ✅ Negative subtype checks: id is not code, url is not uri declared type, Duration is not Age (testFHIRPathIsFunction3, testFHIRPathIsFunction5, testFHIRPathIsFunction7, testFHIRPathIsFunction10)
-- ✅ Various FHIR element types via Parameters (testTypeA1, testTypeA2, testTypeA3, testTypeA)
-- ✅ Quantity-related negative checks for non-Quantity types (testIntegerLiteralIsNotQuantity, testDecimalLiteralIsNotQuantity, testStringIntegerLiteralIsNotQuantity, testStringDecimalLiteralIsNotSystemQuantity, testBooleanLiteralIsNotSystemQuantity)
-- ✅ Decimal-related negative checks (testIntegerLiteralIsNotDecimal, testStringIntegerLiteralIsNotDecimal, testStringDecimalLiteralIsNotDecimal, testBooleanLiteralIsNotDecimal)
-- ✅ Resource-level type check (testType17)
+- ✅ Negative type checks across different types (testStringLiteralIsNotInteger, testBooleanLiteralIsNotInteger, testDateIsNotInteger, testIntegerLiteralIsNotDecimal, testStringIntegerLiteralIsNotDecimal, testStringDecimalLiteralIsNotDecimal, testBooleanLiteralIsNotDecimal, testStringIntegerLiteralIsNotQuantity, testStringDecimalLiteralIsNotSystemQuantity, testBooleanLiteralIsNotSystemQuantity)
+- ✅ Subclass type matching: value is parent type (testTypeA4, testFHIRPathIsFunction9)
+- ✅ FHIR element type hierarchy - code is string, uri vs url (testFHIRPathIsFunction1, testFHIRPathIsFunction2, testFHIRPathIsFunction4, testFHIRPathIsFunction5, testFHIRPathIsFunction6, testFHIRPathIsFunction7)
+- ✅ Extension value type checking including Age, Quantity, Duration (testFHIRPathIsFunction8, testFHIRPathIsFunction9, testFHIRPathIsFunction10)
+- ✅ Resource-level type checking (testType17, testType18)
+- ✅ Parameters value type checking for various FHIR types (testTypeA1, testTypeA2, testTypeA3, testTypeA)
 
 **Gaps:**
-- ❌ No test for empty collection input returning `false`
-- ❌ No test for multi-item collection input throwing an error
-- ❌ No test for unresolvable type identifier throwing an error
+- ❌ Error when type identifier cannot be resolved to a valid type
+- ❌ Error when input collection contains more than one item
 
 ### Test Results
 
@@ -93,4 +96,4 @@ Bundle.entry.resource.all($this is Observation implies status = 'finished')
 
 **Summary:** 268/282 (95%) — 47 tests × 6 engines
 
-5 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification. 4 test(s) fail in multiple (but not all) engines, which may indicate differing interpretations of the specification.
+Several tests show multi-engine failures around FHIR vs System type distinction: testType22 (Patient.is(System.Patient)) fails on 3/6 engines, testType12 and testType14 fail on 2/6 engines. testTypeA4 (uuid is uri subtype) fails on 2 engines, indicating differences in type hierarchy implementation.

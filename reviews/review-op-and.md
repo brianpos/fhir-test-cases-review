@@ -21,11 +21,19 @@ _No examples found in specification._
 10 tests found for `and` (testBooleanLogicAnd1, testBooleanLogicAnd2, testBooleanLogicAnd3, testBooleanLogicAnd4, testBooleanLogicAnd5, testBooleanLogicAnd6, testBooleanLogicAnd7, testBooleanLogicAnd8, testBooleanLogicAnd9, from-zulip-1).
 
 **Covered:**
-- ✅ All 9 truth table combinations: true/false/empty × true/false/empty (testBooleanLogicAnd1 through testBooleanLogicAnd9)
-- ✅ Non-boolean operand behavior (from-zulip-1)
+- ✅ true and true = true (testBooleanLogicAnd1)
+- ✅ true and false = false (testBooleanLogicAnd2)
+- ✅ true and empty = empty (testBooleanLogicAnd3)
+- ✅ false and true = false (testBooleanLogicAnd4)
+- ✅ false and false = false (testBooleanLogicAnd5)
+- ✅ false and empty = false (testBooleanLogicAnd6)
+- ✅ empty and true = empty (testBooleanLogicAnd7)
+- ✅ empty and false = false (testBooleanLogicAnd8)
+- ✅ empty and empty = empty (testBooleanLogicAnd9)
+- ✅ Non-boolean singleton operand evaluated as Boolean per singleton rules (from-zulip-1)
 
 **Gaps:**
-(none)
+- (none)
 
 ### Test Results
 
@@ -43,5 +51,3 @@ _No examples found in specification._
 | from-zulip-1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 60/60 (100%) — 10 tests × 6 engines
-
-All tests pass across all engines.

@@ -23,14 +23,16 @@ If the input collection contains multiple items, the evaluation of the expressio
 6 tests found for `replace` (testReplace1, testReplace2, testReplace3, testReplace4, testReplace5, testReplace6).
 
 **Covered:**
-- ✅ Basic pattern replacement (testReplace1)
-- ✅ Empty pattern surrounds each character with substitution (testReplace2)
-- ✅ Empty substitution removes pattern occurrences (testReplace3)
-- ✅ Empty input, empty pattern arg, or empty substitution arg returns empty (testReplace4, testReplace5, testReplace6)
+- ✅ Replaces instances of pattern with substitution (testReplace1)
+- ✅ Empty substitution removes instances of pattern (testReplace3)
+- ✅ Empty pattern surrounds every character with substitution (testReplace2)
+- ✅ Empty input collection returns empty (testReplace4)
+- ✅ Empty pattern parameter returns empty (testReplace5)
+- ✅ Empty substitution parameter returns empty (testReplace6)
 
 **Gaps:**
-- ❌ Multiple occurrences of pattern all replaced in one string
-- ❌ Error on multiple items in input collection
+- ❌ Multiple occurrences of pattern in same string all replaced
+- ❌ Multiple items in input signals error
 
 ### Test Results
 
@@ -45,4 +47,4 @@ If the input collection contains multiple items, the evaluation of the expressio
 
 **Summary:** 34/36 (94%) — 6 tests × 6 engines
 
-2 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification.
+testReplace5 and testReplace6 each fail in 1 engine (5/6 pass), suggesting engine-specific bugs with empty parameter propagation.

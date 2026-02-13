@@ -15,13 +15,13 @@ _No examples found in specification._
 7 tests found for `skip` (testDollarOrderAllowed, testDollarOrderAllowedA, testDollarOrderNotAllowed, testSkip1, testSkip2, testSkip3, testSkip4).
 
 **Covered:**
-- ✅ Skipping items from a collection (testDollarOrderAllowed, testSkip1, testSkip2, testSkip3)
-- ✅ Skipping past end of collection returns empty (testDollarOrderAllowedA, testSkip4)
-- ✅ Semantic error on unordered collection in strict mode (testDollarOrderNotAllowed)
+- ✅ Returns all but the first num items in the collection (testDollarOrderAllowed, testSkip1, testSkip2, testSkip3)
+- ✅ Returns empty collection when no items remaining after skip (testDollarOrderAllowedA, testSkip4)
+- ✅ Ordering requirement in strict mode tested (testDollarOrderNotAllowed)
 
 **Gaps:**
-- ❌ num <= 0 returns input collection unchanged
 - ❌ Empty input collection returns empty
+- ❌ num less than or equal to zero returns input collection unchanged
 
 ### Test Results
 
@@ -37,4 +37,4 @@ _No examples found in specification._
 
 **Summary:** 33/42 (79%) — 7 tests × 6 engines
 
-3 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification. 1 test(s) fail in multiple (but not all) engines, which may indicate differing interpretations of the specification.
+testDollarOrderNotAllowed fails in most engines (0/5 pass), suggesting the strict-mode semantic error expectation is not widely implemented. testDollarOrderAllowed, testSkip1, and testSkip3 each fail in 1 engine, suggesting engine-specific bugs.

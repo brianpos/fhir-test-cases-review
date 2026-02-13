@@ -44,12 +44,16 @@ Questionnaire.descendants().select(item)
 3 tests found for `repeat` (testRepeat1, testRepeat2, testRepeat5).
 
 **Covered:**
-- ✅ Recursive tree traversal on hierarchical FHIR structures (testRepeat1, testRepeat2)
-- ✅ Repeat with constant expression (testRepeat5)
+- ✅ Repeats projection traversing tree structure with ValueSet.expansion.repeat(contains) (testRepeat1)
+- ✅ Repeats projection traversing tree structure with Questionnaire.repeat(item) (testRepeat2)
+- ✅ Repeat with constant expression in projection (testRepeat5)
 
 **Gaps:**
-- ❌ Empty input collection returns empty
-- ❌ Deduplication behavior (items already in output collection are not re-added)
+- ❌ Deduplication behavior — items already in output are not re-added (equals-based)
+- ❌ Empty input collection behavior
+- ❌ Difference from descendants().select(item)
+- ❌ Scoped function behavior with $this set before each iteration
+- ❌ $index is undefined within repeat context
 
 ### Test Results
 
@@ -61,4 +65,4 @@ Questionnaire.descendants().select(item)
 
 **Summary:** 17/18 (94%) — 3 tests × 6 engines
 
-1 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification.
+testRepeat5 fails in 1 engine (5/6 pass), suggesting an engine-specific bug with constant expressions in repeat.

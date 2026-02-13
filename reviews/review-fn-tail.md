@@ -15,11 +15,11 @@ _No examples found in specification._
 2 tests found for `tail` (testTail1, testTail2).
 
 **Covered:**
-- ✅ Returns all but first item from a multi-item collection (testTail1, testTail2)
+- ✅ Returns all but the first item in input collection (testTail1, testTail2)
 
 **Gaps:**
-- ❌ Empty input collection returning empty is not tested
-- ❌ Single-item input collection returning empty is not tested
+- ❌ Empty input collection returns empty
+- ❌ Single item input collection returns empty
 
 ### Test Results
 
@@ -30,4 +30,4 @@ _No examples found in specification._
 
 **Summary:** 10/12 (83%) — 2 tests × 6 engines
 
-2 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification.
+testTail1 and testTail2 each fail in 1 engine, suggesting engine-specific bugs.

@@ -28,11 +28,20 @@ _No examples found in specification._
 0 tests found for `toTime`.
 
 **Covered:**
-(none)
+- (none)
 
 **Gaps:**
-- ❌ All specification requirements lack test coverage
+- ❌ Time input returns itself
+- ❌ Convertible string returns Time
+- ❌ Non-matching type returns empty
+- ❌ Non-convertible string returns empty
+- ❌ Partial time string produces partial time result
+- ❌ Multiple items in input signals an error
+- ❌ Empty input collection returns empty
 
 ### Test Results
 
-No tests exist for this function yet. Test results will be added once tests are created.
+| Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
+|------|------|------|------|------|------|------|
+
+**Summary:** 0/0 (0%) — 0 tests × 6 engines

@@ -58,11 +58,18 @@ component.code.where(coding.intersect(%resource.code.coding).trace('component', 
 0 tests found for `pathname`.
 
 **Covered:**
-(none)
+- (none)
 
 **Gaps:**
-- ❌ All specification requirements lack test coverage
+- ❌ Returns direct path of each item within input resource using element names and indexers
+- ❌ Items derived from computation (substring, &, math) are excluded from result
+- ❌ Items outside input resource via resolve() are excluded, except contained resources
+- ❌ Optional short parameter excludes array indexers for non-array elements
+- ❌ Empty input collection returns empty
 
 ### Test Results
 
-No tests exist for this function yet. Test results will be added once tests are created.
+| Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
+|------|------|------|------|------|------|------|
+
+**Summary:** 0/0 (0%) — 0 tests × 6 engines

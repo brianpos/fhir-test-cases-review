@@ -15,13 +15,14 @@ _No examples found in specification._
 7 tests found for `take` (testTake1, testTake2, testTake3, testTake4, testTake5, testTake6, testTake7).
 
 **Covered:**
-- ✅ Taking fewer items than available from a collection (testTake1, testTake2, testTake3, testTake4)
-- ✅ Taking more items than available returns all items (testTake5, testTake6)
-- ✅ Taking zero items returns empty collection (testTake7)
+- ✅ Returns first num items from collection (testTake1, testTake2)
+- ✅ Works with FHIR resource collections (testTake3, testTake4)
+- ✅ Returns fewer items when collection has less than num items (testTake5, testTake6)
+- ✅ Returns empty collection when num is 0 (testTake7)
 
 **Gaps:**
-- ❌ Empty input collection returning empty is not tested
-- ❌ Negative `num` returning empty collection is not tested
+- ❌ Negative num returns empty collection
+- ❌ Empty input collection returns empty collection
 
 ### Test Results
 
@@ -37,4 +38,4 @@ _No examples found in specification._
 
 **Summary:** 40/42 (95%) — 7 tests × 6 engines
 
-2 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification.
+Two tests (testTake3, testTake4) each fail in 1 engine, suggesting engine-specific bugs with take() on FHIR resource paths.

@@ -19,7 +19,16 @@ Observation.select(component.value > 90 'mm[Hg]').anyTrue()
 0 tests found for `anyTrue`.
 
 **Covered:**
-(none)
+- (none)
 
 **Gaps:**
-- ❌ All specification requirements lack test coverage
+- ❌ Returns true when any items in collection are true not tested
+- ❌ Returns false when all items are false not tested
+- ❌ Empty input returns false not tested
+
+### Test Results
+
+| Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
+|------|------|------|------|------|------|------|
+
+**Summary:** 0/0 (0%) — 0 tests × 6 engines

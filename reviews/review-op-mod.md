@@ -19,15 +19,16 @@ Computes the remainder of the truncated division of its arguments (supported for
 10 tests found for `mod` (testMixedPrecisionArithmetic6, testMod1, testMod2, testMod3, testMod4, testMod5, testMod6, testModEmpty1, testModEmpty2, testModEmpty3).
 
 **Covered:**
-- ✅ Integer mod operations (testMod1, testMod2, testMod3)
-- ✅ Decimal mod operations (testMod4)
-- ✅ Mixed precision decimal mod integer (testMixedPrecisionArithmetic6)
+- ✅ Integer mod returning zero remainder (testMod1, testMod2)
+- ✅ Integer mod returning non-zero remainder (testMod3)
+- ✅ Decimal mod (testMod4)
 - ✅ Mod by zero returns empty (testMod5)
 - ✅ Negative number mod (testMod6)
-- ✅ Empty collection propagation (testModEmpty1, testModEmpty2, testModEmpty3)
+- ✅ Mixed precision Integer/Decimal mod via implicit conversion (testMixedPrecisionArithmetic6)
+- ✅ Empty operand returns empty (testModEmpty1, testModEmpty2, testModEmpty3)
 
 **Gaps:**
-- ❌ No test for `0 mod N` (should return 0)
+- (none)
 
 ### Test Results
 
@@ -46,4 +47,4 @@ Computes the remainder of the truncated division of its arguments (supported for
 
 **Summary:** 58/60 (97%) — 10 tests × 6 engines
 
-2 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification.
+2 of 10 tests fail in 1 engine each - mod by zero and negative mod, suggesting engine-specific bugs.

@@ -21,10 +21,18 @@ _No examples found in specification._
 9 tests found for `xor` (testBooleanLogicXOr1, testBooleanLogicXOr2, testBooleanLogicXOr3, testBooleanLogicXOr4, testBooleanLogicXOr5, testBooleanLogicXOr6, testBooleanLogicXOr7, testBooleanLogicXOr8, testBooleanLogicXOr9).
 
 **Covered:**
-- ✅ Complete truth table: true/true, true/false, true/empty, false/true, false/false, false/empty, empty/true, empty/false, empty/empty (testBooleanLogicXOr1, testBooleanLogicXOr2, testBooleanLogicXOr3, testBooleanLogicXOr4, testBooleanLogicXOr5, testBooleanLogicXOr6, testBooleanLogicXOr7, testBooleanLogicXOr8, testBooleanLogicXOr9)
+- ✅ true xor true = false (testBooleanLogicXOr1)
+- ✅ true xor false = true (testBooleanLogicXOr2)
+- ✅ true xor empty = empty (testBooleanLogicXOr3)
+- ✅ false xor true = true (testBooleanLogicXOr4)
+- ✅ false xor false = false (testBooleanLogicXOr5)
+- ✅ false xor empty = empty (testBooleanLogicXOr6)
+- ✅ empty xor true = empty (testBooleanLogicXOr7)
+- ✅ empty xor false = empty (testBooleanLogicXOr8)
+- ✅ empty xor empty = empty (testBooleanLogicXOr9)
 
 **Gaps:**
-- ❌ No test with non-boolean operands requiring implicit boolean conversion
+- (none)
 
 ### Test Results
 
@@ -41,5 +49,3 @@ _No examples found in specification._
 | testBooleanLogicXOr9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 54/54 (100%) — 9 tests × 6 engines
-
-All tests pass across all engines.

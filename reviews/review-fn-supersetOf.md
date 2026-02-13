@@ -21,11 +21,13 @@ MedicationRequest.contained.meta.tag.supersetOf(MedicationRequest.meta.tag)
 2 tests found for `supersetOf` (testSuperSetOf1, testSuperSetOf2).
 
 **Covered:**
-- ✅ Subset is not a superset of full collection, and full collection is superset of subset (testSuperSetOf1, testSuperSetOf2)
+- ✅ Returns true when all items in other are members of input collection (testSuperSetOf2)
+- ✅ Returns false when other contains items not in input collection (testSuperSetOf1)
+- ✅ Membership determined using equals operation (testSuperSetOf1, testSuperSetOf2)
 
 **Gaps:**
-- ❌ Empty `other` collection returning `true` is not tested
-- ❌ Empty input collection returning `false` is not tested
+- ❌ Empty other collection returns true
+- ❌ Empty input collection returns false when other is non-empty
 
 ### Test Results
 
@@ -35,5 +37,3 @@ MedicationRequest.contained.meta.tag.supersetOf(MedicationRequest.meta.tag)
 | testSuperSetOf2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 12/12 (100%) — 2 tests × 6 engines
-
-All tests pass across all engines.

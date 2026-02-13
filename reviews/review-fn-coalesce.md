@@ -49,7 +49,18 @@ coalesce(code.coding.where(system='http://snomed.info/sct'), code.coding).first(
 0 tests found for `coalesce`.
 
 **Covered:**
-(none)
+- (none)
 
 **Gaps:**
-- ❌ All specification requirements lack test coverage
+- ❌ Returns first non-empty collection from arguments not tested
+- ❌ All arguments empty returns empty collection not tested
+- ❌ Variable number of arguments not tested
+- ❌ Short-circuit behavior (arguments after first non-empty not evaluated) not tested
+- ❌ Fallback option pattern (e.g., name by use preference) not tested
+
+### Test Results
+
+| Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
+|------|------|------|------|------|------|------|
+
+**Summary:** 0/0 (0%) — 0 tests × 6 engines

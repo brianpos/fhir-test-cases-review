@@ -20,12 +20,14 @@ For strings, will concatenate the strings, where an empty operand is taken to be
 5 tests found for `&` (testConcatenate1, testConcatenate2, testConcatenate3, testConcatenate4, testConcatenate5).
 
 **Covered:**
-- ✅ String concatenation (testConcatenate1)
-- ✅ Empty operand treated as empty string (testConcatenate2, testConcatenate3, testConcatenate5)
-- ✅ Multi-item collection operand behavior (testConcatenate4)
+- ✅ Basic string concatenation of two non-empty strings (testConcatenate1)
+- ✅ Empty right operand treated as empty string (testConcatenate2)
+- ✅ Empty left operand treated as empty string (testConcatenate3)
+- ✅ Error when operand is a multi-item collection (testConcatenate4)
+- ✅ Both operands empty yields empty string (testConcatenate5)
 
 **Gaps:**
-(none)
+- (none)
 
 ### Test Results
 
@@ -39,4 +41,4 @@ For strings, will concatenate the strings, where an empty operand is taken to be
 
 **Summary:** 24/30 (80%) — 5 tests × 6 engines
 
-1 test(s) are not implemented in some engines, but all implemented tests pass.
+testConcatenate5 ({} & {} = '') fails on all 6 engines, suggesting possible spec ambiguity or widespread implementation gap for concatenating two empty collections.

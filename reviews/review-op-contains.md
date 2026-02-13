@@ -19,19 +19,18 @@ Patient.name.given contains 'Joe'
 21 tests found for `contains` (testContainsString1, testContainsString2, testContainsString3, testContainsString4, testContainsString5, testContainsString6, testContainsString7, testContainsString8, testContainsString9, testContainsString10, testContainsString10a, testContainsNonString1, testContainsCollection1, testContainsCollection2, testContainsCollection3, testContainsCollection4, testContainsCollectionEmpty1, testContainsCollectionEmpty2, testContainsCollectionEmpty3, testContainsCollectionEmpty4, testContainsCollectionEmptyDateTime).
 
 **Covered:**
-- ✅ Collection contains: item present in collection (testContainsCollection1, testContainsCollection3)
-- ✅ Collection contains: item not in collection (testContainsCollection2, testContainsCollection4)
-- ✅ Collection contains: empty left operand returns false (testContainsCollectionEmpty1, testContainsCollectionEmpty2, testContainsCollectionEmpty3)
-- ✅ Collection contains: empty right operand returns empty (testContainsCollectionEmpty4)
-- ✅ Collection contains: DateTime type (testContainsCollectionEmptyDateTime)
-- ✅ String contains(): substring found and not found (testContainsString1 through testContainsString6)
-- ✅ String contains(): empty substring returns true (testContainsString7)
-- ✅ String contains(): empty input returns empty (testContainsString8, testContainsString9)
-- ✅ String contains() in select context (testContainsString10, testContainsString10a)
-- ✅ Non-string input behavior (testContainsNonString1)
+- ✅ Collection containership: returns true when single item is in left collection (testContainsCollection1, testContainsCollection3)
+- ✅ Collection containership: returns false when item is not in left collection (testContainsCollection2, testContainsCollection4)
+- ✅ Collection containership: empty left operand returns false (testContainsCollectionEmpty1, testContainsCollectionEmpty2, testContainsCollectionEmpty3, testContainsCollectionEmptyDateTime)
+- ✅ Collection containership: empty right operand returns empty (testContainsCollectionEmpty4)
+- ✅ String contains function: substring present and absent cases (testContainsString1, testContainsString2, testContainsString3, testContainsString4, testContainsString5, testContainsString6)
+- ✅ String contains: empty string is contained in any string (testContainsString7)
+- ✅ String contains: empty collection input returns empty (testContainsString8, testContainsString9)
+- ✅ String contains: with computed expression argument via select (testContainsString10)
+- ✅ Semantic error for contains on non-string types or ambiguous overload (testContainsString10a, testContainsNonString1)
 
 **Gaps:**
-- ❌ No explicit test verifying contains is converse of in (same result for x contains y and y in x)
+- (none)
 
 ### Test Results
 
@@ -61,4 +60,4 @@ Patient.name.given contains 'Joe'
 
 **Summary:** 124/126 (98%) — 21 tests × 6 engines
 
-2 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification.
+testContainsString10a and testContainsCollectionEmpty4 each fail on single engines, suggesting engine-specific bugs in semantic error detection and empty collection handling.

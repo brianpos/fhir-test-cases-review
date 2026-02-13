@@ -22,11 +22,13 @@ X.count() = X.distinct().count()
 3 tests found for `isDistinct` (testDistinct1, testDistinct2, testDistinct3).
 
 **Covered:**
-- ✅ All-distinct collection returns true (testDistinct1, testDistinct2)
-- ✅ Non-distinct collection returns false (testDistinct3)
+- ✅ Returns true when all items in collection are distinct (testDistinct1, testDistinct2)
+- ✅ Returns false when items are not distinct (testDistinct3)
 
 **Gaps:**
-- ❌ Empty input collection returning true
+- ❌ Empty input returns true
+- ❌ Uses equals operator for distinctness comparison (no test with types where equals semantics matter)
+- ❌ Single item collection returns true
 
 ### Test Results
 
@@ -38,4 +40,4 @@ X.count() = X.distinct().count()
 
 **Summary:** 16/18 (89%) — 3 tests × 6 engines
 
-2 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification.
+testDistinct2 and testDistinct3 each fail in 1 engine (5/6), suggesting engine-specific bugs with descendants() or linkId traversal rather than isDistinct itself.

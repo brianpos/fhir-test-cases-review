@@ -33,11 +33,23 @@ The following examples illustrate the behavior of the duration function:
 0 tests found for `duration`.
 
 **Covered:**
-(none)
+- (none)
 
 **Gaps:**
-- ❌ All specification requirements lack test coverage
+- ❌ Returns number of whole calendar periods at specified precision between input and value
+- ❌ Result is negative if input value is after value argument
+- ❌ Result is always an integer; fractional periods are dropped
+- ❌ Date values: precision must be year, month, week, or day
+- ❌ DateTime values: precision must be year, month, week, day, hour, minute, second, or millisecond
+- ❌ Time values: precision must be hour, minute, second, or millisecond
+- ❌ Input or value of less precision than specified precision returns empty
+- ❌ Normalize timezone for datetime values with different offsets for hour/minute/second/millisecond precision
+- ❌ Empty input or value argument returns empty
+- ❌ More than one input item or incompatible item signals error
 
 ### Test Results
 
-No tests exist for this function yet. Test results will be added once tests are created.
+| Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
+|------|------|------|------|------|------|------|
+
+**Summary:** 0/0 (0%) — 0 tests × 6 engines

@@ -27,15 +27,20 @@ _No examples found in specification._
 12 tests found for `toInteger` (testIntegerLiteralToInteger, testStringIntegerLiteralToInteger, testDecimalLiteralToInteger, testDecimalLiteralToIntegerIsEmpty, testBooleanLiteralToInteger, testToInteger1, testToInteger2, testToInteger3, testToInteger4, testToInteger5, testToDecimal2, testToString2).
 
 **Covered:**
-- ✅ Integer identity conversion (testIntegerLiteralToInteger)
-- ✅ String to Integer for valid strings including positive, negative, and zero (testStringIntegerLiteralToInteger, testToInteger1, testToInteger2, testToInteger3, testToDecimal2, testToString2)
+- ✅ Integer input returns itself (testIntegerLiteralToInteger)
+- ✅ String integer converts to Integer (testStringIntegerLiteralToInteger, testToInteger1)
+- ✅ Negative string converts to Integer (testToInteger2, testToDecimal2, testToString2)
+- ✅ Zero string converts to Integer (testToInteger3)
 - ✅ Boolean true converts to 1 (testBooleanLiteralToInteger)
-- ✅ Non-convertible strings return empty, including decimal strings and alphabetic strings (testDecimalLiteralToInteger, testDecimalLiteralToIntegerIsEmpty, testToInteger4, testToInteger5)
+- ✅ String with decimal point is not convertible, returns empty (testDecimalLiteralToInteger, testDecimalLiteralToIntegerIsEmpty, testToInteger4)
+- ✅ Non-convertible string returns empty (testToInteger5)
 
 **Gaps:**
-- ❌ Boolean `false` converting to `0` is not tested
-- ❌ Empty input collection returning empty is not tested
-- ❌ Multiple items in input collection signaling an error is not tested
+- ❌ Boolean false converts to 0
+- ❌ String with '+' prefix converts to Integer
+- ❌ Non-matching type (e.g., Date, Quantity) returns empty
+- ❌ Multiple items in input signals an error
+- ❌ Empty input collection returns empty
 
 ### Test Results
 
@@ -56,4 +61,4 @@ _No examples found in specification._
 
 **Summary:** 68/72 (94%) — 12 tests × 6 engines
 
-4 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification.
+Aidbox fails 4 tests — empty-collection comparison syntax (testDecimalLiteralToInteger) and negative integer string parsing (testToInteger2, testToDecimal2, testToString2).

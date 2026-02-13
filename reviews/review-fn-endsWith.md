@@ -24,16 +24,18 @@ If the input collection contains multiple items, the evaluation of the expressio
 12 tests found for `endsWith` (testEndsWith1, testEndsWith2, testEndsWith3, testEndsWith4, testEndsWith5, testEndsWith6, testEndsWith7, testEndsWith8, testEndsWith9, testEndsWith10, testEndsWith10a, testEndsWithNonString1).
 
 **Covered:**
-- ✅ Suffix at end returns true, suffix not at end returns false (testEndsWith1, testEndsWith2, testEndsWith3, testEndsWith4)
-- ✅ Full string as suffix returns true (testEndsWith5)
-- ✅ Suffix longer than string returns false (testEndsWith6)
+- ✅ Returns true when string ends with given suffix (testEndsWith2, testEndsWith3)
+- ✅ Returns false when string does not end with suffix (testEndsWith1, testEndsWith4)
+- ✅ Full string matches as suffix (testEndsWith5)
+- ✅ Returns false when suffix is longer than input (testEndsWith6)
 - ✅ Empty suffix returns true (testEndsWith7)
-- ✅ Empty input returns empty (testEndsWith8, testEndsWith9)
-- ✅ Computed suffix via select context (testEndsWith10)
-- ✅ Error on non-string input type (testEndsWith10a, testEndsWithNonString1)
+- ✅ Empty input collection returns empty (testEndsWith8, testEndsWith9)
+- ✅ Works within select context with computed suffix (testEndsWith10)
+- ✅ Semantic error when suffix argument evaluates to collection (testEndsWith10a)
+- ✅ Non-string input signals error (testEndsWithNonString1)
 
 **Gaps:**
-- ❌ No test for error when input collection contains multiple string items
+- ❌ Multiple items in input collection signals error
 
 ### Test Results
 
@@ -54,4 +56,4 @@ If the input collection contains multiple items, the evaluation of the expressio
 
 **Summary:** 71/72 (99%) — 12 tests × 6 engines
 
-1 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification.
+testEndsWith10a fails in 1 engine, suggesting an engine-specific bug with computed suffix arguments.

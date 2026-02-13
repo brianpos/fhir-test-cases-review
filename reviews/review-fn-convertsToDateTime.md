@@ -28,17 +28,25 @@ _No examples found in specification._
 9 tests found for `convertsToDateTime` (testStringYearConvertsToDateTime, testStringMonthConvertsToDateTime, testStringDayConvertsToDateTime, testStringHourConvertsToDateTime, testStringMinuteConvertsToDateTime, testStringSecondConvertsToDateTime, testStringMillisecondConvertsToDateTime, testStringUTCConvertsToDateTime, testStringTZConvertsToDateTime).
 
 **Covered:**
-- ✅ String with various DateTime precisions converts successfully (testStringYearConvertsToDateTime, testStringMonthConvertsToDateTime, testStringDayConvertsToDateTime, testStringHourConvertsToDateTime, testStringMinuteConvertsToDateTime, testStringSecondConvertsToDateTime, testStringMillisecondConvertsToDateTime)
-- ✅ Timezone offset formats including UTC 'Z' and explicit offset (testStringUTCConvertsToDateTime, testStringTZConvertsToDateTime)
+- ✅ String convertible to DateTime returns true at year precision (testStringYearConvertsToDateTime)
+- ✅ String convertible to DateTime returns true at month precision (testStringMonthConvertsToDateTime)
+- ✅ String convertible to DateTime returns true at day precision (testStringDayConvertsToDateTime)
+- ✅ String convertible to DateTime returns true at hour precision (testStringHourConvertsToDateTime)
+- ✅ String convertible to DateTime returns true at minute precision (testStringMinuteConvertsToDateTime)
+- ✅ String convertible to DateTime returns true at second precision (testStringSecondConvertsToDateTime)
+- ✅ String convertible to DateTime returns true at millisecond precision (testStringMillisecondConvertsToDateTime)
+- ✅ String with UTC timezone is convertible (testStringUTCConvertsToDateTime)
+- ✅ String with timezone offset is convertible (testStringTZConvertsToDateTime)
 
 **Gaps:**
-- ❌ DateTime input type returns true
-- ❌ Date input type returns true
-- ❌ Non-convertible String returns false
-- ❌ Non-convertible types (Integer, Boolean) return false
-- ❌ Empty input collection returns empty
-- ❌ Multiple items in input collection signals an error
-- ❌ Optional format parameter not tested
+- ❌ DateTime item returns true not tested with an actual DateTime value
+- ❌ Date item returns true not tested with a Date value
+- ❌ Non-convertible type returns false not tested
+- ❌ Non-convertible string returns false not tested
+- ❌ Optional format parameter overrides default format not tested
+- ❌ Format parameter is ignored for non-string input not tested
+- ❌ Multiple items in input signal an error not tested
+- ❌ Empty input collection returns empty not tested
 
 ### Test Results
 
@@ -55,6 +63,3 @@ _No examples found in specification._
 | testStringTZConvertsToDateTime | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 54/54 (100%) — 9 tests × 6 engines
-- Overall pass rate: 54/54 (100%)
-- Tests: 9
-- All engines pass all tests — fully consistent.

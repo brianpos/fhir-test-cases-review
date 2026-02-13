@@ -19,9 +19,9 @@ Observation.select(component.value > 90 'mm[Hg]').allTrue()
 3 tests found for `allTrue` (testAllTrue1, testAllTrue2, from-zulip-2).
 
 **Covered:**
-- ✅ Returns true when all items are true (testAllTrue1)
-- ✅ Returns false when any item is false (testAllTrue2)
-- ✅ Non-Boolean items in collection signal an error (from-zulip-2)
+- ✅ Returns true when all items in Boolean collection are true (testAllTrue1)
+- ✅ Returns false when any item in collection is false (testAllTrue2)
+- ✅ Non-Boolean values in collection signal an error (from-zulip-2)
 
 **Gaps:**
 - ❌ Empty input collection returns true
@@ -36,5 +36,5 @@ Observation.select(component.value > 90 'mm[Hg]').allTrue()
 | from-zulip-2 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 17/18 (94%) — 3 tests × 6 engines
-- Overall pass rate: 17/18 (94%)
-- Tests: 3
+
+Non-Boolean input error test fails in 1 engine, suggesting an engine-specific bug.

@@ -15,10 +15,12 @@ _No examples found in specification._
 2 tests found for `now` (testNow1, testNow2).
 
 **Covered:**
-- ✅ Returns a DateTime usable in comparisons and with length > 10 indicating timezone inclusion (testNow1, testNow2)
+- ✅ Returns the current date and time, comparable with date values (testNow1)
+- ✅ Result includes time component beyond just date (testNow2)
 
 **Gaps:**
-- ❌ No direct assertion that result includes timezone offset
+- ❌ Result includes timezone offset
+- ❌ Deterministic evaluation — returns same value within a given expression
 
 ### Test Results
 
@@ -29,4 +31,4 @@ _No examples found in specification._
 
 **Summary:** 11/12 (92%) — 2 tests × 6 engines
 
-1 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification.
+testNow1 fails in 1 engine (5/6 pass), suggesting an engine-specific bug with date/DateTime comparison involving now().

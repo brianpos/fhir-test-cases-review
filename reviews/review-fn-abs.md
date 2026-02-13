@@ -25,15 +25,16 @@ If the input collection contains multiple items, the evaluation of the expressio
 4 tests found for `abs` (testAbs1, testAbs2, testAbs3, testAbsEmpty).
 
 **Covered:**
-- ✅ Absolute value of negative Integer returns positive Integer (testAbs1)
-- ✅ Absolute value of negative Decimal returns positive Decimal (testAbs2)
-- ✅ Absolute value of negative Quantity preserves unit (testAbs3)
+- ✅ Returns absolute value of Integer input (testAbs1)
+- ✅ Returns absolute value of Decimal input (testAbs2)
+- ✅ Returns absolute value of Quantity input with unit unchanged (testAbs3)
+- ✅ Result is in the same type as input (testAbs1, testAbs2, testAbs3)
 - ✅ Empty input collection returns empty (testAbsEmpty)
 
 **Gaps:**
 - ❌ Absolute value of positive input returns same value
 - ❌ Long input type not tested
-- ❌ Multiple items in input collection signals an error
+- ❌ Multiple items in input collection signals error not tested
 
 ### Test Results
 
@@ -45,5 +46,5 @@ If the input collection contains multiple items, the evaluation of the expressio
 | testAbsEmpty | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 23/24 (96%) — 4 tests × 6 engines
-- Overall pass rate: 23/24 (96%)
-- Tests: 4
+
+Quantity absolute value test fails in 1 engine, suggesting an engine-specific bug.

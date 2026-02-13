@@ -24,14 +24,18 @@ _No examples found in specification._
 4 tests found for `convertsToTime` (testStringHourConvertsToTime, testStringMinuteConvertsToTime, testStringSecondConvertsToTime, testStringMillisecondConvertsToTime).
 
 **Covered:**
-- ✅ String at various precisions converts to Time — hour, minute, second, millisecond (testStringHourConvertsToTime, testStringMinuteConvertsToTime, testStringSecondConvertsToTime, testStringMillisecondConvertsToTime)
+- ✅ String convertible to Time returns true at hour precision (testStringHourConvertsToTime)
+- ✅ String convertible to Time returns true at minute precision (testStringMinuteConvertsToTime)
+- ✅ String convertible to Time returns true at second precision (testStringSecondConvertsToTime)
+- ✅ String convertible to Time returns true at millisecond precision (testStringMillisecondConvertsToTime)
 
 **Gaps:**
-- ❌ No test for Time input returning true
-- ❌ No test for non-convertible string returning false
-- ❌ No test for non-string/non-Time type returning false
-- ❌ No test for empty input returning empty
-- ❌ No test for error when input collection contains multiple items
+- ❌ Time item returns true (not tested with an actual Time value)
+- ❌ Non-convertible string returns false
+- ❌ Non-Time type (e.g., Integer, Boolean) returns false
+- ❌ String with timezone offset format not tested
+- ❌ Multiple items in input signal an error
+- ❌ Empty input collection returns empty
 
 ### Test Results
 
@@ -44,4 +48,4 @@ _No examples found in specification._
 
 **Summary:** 23/24 (96%) — 4 tests × 6 engines
 
-1 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification.
+1 test (hour-only string) fails in 1 engine, suggesting an engine-specific bug with partial time parsing.

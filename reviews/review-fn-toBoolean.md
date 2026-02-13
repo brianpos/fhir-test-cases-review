@@ -39,17 +39,24 @@ _No examples found in specification._
 5 tests found for `toBoolean` (testIntegerLiteralToBoolean, testIntegerLiteralToBooleanEmpty, testIntegerLiteralToBooleanFalse, testStringTrueToBoolean, testStringFalseToBoolean).
 
 **Covered:**
-- ✅ Integer 1 converts to true and Integer 0 converts to false (testIntegerLiteralToBoolean, testIntegerLiteralToBooleanFalse)
-- ✅ Non-convertible integer (2) returns empty (testIntegerLiteralToBooleanEmpty)
-- ✅ String 'true' and 'false' convert to corresponding booleans (testStringTrueToBoolean, testStringFalseToBoolean)
+- ✅ Integer 1 converts to true (testIntegerLiteralToBoolean)
+- ✅ Integer 0 converts to false (testIntegerLiteralToBooleanFalse)
+- ✅ Non-convertible integer returns empty (testIntegerLiteralToBooleanEmpty)
+- ✅ String 'true' converts to true (testStringTrueToBoolean)
+- ✅ String 'false' converts to false (testStringFalseToBoolean)
 
 **Gaps:**
-- ❌ Decimal representations (1.0 → true, 0.0 → false) are not tested
-- ❌ Additional string representations ('t', 'yes', 'y', '1', '1.0', 'f', 'no', 'n', '0', '0.0') are not tested
-- ❌ Case insensitivity of string representations is not tested
-- ❌ Boolean input returning itself is not tested
-- ❌ Empty input collection returning empty is not tested
-- ❌ Multiple items in input collection signaling an error is not tested
+- ❌ Boolean input returns itself unchanged
+- ❌ Decimal 1.0 converts to true
+- ❌ Decimal 0.0 converts to false
+- ❌ Non-convertible decimal returns empty
+- ❌ String representations 't', 'yes', 'y', '1', '1.0' convert to true
+- ❌ String representations 'f', 'no', 'n', '0', '0.0' convert to false
+- ❌ Case-insensitive string matching (e.g., 'TRUE', 'T', 'Yes')
+- ❌ Non-convertible string returns empty
+- ❌ Non-convertible type (e.g., Date) returns empty
+- ❌ Multiple items in input signals an error
+- ❌ Empty input collection returns empty
 
 ### Test Results
 
@@ -62,5 +69,3 @@ _No examples found in specification._
 | testStringFalseToBoolean | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 30/30 (100%) — 5 tests × 6 engines
-
-All tests pass across all engines.

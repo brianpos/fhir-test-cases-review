@@ -27,11 +27,25 @@ The following examples illustrate the behavior of the `min` function:
 0 tests found for `min`.
 
 **Covered:**
-(none)
+- (none)
 
 **Gaps:**
-- ❌ All specification requirements lack test coverage
+- ❌ Returns the minimum item in the input collection
+- ❌ Comparison semantics defined by Comparison Operators for the type being aggregated
+- ❌ Accepts Integer input
+- ❌ Accepts Long input
+- ❌ Accepts Decimal input
+- ❌ Accepts Quantity input
+- ❌ Accepts Date input
+- ❌ Accepts DateTime input
+- ❌ Accepts Time input
+- ❌ Accepts String input
+- ❌ All items in input collection SHALL be the same type, otherwise exception is thrown
+- ❌ Empty input collection returns empty
 
 ### Test Results
 
-No tests exist for this function yet. Test results will be added once tests are created.
+| Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
+|------|------|------|------|------|------|------|
+
+**Summary:** 0/0 (0%) — 0 tests × 6 engines

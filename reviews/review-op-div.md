@@ -21,13 +21,13 @@ Performs truncated division of the left operand by the right operand (supported 
 **Covered:**
 - ✅ Integer truncated division (testDiv1, testDiv2, testDiv3)
 - ✅ Decimal truncated division (testDiv4)
-- ✅ Mixed Integer/Decimal truncated division (testMixedPrecisionArithmetic5)
+- ✅ Division by zero returns empty collection (testDiv5)
 - ✅ Negative number truncated division (testDiv6)
-- ✅ Division by zero returns empty (testDiv5)
+- ✅ Mixed precision: integer div decimal (testMixedPrecisionArithmetic5)
 - ✅ Empty operand propagation (testDivEmpty1, testDivEmpty2, testDivEmpty3)
 
 **Gaps:**
-(none)
+- (none)
 
 ### Test Results
 
@@ -46,4 +46,4 @@ Performs truncated division of the left operand by the right operand (supported 
 
 **Summary:** 58/60 (97%) — 10 tests × 6 engines
 
-2 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification.
+testDiv5 (division by zero) and testDiv6 (negative truncated division) each fail on single engines, suggesting engine-specific bugs.

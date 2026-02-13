@@ -23,12 +23,12 @@ If the input collection contains multiple items, the evaluation of the expressio
 1 tests found for `toChars` (testToChars1).
 
 **Covered:**
-- ✅ Basic string split into individual characters (testToChars1)
+- ✅ Splits string into individual single-character strings (testToChars1)
 
 **Gaps:**
-- ❌ Empty input collection returning empty is not tested
-- ❌ Multiple items in input collection signaling an error is not tested
-- ❌ Unicode combining character handling (e.g. `'\u0065\u0301'.toChars()`) is not tested
+- ❌ Empty input collection returns empty
+- ❌ Multiple items in input signals an error
+- ❌ Unicode combining characters return separate character strings
 
 ### Test Results
 
@@ -37,5 +37,3 @@ If the input collection contains multiple items, the evaluation of the expressio
 | testToChars1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 6/6 (100%) — 1 tests × 6 engines
-
-All tests pass across all engines.

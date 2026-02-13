@@ -43,21 +43,21 @@ group.select(
 21 tests found for `defineVariable` (defineVariable1, defineVariable2, defineVariable3, defineVariable4, defineVariable5, defineVariable6, defineVariable7, defineVariable8, defineVariable9, defineVariable10, dvRedefiningVariableThrowsError, defineVariable12, defineVariable13, defineVariable14, defineVariable15, defineVariable16, dvCantOverwriteSystemVar, dvConceptMapExample, defineVariable19, dvParametersDontColide, dvUsageOutsideScopeThrows).
 
 **Covered:**
-- ✅ Basic variable definition with literal projection value (defineVariable1)
-- ✅ Variable with FHIRPath projection expression referencing input (defineVariable2, defineVariable3)
-- ✅ Multiple variables in union expressions with independent scopes (defineVariable4, defineVariable5, defineVariable6, defineVariable7)
-- ✅ Chaining variables with intermediate operations like trace (defineVariable8)
-- ✅ Variable chaining where later variable references earlier one in projection (defineVariable13, defineVariable14)
-- ✅ Nested variable scopes via nested select expressions (defineVariable15)
-- ✅ Dynamic variable names and values computed from expressions (defineVariable19, dvParametersDontColide)
-- ✅ Real-world ConceptMap traversal example (dvConceptMapExample)
-- ✅ Error when accessing variable out of its expression scope (defineVariable9, defineVariable12, defineVariable16, dvUsageOutsideScopeThrows)
-- ✅ Error when referencing undefined variable (defineVariable10)
-- ✅ Error when redefining variable in same scope (dvRedefiningVariableThrowsError)
-- ✅ Error when overwriting system-defined variable (dvCantOverwriteSystemVar)
+- ✅ Define variable with projection value, accessible via %name (defineVariable1)
+- ✅ Variable holds collection values from projection expression (defineVariable2, defineVariable3)
+- ✅ Define variable without projection uses input collection as value (dvConceptMapExample)
+- ✅ Multiple variables in union expressions with separate scopes (defineVariable4, defineVariable5, defineVariable6, defineVariable7)
+- ✅ Chaining multiple defineVariable calls in sequence (defineVariable8, defineVariable13, defineVariable14, defineVariable15)
+- ✅ Variable not accessible outside its expression scope (defineVariable9, defineVariable12, defineVariable16, dvUsageOutsideScopeThrows)
+- ✅ Accessing undefined variable signals error (defineVariable10)
+- ✅ Redefining variable in same scope signals error (dvRedefiningVariableThrowsError)
+- ✅ Cannot overwrite system variables like %context (dvCantOverwriteSystemVar)
+- ✅ Complex nested usage matching spec ConceptMap example pattern (dvConceptMapExample)
+- ✅ Variables in nested function parameters don't collide (defineVariable19, dvParametersDontColide)
+- ✅ Output collection is same as input — function does not change the input (defineVariable7)
 
 **Gaps:**
-- ❌ No test verifying output collection equals input collection (pass-through behavior)
+- ❌ Does not change scoped variables $this or $index (implicitly tested but not explicitly verified)
 
 ### Test Results
 
@@ -87,4 +87,4 @@ group.select(
 
 **Summary:** 103/126 (82%) — 21 tests × 6 engines
 
-9 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification. 8 additional test(s) are not yet implemented in some engines.
+Multiple tests consistently fail in 1 engine, suggesting incomplete defineVariable implementation. Several scope-boundary error tests also show 1 engine failing to detect out-of-scope variable usage.

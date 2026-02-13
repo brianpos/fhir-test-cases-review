@@ -15,10 +15,11 @@ _No examples found in specification._
 1 tests found for `children` (testRepeat4).
 
 **Covered:**
-- ✅ Returns immediate child nodes from a resource (testRepeat4)
+- ✅ Returns collection with all immediate child nodes of items in input collection (testRepeat4)
 
 **Gaps:**
-- ❌ Children of primitive types not tested
+- ❌ Behavior with items that have no children not tested
+- ❌ Behavior with multiple items in input collection not tested
 - ❌ Empty input collection behavior not tested
 
 ### Test Results
@@ -28,6 +29,3 @@ _No examples found in specification._
 | testRepeat4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 6/6 (100%) — 1 tests × 6 engines
-- Overall pass rate: 6/6 (100%)
-- Tests: 1
-- All engines pass all tests — fully consistent.

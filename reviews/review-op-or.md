@@ -21,10 +21,18 @@ _No examples found in specification._
 9 tests found for `or` (testBooleanLogicOr1, testBooleanLogicOr2, testBooleanLogicOr3, testBooleanLogicOr4, testBooleanLogicOr5, testBooleanLogicOr6, testBooleanLogicOr7, testBooleanLogicOr8, testBooleanLogicOr9).
 
 **Covered:**
-- ✅ Complete truth table: true/true, true/false, true/empty, false/true, false/false, false/empty, empty/true, empty/false, empty/empty (testBooleanLogicOr1, testBooleanLogicOr2, testBooleanLogicOr3, testBooleanLogicOr4, testBooleanLogicOr5, testBooleanLogicOr6, testBooleanLogicOr7, testBooleanLogicOr8, testBooleanLogicOr9)
+- ✅ true or true = true (testBooleanLogicOr1)
+- ✅ true or false = true (testBooleanLogicOr2)
+- ✅ true or empty = true (testBooleanLogicOr3)
+- ✅ false or true = true (testBooleanLogicOr4)
+- ✅ false or false = false (testBooleanLogicOr5)
+- ✅ false or empty = empty (testBooleanLogicOr6)
+- ✅ empty or true = true (testBooleanLogicOr7)
+- ✅ empty or false = empty (testBooleanLogicOr8)
+- ✅ empty or empty = empty (testBooleanLogicOr9)
 
 **Gaps:**
-- ❌ No test with non-boolean operands requiring implicit boolean conversion
+- (none)
 
 ### Test Results
 
@@ -41,5 +49,3 @@ _No examples found in specification._
 | testBooleanLogicOr9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 54/54 (100%) — 9 tests × 6 engines
-
-All tests pass across all engines.

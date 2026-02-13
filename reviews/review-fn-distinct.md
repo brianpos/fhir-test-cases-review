@@ -23,12 +23,14 @@ Patient.meta.tag.distinct()
 4 tests found for `distinct` (testExpressions, testDistinct4, testDistinct5, testDistinct6).
 
 **Covered:**
-- ✅ Distinct removes duplicate strings from a collection (testExpressions)
-- ✅ Distinct on collection with no duplicates (testDistinct4)
-- ✅ Distinct on extracted properties with count verification (testDistinct5, testDistinct6)
+- ✅ Returns collection containing only unique items (testExpressions, testDistinct4)
+- ✅ Works with string elements from resource descendants (testDistinct5, testDistinct6)
+- ✅ Handles already-distinct collections without change (testDistinct4)
 
 **Gaps:**
-- ❌ No test for empty input returning empty
+- ❌ Empty input returns empty
+- ❌ Uses equals (=) operator to determine uniqueness is not explicitly demonstrated
+- ❌ Order of items in result is not guaranteed to be preserved (not explicitly tested)
 
 ### Test Results
 
@@ -41,4 +43,4 @@ Patient.meta.tag.distinct()
 
 **Summary:** 20/24 (83%) — 4 tests × 6 engines
 
-2 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification. 1 test(s) fail in multiple (but not all) engines, which may indicate differing interpretations of the specification.
+testExpressions fails in 2 engines; testDistinct5 and testDistinct6 each fail in 1 engine. Failures may indicate differences in how distinctness is evaluated across engines.

@@ -33,16 +33,18 @@ If the input collection contains multiple items, the evaluation of the expressio
 3 tests found for `round` (testRound1, testRound2, testRoundEmpty).
 
 **Covered:**
-- ✅ Rounding without precision argument (testRound1)
-- ✅ Rounding with explicit precision argument (testRound2)
+- ✅ Rounding with default precision of 0 decimal places (testRound1)
+- ✅ Precision argument determines decimal place for rounding (testRound2)
+- ✅ Integer input implicitly converted to Decimal (testRound1)
+- ✅ Decimal input returns Decimal result (testRound2)
 - ✅ Empty input returns empty (testRoundEmpty)
 
 **Gaps:**
-- ❌ Rounding at 0.5 boundary (e.g. 1.5.round() = 2, 2.5.round() = 3)
-- ❌ Negative number rounding
-- ❌ Quantity input type returns Quantity with same units
-- ❌ Error when precision argument is negative
-- ❌ Error on multiple items in input collection
+- ❌ Traditional rounding behavior for values >= 0.5 (e.g. 1.5 rounds to 2)
+- ❌ Rounding negative numbers (e.g. -0.5 rounds to -1)
+- ❌ Precision must be >= 0 or error is signaled
+- ❌ Quantity input type support returning Quantity with same units
+- ❌ Multiple items in input signals error
 
 ### Test Results
 
@@ -53,5 +55,3 @@ If the input collection contains multiple items, the evaluation of the expressio
 | testRoundEmpty | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 18/18 (100%) — 3 tests × 6 engines
-
-All tests pass across all engines.

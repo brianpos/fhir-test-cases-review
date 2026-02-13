@@ -88,22 +88,28 @@ Additional functions to support more sophisticated timezone offset comparison (s
 39 tests found for `=` (testLiteralIntegerEqual, testDateEqual, testLiteralDateTimeTZEqualFalse, testLiteralDateTimeTZEqualTrue, testExpressionsEqual, testQuantity1, testQuantity5, testQuantity6, testEquality1, testEquality2, testEquality3, testEquality4, testEquality5, testEquality6, testEquality7, testEquality8, testEquality9, testEquality10, testEquality11, testEquality12, testEquality13, testEquality14, testEquality15, testEquality16, testEquality17, testEquality18, testEquality19, testEquality20, testEquality21, testEquality22, testEquality23, testEquality24, testEquality25, testEquality26, testEquality27, testEquality28, testMixedPrecisionEquals1, testMixedPrecisionEquals2, testMixedPrecisionEquals3).
 
 **Covered:**
-- ✅ Integer equality (testEquality1, testEquality8, testEquality15)
-- ✅ String equality, case sensitive (testEquality9, testEquality10, testEquality11)
-- ✅ Decimal equality with trailing zeroes ignored (testEquality12, testEquality13, testEquality14, testEquality16)
-- ✅ Mixed Integer/Decimal implicit conversion (testMixedPrecisionEquals1, testMixedPrecisionEquals2, testMixedPrecisionEquals3)
-- ✅ Date equality (testEquality17, testEquality18, testDateEqual)
-- ✅ DateTime equality with timezone offsets (testEquality20, testEquality24, testLiteralDateTimeTZEqualFalse, testLiteralDateTimeTZEqualTrue)
-- ✅ Date/DateTime precision mismatch returns empty (testEquality19, testEquality23)
-- ✅ DateTime seconds/milliseconds precision (testEquality21, testEquality22)
+- ✅ Integer equality (testEquality1, testEquality8, testEquality15, testLiteralIntegerEqual)
 - ✅ Empty operand returns empty (testEquality2, testEquality3)
-- ✅ Multi-item collection pairwise equality, order dependent (testEquality4, testEquality5, testEquality6, testEquality7, testEquality25, testEquality26, testEquality27)
+- ✅ Single-item collection equality (testEquality4)
+- ✅ Multi-item collection ordered equality (testEquality5, testEquality6, testEquality26, testEquality27)
+- ✅ Multi-item collections with different lengths returns false (testEquality7)
+- ✅ String equality is case-sensitive based on Unicode values (testEquality9, testEquality10, testEquality11)
+- ✅ Decimal equality with trailing zeroes ignored (testEquality12, testEquality13, testEquality14, testEquality16)
+- ✅ Date equality (testEquality17, testEquality18, testDateEqual)
+- ✅ DateTime with different precision returns empty (testEquality19, testEquality23)
+- ✅ DateTime comparison (testEquality20)
+- ✅ Seconds and milliseconds treated as single precision (testEquality21, testEquality22)
+- ✅ DateTime with timezone offset handling (testEquality24, testLiteralDateTimeTZEqualTrue, testLiteralDateTimeTZEqualFalse)
+- ✅ Complex type equality with recursive comparison (testEquality25)
 - ✅ Quantity equality with unit conversion (testQuantity1, testQuantity5, testQuantity6, testEquality28)
+- ✅ Mixed precision implicit conversion between Integer and Decimal (testMixedPrecisionEquals1, testMixedPrecisionEquals2, testMixedPrecisionEquals3)
+- ✅ Expression-based equality (testExpressionsEqual)
 
 **Gaps:**
-- ❌ No test for Boolean equality
-- ❌ No test for Time equality
-- ❌ No test for complex type recursive equality beyond resource-level comparison
+- ❌ Boolean equality
+- ❌ Time equality
+- ❌ Quantity with invalid units returns empty
+- ❌ Calendar durations vs definite quantity durations uncomparability
 
 ### Test Results
 
@@ -151,4 +157,4 @@ Additional functions to support more sophisticated timezone offset comparison (s
 
 **Summary:** 217/234 (93%) — 39 tests × 6 engines
 
-11 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification. 3 test(s) fail in multiple (but not all) engines, which may indicate differing interpretations of the specification.
+Timezone and quantity unit conversion tests fail on 1-2 engines. testQuantity5 and testQuantity6 (calendar duration equality) fail on 2 engines due to unit conversion support differences.

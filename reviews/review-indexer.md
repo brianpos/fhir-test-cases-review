@@ -21,12 +21,12 @@ Patient.name[0]
 2 tests found for `[]` (testIndexer1, testIndexer2).
 
 **Covered:**
-- ✅ Accessing items by 0-based index (testIndexer1, testIndexer2)
+- ✅ Returns item at 0-based index position for first element (testIndexer1)
+- ✅ Returns item at 0-based index position for non-first element (testIndexer2)
 
 **Gaps:**
-- ❌ No test for empty input collection returning empty
-- ❌ No test for out-of-bounds index returning empty
-- ❌ No test for negative index behavior
+- ❌ Empty input returns empty collection
+- ❌ Index outside boundaries returns empty collection
 
 ### Test Results
 
@@ -37,4 +37,4 @@ Patient.name[0]
 
 **Summary:** 11/12 (92%) — 2 tests × 6 engines
 
-1 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification.
+testIndexer1 fails in 1 engine, suggesting an engine-specific bug.

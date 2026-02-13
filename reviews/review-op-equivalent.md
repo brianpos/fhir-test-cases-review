@@ -68,23 +68,25 @@ For strings, equivalence returns `true` if the strings are the same value while 
 27 tests found for `~` (testIntegerLiteralToDeciamlEquivalent, testQuantity2, testQuantity4, testEquivalent1, testEquivalent2, testEquivalent3, testEquivalent4, testEquivalent5, testEquivalent6, testEquivalent7, testEquivalent8, testEquivalent9, testEquivalent10, testEquivalent11, testEquivalent12, testEquivalent13, testEquivalent14, testEquivalent15, testEquivalent16, testEquivalent17, testEquivalent18, testEquivalent19, testEquivalent20, testEquivalent21, testEquivalent22, testEquivalent23, testEquivalent24).
 
 **Covered:**
-- ✅ Empty ~ empty returns true (testEquivalent2)
-- ✅ Value ~ empty returns false (testEquivalent3)
-- ✅ Integer equivalence (testEquivalent1, testEquivalent4, testEquivalent12, testEquivalent13)
-- ✅ String equivalence, case insensitive (testEquivalent5, testEquivalent6, testEquivalent7)
-- ✅ Decimal equivalence with precision rounding (testEquivalent8, testEquivalent9, testEquivalent10, testEquivalent11)
-- ✅ Integer to Decimal implicit conversion (testIntegerLiteralToDeciamlEquivalent)
+- ✅ Integer equivalence (testEquivalent1, testEquivalent4)
+- ✅ Empty collections are equivalent: {} ~ {} returns true (testEquivalent2)
+- ✅ Value vs empty returns false (testEquivalent3)
+- ✅ String equivalence is case-insensitive (testEquivalent5, testEquivalent6, testEquivalent7)
+- ✅ Decimal equivalence with trailing zeroes ignored (testEquivalent8, testEquivalent9, testEquivalent10, testEquivalent12, testEquivalent13)
+- ✅ Decimal precision rounding to least precise operand (testEquivalent11)
 - ✅ Date equivalence (testEquivalent14, testEquivalent15)
-- ✅ Date/DateTime precision mismatch returns false not empty (testEquivalent16)
-- ✅ DateTime seconds/milliseconds precision (testEquivalent17, testEquivalent18)
-- ✅ Complex type equivalence (testEquivalent19, testEquivalent20)
-- ✅ Multi-item collection order independence (testEquivalent23, testEquivalent24)
+- ✅ Different precision returns false instead of empty (testEquivalent16)
+- ✅ Seconds and milliseconds as single precision (testEquivalent17, testEquivalent18)
+- ✅ Complex type equivalence with recursive comparison (testEquivalent19)
+- ✅ Multi-item collection equivalence is not order dependent (testEquivalent20, testEquivalent21, testEquivalent23, testEquivalent24)
 - ✅ Quantity equivalence with unit conversion (testQuantity2, testQuantity4, testEquivalent22)
+- ✅ Integer to Decimal implicit conversion for equivalence (testIntegerLiteralToDeciamlEquivalent)
 
 **Gaps:**
-- ❌ No test for Boolean equivalence
-- ❌ No test for Time equivalence
-- ❌ No test for string whitespace normalization in equivalence
+- ❌ Boolean equivalence
+- ❌ Time equivalence
+- ❌ String whitespace normalization in equivalence
+- ❌ Quantity with invalid units returns false
 
 ### Test Results
 
@@ -120,4 +122,4 @@ For strings, equivalence returns `true` if the strings are the same value while 
 
 **Summary:** 151/162 (93%) — 27 tests × 6 engines
 
-5 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification. 2 test(s) fail in multiple (but not all) engines, which may indicate differing interpretations of the specification. 1 additional test(s) are not yet implemented in some engines.
+testQuantity4 (4 'g' ~ 4040 'mg') fails on 3/6 engines, suggesting possible spec ambiguity about precision handling in quantity equivalence. testEquivalent21 (order-independent collection equivalence) also has mixed results.

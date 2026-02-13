@@ -25,13 +25,17 @@ If the input collection contains multiple items, the evaluation of the expressio
 6 tests found for `indexOf` (testIndexOf1, testIndexOf2, testIndexOf3, testIndexOf5, testIndexOf4, testIndexOf6).
 
 **Covered:**
-- ✅ Returns 0-based index of first occurrence (testIndexOf1)
-- ✅ Returns -1 when substring not found (testIndexOf2)
+- ✅ Returns 0-based index of first position substring is found (testIndexOf1)
+- ✅ Returns -1 if substring is not found (testIndexOf2)
 - ✅ Empty string substring returns 0 (testIndexOf3)
-- ✅ Empty input or empty substring returns empty (testIndexOf4, testIndexOf5, testIndexOf6)
+- ✅ If substring is empty collection, result is empty (testIndexOf5)
+- ✅ If input is empty collection, result is empty (testIndexOf4)
+- ✅ Both input and substring empty collections return empty (testIndexOf6)
 
 **Gaps:**
-- ❌ Multiple items in input collection signaling error
+- ❌ Index measured in Unicode scalar values (no test with multi-byte or combining characters)
+- ❌ Multiple items in input collection signals error
+- ❌ Finding first occurrence when substring appears multiple times in the string
 
 ### Test Results
 
@@ -46,4 +50,4 @@ If the input collection contains multiple items, the evaluation of the expressio
 
 **Summary:** 35/36 (97%) — 6 tests × 6 engines
 
-1 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification.
+testIndexOf5 fails in 1 engine (5/6), suggesting an engine-specific bug with empty-collection substring handling.

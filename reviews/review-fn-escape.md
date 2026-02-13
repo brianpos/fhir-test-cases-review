@@ -23,14 +23,14 @@ _No examples found in specification._
 2 tests found for `escape` (testEscapeHtml, testEscapeJson).
 
 **Covered:**
-- ✅ HTML escaping of angle brackets and quotes (testEscapeHtml)
-- ✅ JSON escaping of quotes (testEscapeJson)
+- ✅ HTML escaping of < and " characters (testEscapeHtml)
+- ✅ JSON escaping of " characters (testEscapeJson)
 
 **Gaps:**
-- ❌ No test for HTML escaping of ampersand (`&`) character
-- ❌ No test for escaping characters with encoding above 127
-- ❌ No test for empty input returning empty
-- ❌ No test for missing target parameter returning empty
+- ❌ HTML escaping of & character
+- ❌ HTML escaping of characters with encoding above 127
+- ❌ Empty input returns empty
+- ❌ No target specified returns empty
 
 ### Test Results
 
@@ -41,4 +41,4 @@ _No examples found in specification._
 
 **Summary:** 8/12 (67%) — 2 tests × 6 engines
 
-2 test(s) are not implemented in some engines, but all implemented tests pass.
+Two engines do not produce results for escape tests, suggesting the escape function is not yet widely implemented.

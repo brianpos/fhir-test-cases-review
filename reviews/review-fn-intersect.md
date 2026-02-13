@@ -15,14 +15,15 @@ _No examples found in specification._
 4 tests found for `intersect` (testIntersect1, testIntersect2, testIntersect3, testIntersect4).
 
 **Covered:**
-- ✅ Returns items present in both collections (testIntersect1)
-- ✅ No common items returns empty (testIntersect2)
-- ✅ Intersect with empty collection returns empty (testIntersect3)
-- ✅ Duplicate items eliminated from result (testIntersect4)
+- ✅ Returns set of items present in both collections (testIntersect1)
+- ✅ Returns empty when no common items exist (testIntersect2)
+- ✅ Returns empty when other collection is empty (testIntersect3)
+- ✅ Duplicate items are eliminated (testIntersect4)
 
 **Gaps:**
-- ❌ Empty input collection intersected with non-empty collection (i.e., `{}.intersect(1 | 2)`)
-- ❌ Intersect with non-integer types (e.g., strings, dates)
+- ❌ Order of items not guaranteed to be preserved (no explicit unordered test)
+- ❌ Intersect with complex or non-integer types
+- ❌ Intersect when input collection is empty
 
 ### Test Results
 
@@ -34,5 +35,3 @@ _No examples found in specification._
 | testIntersect4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 24/24 (100%) — 4 tests × 6 engines
-
-All tests pass across all engines.

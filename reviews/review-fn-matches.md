@@ -29,14 +29,22 @@ The optional `flags` parameter can be set to:
 11 tests found for `matches` (testMatchesCaseSensitive1, testMatchesCaseSensitive2, testMatchesEmpty, testMatchesEmpty2, testMatchesEmpty3, testMatchesSingleLineMode1, testMatchesWithinUrl1, testMatchesWithinUrl2, testMatchesWithinUrl3, testMatchesWithinUrl1a, testMatchesWithinUrl4).
 
 **Covered:**
-- ✅ Case-sensitive matching (testMatchesCaseSensitive1, testMatchesCaseSensitive2)
-- ✅ Empty input or empty regex returns empty (testMatchesEmpty, testMatchesEmpty2, testMatchesEmpty3)
-- ✅ Single-line mode: `.` matches newline (testMatchesSingleLineMode1)
-- ✅ Partial match within strings and `^`/`$` anchors (testMatchesWithinUrl1, testMatchesWithinUrl1a, testMatchesWithinUrl2, testMatchesWithinUrl3, testMatchesWithinUrl4)
+- ✅ Returns true when value matches given regular expression (testMatchesCaseSensitive1, testMatchesWithinUrl2)
+- ✅ Case-sensitive matching by default (testMatchesCaseSensitive1, testMatchesCaseSensitive2)
+- ✅ Single line mode: dot matches newlines (testMatchesSingleLineMode1)
+- ✅ Start/end markers ^/$ can match entire string (testMatchesWithinUrl3)
+- ✅ Partial regex matching within strings (testMatchesWithinUrl2, testMatchesWithinUrl1a)
+- ✅ Returns false when value does not match (testMatchesWithinUrl1, testMatchesWithinUrl4)
+- ✅ Empty regex returns empty (testMatchesEmpty)
+- ✅ Empty input returns empty (testMatchesEmpty2)
+- ✅ Both input and regex empty returns empty (testMatchesEmpty3)
 
 **Gaps:**
-- ❌ Multiple items in input collection signaling error
-- ❌ Optional `flags` parameter (`i` for case-insensitive, `m` for multi-line)
+- ❌ Optional 'i' flag for case-insensitive search
+- ❌ Optional 'm' flag for multi-line mode
+- ❌ Unicode character handling in regex
+- ❌ Multiple items in input collection signals error
+- ❌ Culture and locale independence verification
 
 ### Test Results
 
@@ -56,4 +64,4 @@ The optional `flags` parameter can be set to:
 
 **Summary:** 62/66 (94%) — 11 tests × 6 engines
 
-2 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification. 1 test(s) fail in multiple (but not all) engines, which may indicate differing interpretations of the specification.
+testMatchesSingleLineMode1 fails in 2 engines (4/6), suggesting disagreement on single-line mode (dot matching newlines). testMatchesEmpty and testMatchesWithinUrl2 each fail in 1 engine.

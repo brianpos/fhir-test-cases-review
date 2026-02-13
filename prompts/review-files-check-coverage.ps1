@@ -6,8 +6,11 @@
 $prompt = @"
 For each review file in the reviews folder, analyze test coverage against the specification:
 
-1. EXTRACT: Run `python scripts/check_coverage.py --file <review-file.md>` to get the spec content, matching tests, and test results for a review file.
-2. ANALYZE: Compare the specification requirements against the test expressions. Determine:
+The FHIRPath specification is at: C:\git\hl7\FHIRPath\input\pages\index.md
+
+1. EXTRACT: Run `python scripts/check_coverage.py --file <review-file.md>` to get the matching tests and existing analysis for a review file. The output includes a `spec_header` field — use this to locate the relevant section in the specification file.
+2. READ SPEC: Read the relevant section from the specification file (index.md). Also read the parent section heading and any preamble text that applies to the group of functions/operators this feature belongs to (e.g. the "Boolean logic" preamble applies to all of and/or/xor/implies/not). Follow any cross-references to related sections (e.g. "Singleton Evaluation of Collections").
+3. ANALYZE: Compare the specification requirements against the test expressions. If the review file already has Covered/Gaps content from a previous analysis, review it and update as needed (add missing items, remove incorrect ones, refine descriptions) rather than regenerating from scratch. Determine:
    - Which spec requirements are covered by at least one test
    - Which requirements have no test coverage (gaps)
    - A brief overall summary of the function's test status (failure patterns, engine-specific issues, etc.)
@@ -19,9 +22,15 @@ For each review file in the reviews folder, analyze test coverage against the sp
    - Check that each spec requirement has at least one test that would fail if that requirement were implemented incorrectly
    - Tests that verify additional behaviors beyond the spec (e.g. edge cases, type safety) can be listed as covered items too
 
-3. WRITE BACK: Produce a JSON object with the analysis and write it back using `python scripts/review_set_covered_and_gaps.py --json-file <path>`.
+   Pay close attention to these cross-cutting concerns — check whether each is specified and tested:
+   - Collection handling: what happens with multiple items in input? Is an error required?
+   - Empty inputs: behavior when input collection or arguments are empty
+   - Type handling: implicit and explicit type conversions across expected types (per Singleton Evaluation rules)
+   - Error conditions: all error conditions mentioned in the spec must have corresponding tests
 
-The JSON format for step 3 is:
+4. WRITE BACK: Produce a JSON object with the analysis and write it back using `python scripts/review_set_covered_and_gaps.py --json-file <path>`.
+
+The JSON format for step 4 is:
 {
   "filename": "review-fn-example.md",
   "covered": [

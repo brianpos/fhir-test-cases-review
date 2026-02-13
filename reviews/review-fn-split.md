@@ -25,13 +25,14 @@ The following example illustrates the behavior of the `.split` operator:
 4 tests found for `split` (testSplit1, testSplit2, testSplit3, testSplit4).
 
 **Covered:**
-- ✅ Basic splitting by single-character separator (testSplit1)
-- ✅ Preserving empty segments between consecutive separators (testSplit2)
-- ✅ Multi-character separator splitting and round-trip with join (testSplit3, testSplit4)
+- ✅ Splits singleton string into list using given separator (testSplit1)
+- ✅ Handles consecutive separators producing empty strings in result (testSplit2)
+- ✅ Multi-character separator support (testSplit3, testSplit4)
+- ✅ Split and join roundtrip preserves original string (testSplit2, testSplit4)
 
 **Gaps:**
 - ❌ Empty input returns empty
-- ❌ No separator match returns input string unchanged (e.g. 'ABC'.split(','))
+- ❌ Input with no separator appearances returns input string unchanged
 
 ### Test Results
 
@@ -44,4 +45,4 @@ The following example illustrates the behavior of the `.split` operator:
 
 **Summary:** 20/24 (83%) — 4 tests × 6 engines
 
-4 test(s) are not implemented in some engines, but all implemented tests pass.
+One engine (Aidbox) does not support split(), accounting for all non-passing results. All tests pass in the 5 engines that support the function.

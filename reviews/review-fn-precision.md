@@ -35,14 +35,17 @@ For Date and DateTime values, the function returns the number of digits of preci
 6 tests found for `precision` (PrecisionDecimal, PrecisionYear, PrecisionDateTimeMilliseconds, PrecisionTimeMinutes, PrecisionTimeMilliseconds, PrecisionEmpty).
 
 **Covered:**
-- ✅ Decimal precision returns digits after decimal point (PrecisionDecimal)
-- ✅ Date and DateTime precision at year and millisecond granularity (PrecisionYear, PrecisionDateTimeMilliseconds)
-- ✅ Time precision at minute and millisecond granularity (PrecisionTimeMinutes, PrecisionTimeMilliseconds)
+- ✅ Returns number of digits of precision for Decimal values (PrecisionDecimal)
+- ✅ Returns number of digits of precision for Date values (PrecisionYear)
+- ✅ Returns number of digits of precision for DateTime values (PrecisionDateTimeMilliseconds)
+- ✅ Returns number of digits of precision for Time values (PrecisionTimeMinutes, PrecisionTimeMilliseconds)
 - ✅ Empty input returns empty (PrecisionEmpty)
 
 **Gaps:**
-- ❌ Error on multiple items in input collection
-- ❌ Date with intermediate precision (e.g. @2014-01 for year-month)
+- ❌ Multiple items in input signals error
+- ❌ Date with month precision (e.g., @2014-01)
+- ❌ Date with day precision (e.g., @2014-01-05)
+- ❌ DateTime with varying precision levels (hours only, hours+minutes)
 
 ### Test Results
 
@@ -57,4 +60,4 @@ For Date and DateTime values, the function returns the number of digits of preci
 
 **Summary:** 17/36 (47%) — 6 tests × 6 engines
 
-5 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification. 1 test(s) fail in multiple (but not all) engines, which may indicate differing interpretations of the specification.
+All tests fail in multiple engines with a consistent ~50% pass rate, suggesting this is a newer function with incomplete engine support rather than individual engine bugs.

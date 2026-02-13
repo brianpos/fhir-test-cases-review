@@ -17,14 +17,14 @@ _No examples found in specification._
 5 tests found for `|` (testUnion1, testUnion2, testUnion3, testUnion9, testUnion12).
 
 **Covered:**
-- ✅ Union of distinct items preserves all (testUnion1)
-- ✅ Duplicate elimination using equals semantics (testUnion2, testUnion3)
-- ✅ Union on resource element paths (testUnion9)
-- ✅ Union of mixed types (boolean and string) (testUnion12)
+- ✅ Union produces collection with correct count (testUnion1)
+- ✅ Union eliminates duplicate values (testUnion2, testUnion3)
+- ✅ Union of element fields (testUnion9)
+- ✅ Union of different types (boolean and string) (testUnion12)
 
 **Gaps:**
-- ❌ No test for union with empty collection (e.g. `1 | {}` should yield `1`)
-- ❌ No test confirming no expectation of order in result
+- ❌ Union with empty collection
+- ❌ Union eliminating duplicates uses equals (=) semantics specifically
 
 ### Test Results
 
@@ -38,4 +38,4 @@ _No examples found in specification._
 
 **Summary:** 28/30 (93%) — 5 tests × 6 engines
 
-2 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification.
+2 of 5 tests fail in 1 engine each — field union and mixed-type union, suggesting engine-specific bugs.

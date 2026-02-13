@@ -34,21 +34,21 @@ The less or equal operator (`<=`) returns `true` if the first operand is less th
 32 tests found for `<=` (testMixedPrecisionLessOrEqual1, testMixedPrecisionLessOrEqual2, testLessOrEqual1, testLessOrEqual2, testLessOrEqual3, testLessOrEqual4, testLessOrEqual5, testLessOrEqual6, testLessOrEqual7, testLessOrEqual8, testLessOrEqual9, testLessOrEqual10, testLessOrEqual11, testLessOrEqual12, testLessOrEqual13, testLessOrEqual14, testLessOrEqual15, testLessOrEqual16, testLessOrEqual17, testLessOrEqual18, testLessOrEqual19, testLessOrEqual20, testLessOrEqual21, testLessOrEqual22, testLessOrEqual23, testLessOrEqual24, testLessOrEqual25, testLessOrEqual26, testLessOrEqual27, testLessOrEqualEmpty1, testLessOrEqualEmpty2, testLessOrEqualEmpty3).
 
 **Covered:**
-- ✅ Integer <= comparisons: less-than, equal, greater-than cases (testLessOrEqual1, testLessOrEqual8, testLessOrEqual15)
-- ✅ Decimal <= comparisons (testLessOrEqual2, testLessOrEqual9, testLessOrEqual16)
-- ✅ String <= comparisons with case sensitivity (testLessOrEqual3, testLessOrEqual4, testLessOrEqual10, testLessOrEqual11, testLessOrEqual17, testLessOrEqual18)
-- ✅ Date <= comparisons (testLessOrEqual5, testLessOrEqual12, testLessOrEqual19)
-- ✅ DateTime <= comparisons (testLessOrEqual6, testLessOrEqual13, testLessOrEqual20)
-- ✅ Time <= comparisons (testLessOrEqual7, testLessOrEqual14, testLessOrEqual21)
-- ✅ Quantity <= with unit conversion (testLessOrEqual22)
-- ✅ Mixed precision integer/decimal implicit conversion (testMixedPrecisionLessOrEqual1, testMixedPrecisionLessOrEqual2)
-- ✅ Different precision dates/dateTimes/times return empty (testLessOrEqual23, testLessOrEqual24, testLessOrEqual25)
-- ✅ Trailing zeroes in dateTime/time ignored for equality (testLessOrEqual26, testLessOrEqual27)
-- ✅ Empty collection propagation (testLessOrEqualEmpty1, testLessOrEqualEmpty2, testLessOrEqualEmpty3)
+- ✅ Integer <= comparison for less, equal, and greater cases (testLessOrEqual1, testLessOrEqual8, testLessOrEqual15)
+- ✅ Decimal <= comparison (testLessOrEqual2, testLessOrEqual9, testLessOrEqual16)
+- ✅ String <= comparison is case-sensitive and lexical (testLessOrEqual3, testLessOrEqual4, testLessOrEqual10, testLessOrEqual11, testLessOrEqual17, testLessOrEqual18)
+- ✅ Date <= comparison (testLessOrEqual5, testLessOrEqual12, testLessOrEqual19)
+- ✅ DateTime <= comparison (testLessOrEqual6, testLessOrEqual13, testLessOrEqual20)
+- ✅ Time <= comparison (testLessOrEqual7, testLessOrEqual14, testLessOrEqual21)
+- ✅ Quantity <= comparison with unit conversion (testLessOrEqual22)
+- ✅ Mixed precision implicit conversion between Integer and Decimal (testMixedPrecisionLessOrEqual1, testMixedPrecisionLessOrEqual2)
+- ✅ Different precisions return empty for date, dateTime, and time (testLessOrEqual23, testLessOrEqual24, testLessOrEqual25)
+- ✅ Trailing zeroes after decimal are ignored in dateTime and time (testLessOrEqual26, testLessOrEqual27)
+- ✅ Empty operand handling returns empty (testLessOrEqualEmpty1, testLessOrEqualEmpty2, testLessOrEqualEmpty3)
 
 **Gaps:**
-- ❌ No test for timezone-aware comparison (spec example: `@2018-01-01T16:00:00+11:00 <= @2018-01-01T15:00:00.0+10:00`)
-- ❌ No test for multi-character string comparison (spec example: `'abc' <= 'ABC'`)
+- ❌ DateTime with timezone offset comparison (spec examples include timezone offset cases)
+- ❌ Quantity with same-dimension cross-unit conversion (e.g., 4 'm' <= 4 'cm')
 
 ### Test Results
 
@@ -89,4 +89,4 @@ The less or equal operator (`<=`) returns `true` if the first operand is less th
 
 **Summary:** 189/192 (98%) — 32 tests × 6 engines
 
-3 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification.
+Three tests fail on a single engine each: quantity comparison and trailing zero handling, suggesting engine-specific bugs.

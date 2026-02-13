@@ -15,10 +15,11 @@ _No examples found in specification._
 2 tests found for `today` (testToday1, testToday2).
 
 **Covered:**
-- ✅ Returns current date, verified by comparison with birthDate and string length check (testToday1, testToday2)
+- ✅ Returns the current date, comparable with other dates (testToday1)
+- ✅ Return type is Date with YYYY-MM-DD format (10 characters) (testToday2)
 
 **Gaps:**
-(none — specification only requires returning the current date, which is covered)
+- ❌ Deterministic evaluation: today() returns same value within a single expression
 
 ### Test Results
 
@@ -28,5 +29,3 @@ _No examples found in specification._
 | testToday2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 12/12 (100%) — 2 tests × 6 engines
-
-All tests pass across all engines.

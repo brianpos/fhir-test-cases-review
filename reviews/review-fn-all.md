@@ -22,8 +22,8 @@ generalPractitioner.all($this.resolve() is Practitioner)
 2 tests found for `all` (testAllTrue3, testAllTrue4).
 
 **Covered:**
-- ✅ Returns true when all items satisfy criteria (testAllTrue3)
-- ✅ Returns false when not all items satisfy criteria (testAllTrue4)
+- ✅ Returns true when criteria evaluates to true for every item in collection (testAllTrue3)
+- ✅ Returns false when criteria evaluates to false for any item (testAllTrue4)
 
 **Gaps:**
 - ❌ Empty input collection returns true
@@ -38,6 +38,3 @@ generalPractitioner.all($this.resolve() is Practitioner)
 | testAllTrue4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 12/12 (100%) — 2 tests × 6 engines
-- Overall pass rate: 12/12 (100%)
-- Tests: 2
-- All engines pass all tests — fully consistent.

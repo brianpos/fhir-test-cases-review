@@ -25,16 +25,15 @@ _No examples found in specification._
 6 tests found for `convertsToDecimal` (testIntegerLiteralConvertsToDecimal, testDecimalLiteralConvertsToDecimal, testStringIntegerLiteralConvertsToDecimal, testStringLiteralConvertsToDecimalFalse, testStringDecimalLiteralConvertsToDecimal, testBooleanLiteralConvertsToDecimal).
 
 **Covered:**
-- ✅ Integer input is convertible (testIntegerLiteralConvertsToDecimal)
-- ✅ Decimal input is convertible (testDecimalLiteralConvertsToDecimal)
-- ✅ String integer and decimal representations are convertible (testStringIntegerLiteralConvertsToDecimal, testStringDecimalLiteralConvertsToDecimal)
-- ✅ Non-convertible String returns false (testStringLiteralConvertsToDecimalFalse)
-- ✅ Boolean input is convertible (testBooleanLiteralConvertsToDecimal)
+- ✅ Integer item returns true (testIntegerLiteralConvertsToDecimal)
+- ✅ Decimal item returns true (testDecimalLiteralConvertsToDecimal)
+- ✅ Convertible string returns true (testStringIntegerLiteralConvertsToDecimal, testStringDecimalLiteralConvertsToDecimal)
+- ✅ Non-convertible string returns false (testStringLiteralConvertsToDecimalFalse)
+- ✅ Boolean item returns true (testBooleanLiteralConvertsToDecimal)
 
 **Gaps:**
-- ❌ Empty input collection returns empty
-- ❌ Multiple items in input collection signals an error
-- ❌ Non-convertible types (Date, Quantity) return false
+- ❌ Multiple items in input signal an error not tested
+- ❌ Empty input collection returns empty not tested
 
 ### Test Results
 
@@ -48,6 +47,3 @@ _No examples found in specification._
 | testBooleanLiteralConvertsToDecimal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 36/36 (100%) — 6 tests × 6 engines
-- Overall pass rate: 36/36 (100%)
-- Tests: 6
-- All engines pass all tests — fully consistent.

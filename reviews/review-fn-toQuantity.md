@@ -62,15 +62,25 @@ q.toQuantity('g') // changes the value and units in the quantity according to UC
 9 tests found for `toQuantity` (testIntegerLiteralToQuantity, testDecimalLiteralToQuantity, testStringIntegerLiteralToQuantity, testStringQuantityLiteralToQuantity, testStringQuantityDayLiteralToQuantity, testStringQuantityWeekLiteralToQuantity, testStringQuantityMonthLiteralToQuantity, testStringQuantityYearLiteralToQuantity, testStringDecimalLiteralToQuantity).
 
 **Covered:**
-- ✅ Integer and Decimal convert to Quantity with default unit '1' (testIntegerLiteralToQuantity, testDecimalLiteralToQuantity, testStringIntegerLiteralToQuantity, testStringDecimalLiteralToQuantity)
-- ✅ String with calendar duration units converts to Quantity (testStringQuantityLiteralToQuantity, testStringQuantityDayLiteralToQuantity, testStringQuantityWeekLiteralToQuantity, testStringQuantityMonthLiteralToQuantity, testStringQuantityYearLiteralToQuantity)
+- ✅ Integer converts to Quantity with default unit '1' (testIntegerLiteralToQuantity)
+- ✅ Decimal converts to Quantity with default unit '1' (testDecimalLiteralToQuantity)
+- ✅ String integer converts to Quantity (testStringIntegerLiteralToQuantity)
+- ✅ String with calendar duration unit converts to Quantity (testStringQuantityLiteralToQuantity)
+- ✅ Calendar day unit equivalence with UCUM 'd' (testStringQuantityDayLiteralToQuantity)
+- ✅ String with UCUM unit converts to Quantity — week (testStringQuantityWeekLiteralToQuantity)
+- ✅ String with UCUM unit converts to Quantity — month (testStringQuantityMonthLiteralToQuantity)
+- ✅ String with UCUM unit converts to Quantity — year (testStringQuantityYearLiteralToQuantity)
+- ✅ String decimal converts to Quantity with default unit (testStringDecimalLiteralToQuantity)
 
 **Gaps:**
-- ❌ Quantity identity conversion (Quantity input returning same Quantity) is not tested
-- ❌ Boolean conversion (true → `1.0 '1'`, false → `0.0 '1'`) is not tested
-- ❌ Unit conversion via the optional `unit` parameter is not tested
-- ❌ Empty input collection returning empty is not tested
-- ❌ Multiple items in input collection signaling an error is not tested
+- ❌ Quantity input returns itself
+- ❌ Boolean true converts to 1.0 '1'
+- ❌ Boolean false converts to 0.0 '1'
+- ❌ Non-matching type returns empty
+- ❌ Multiple items in input signals an error
+- ❌ Empty input collection returns empty
+- ❌ Unit conversion with toQuantity(unit) parameter using UCUM rules
+- ❌ Calendar duration conversion factors (year/month/week/day/hour/minute/second)
 
 ### Test Results
 
@@ -88,4 +98,4 @@ q.toQuantity('g') // changes the value and units in the quantity according to UC
 
 **Summary:** 45/54 (83%) — 9 tests × 6 engines
 
-3 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification. 3 test(s) fail in multiple (but not all) engines, which may indicate differing interpretations of the specification.
+Aidbox fails 6 of 9 tests, primarily string-to-Quantity and UCUM/calendar unit conversions. Helios fails month and year UCUM unit conversions. fhirpath.js fails string integer-to-Quantity.

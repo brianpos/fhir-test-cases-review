@@ -31,20 +31,22 @@ If the `unit` argument is provided, it must be the string representation of a UC
 9 tests found for `convertsToQuantity` (testIntegerLiteralConvertsToQuantity, testDecimalLiteralConvertsToQuantity, testStringIntegerLiteralConvertsToQuantity, testStringQuantityLiteralConvertsToQuantity, testStringQuantityWeekConvertsToQuantity, testStringQuantityWeekConvertsToQuantityFalse, testStringDecimalLiteralConvertsToQuantityFalse, testStringDecimalLiteralConvertsToQuantity, testBooleanLiteralConvertsToQuantity).
 
 **Covered:**
-- ✅ Integer input is convertible (testIntegerLiteralConvertsToQuantity)
-- ✅ Decimal input is convertible (testDecimalLiteralConvertsToQuantity)
-- ✅ String integer and decimal are convertible (testStringIntegerLiteralConvertsToQuantity, testStringDecimalLiteralConvertsToQuantity)
+- ✅ Integer item returns true (testIntegerLiteralConvertsToQuantity)
+- ✅ Decimal item returns true (testDecimalLiteralConvertsToQuantity)
+- ✅ String integer convertible to Quantity (testStringIntegerLiteralConvertsToQuantity)
 - ✅ String with calendar duration keyword is convertible (testStringQuantityLiteralConvertsToQuantity)
-- ✅ String with UCUM unit (quoted) is convertible (testStringQuantityWeekConvertsToQuantity)
-- ✅ String with unquoted UCUM unit is not convertible (testStringQuantityWeekConvertsToQuantityFalse)
-- ✅ Non-convertible String returns false (testStringDecimalLiteralConvertsToQuantityFalse)
-- ✅ Boolean input is convertible (testBooleanLiteralConvertsToQuantity)
+- ✅ String with UCUM unit in quotes is convertible (testStringQuantityWeekConvertsToQuantity)
+- ✅ String with unquoted non-keyword unit is not convertible (testStringQuantityWeekConvertsToQuantityFalse)
+- ✅ Non-convertible string returns false (testStringDecimalLiteralConvertsToQuantityFalse)
+- ✅ String decimal convertible to Quantity (testStringDecimalLiteralConvertsToQuantity)
+- ✅ Boolean item returns true (testBooleanLiteralConvertsToQuantity)
 
 **Gaps:**
-- ❌ Quantity input type returns true
-- ❌ Empty input collection returns empty
-- ❌ Multiple items in input collection signals an error
-- ❌ Unit parameter for UCUM conversion not tested
+- ❌ Quantity item returns true not tested with an actual Quantity value
+- ❌ Empty input collection returns empty not tested
+- ❌ Multiple items in input signal an error not tested
+- ❌ Unit argument for UCUM unit conversion checking not tested
+- ❌ Implementations may return empty for unsupported unit conversions not tested
 
 ### Test Results
 
@@ -61,5 +63,5 @@ If the `unit` argument is provided, it must be the string representation of a UC
 | testBooleanLiteralConvertsToQuantity | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 52/54 (96%) — 9 tests × 6 engines
-- Overall pass rate: 52/54 (96%)
-- Tests: 9
+
+2 tests each fail in 1 engine, suggesting engine-specific bugs in string-to-quantity conversion.

@@ -37,18 +37,27 @@ If the input collection contains multiple items, the evaluation of the expressio
 24 tests found for `highBoundary` (HighBoundaryDecimalDefault, HighBoundaryDecimal1, HighBoundaryDecimal2, HighBoundaryDecimal3, HighBoundaryDecimal4, HighBoundaryDecimal5, HighBoundaryDecimal6, HighBoundaryDecimal7, HighBoundaryDecimal8, HighBoundaryDecimal9, HighBoundaryDecimal10, HighBoundaryDecimal11, HighBoundaryDecimal12, HighBoundaryDecimal13, HighBoundaryDecimal14, HighBoundaryDecimal15, HighBoundaryDecimal16, HighBoundaryDecimal, HighBoundaryQuantity, HighBoundaryDateMonth, HighBoundaryDateTimeMillisecond1, HighBoundaryDateTimeMillisecond2, HighBoundaryDateTimeMillisecond3, HighBoundaryTimeMillisecond).
 
 **Covered:**
-- ✅ Decimal with default and explicit precision, including zero precision (HighBoundaryDecimalDefault, HighBoundaryDecimal, HighBoundaryDecimal1, HighBoundaryDecimal2, HighBoundaryDecimal8, HighBoundaryDecimal9, HighBoundaryDecimal10, HighBoundaryDecimal11, HighBoundaryDecimal12, HighBoundaryDecimal13, HighBoundaryDecimal15, HighBoundaryDecimal16)
-- ✅ Negative decimal values with default and explicit precision (HighBoundaryDecimal4, HighBoundaryDecimal5, HighBoundaryDecimal6, HighBoundaryDecimal14)
-- ✅ Precision exceeding max implementation precision returns empty (HighBoundaryDecimal7)
+- ✅ Decimal with default precision returns value to 8 decimal places (HighBoundaryDecimalDefault, HighBoundaryDecimal)
+- ✅ Decimal with explicit precision less than input digits (HighBoundaryDecimal1, HighBoundaryDecimal5, HighBoundaryDecimal11)
+- ✅ Decimal with explicit precision greater than input digits (HighBoundaryDecimal2, HighBoundaryDecimal6, HighBoundaryDecimal10, HighBoundaryDecimal12)
+- ✅ Decimal with zero precision (HighBoundaryDecimal9)
 - ✅ Negative precision returns empty (HighBoundaryDecimal3)
-- ✅ Quantity type support (HighBoundaryQuantity)
-- ✅ Date type with month precision (HighBoundaryDateMonth)
-- ✅ DateTime type with millisecond precision and timezone handling (HighBoundaryDateTimeMillisecond1, HighBoundaryDateTimeMillisecond2, HighBoundaryDateTimeMillisecond3)
-- ✅ Time type with millisecond precision (HighBoundaryTimeMillisecond)
+- ✅ Negative decimal values compute correctly (HighBoundaryDecimal4, HighBoundaryDecimal5, HighBoundaryDecimal6, HighBoundaryDecimal14, HighBoundaryDecimal16)
+- ✅ Precision exceeding maximum returns empty (HighBoundaryDecimal7)
+- ✅ Integer input handled via implicit conversion (HighBoundaryDecimal8)
+- ✅ Multi-digit and small decimal values (HighBoundaryDecimal13, HighBoundaryDecimal15)
+- ✅ Quantity input returns Quantity with same units (HighBoundaryQuantity)
+- ✅ Date with month precision (HighBoundaryDateMonth)
+- ✅ DateTime with millisecond precision (HighBoundaryDateTimeMillisecond1, HighBoundaryDateTimeMillisecond2, HighBoundaryDateTimeMillisecond3)
+- ✅ DateTime with timezone offset preserved (HighBoundaryDateTimeMillisecond2)
+- ✅ Time with millisecond precision (HighBoundaryTimeMillisecond)
 
 **Gaps:**
-- ❌ Empty input collection returning empty
-- ❌ Multiple items in input collection signaling error
+- ❌ Empty input returns empty
+- ❌ Multiple items in input signals error
+- ❌ Date with default precision (4)
+- ❌ DateTime with default precision (17)
+- ❌ Time with default precision (9)
 
 ### Test Results
 
@@ -81,4 +90,4 @@ If the input collection contains multiple items, the evaluation of the expressio
 
 **Summary:** 83/144 (58%) — 24 tests × 6 engines
 
-12 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification. 1 test(s) fail in multiple (but not all) engines, which may indicate differing interpretations of the specification. 11 additional test(s) are not yet implemented in some engines.
+58% pass rate with widespread failures. Several engines have not implemented highBoundary, and among those that have, failures occur on precision edge cases (negative precision, zero precision, boundary of max precision) and DateTime boundary calculations.

@@ -17,14 +17,15 @@ _No examples found in specification._
 6 tests found for `trim` (testTrim1, testTrim2, testTrim3, testTrim4, testTrim5, testTrim6).
 
 **Covered:**
-- ✅ Trimming whitespace from beginning and ending of input string (testTrim3)
-- ✅ String without leading/trailing whitespace is unchanged (testTrim1, testTrim2)
-- ✅ Internal whitespace is preserved, only ends are trimmed (testTrim2)
-- ✅ All-whitespace string trimmed to empty string (testTrim4, testTrim6)
+- ✅ String without leading/trailing whitespace is unchanged (testTrim1)
+- ✅ Internal whitespace is preserved (testTrim2)
+- ✅ Trims whitespace from beginning and ending of string (testTrim3)
+- ✅ All-whitespace string trimmed to zero length (testTrim4)
 - ✅ Empty input returns empty (testTrim5)
+- ✅ All-whitespace string trimmed equals empty string (testTrim6)
 
 **Gaps:**
-- ❌ No tests for non-space whitespace characters (tabs, newlines) as defined in the Whitespace lexical category
+- ❌ Whitespace characters beyond spaces (tabs, newlines, etc.) as defined in Whitespace lexical category not tested
 
 ### Test Results
 
@@ -39,4 +40,4 @@ _No examples found in specification._
 
 **Summary:** 30/36 (83%) — 6 tests × 6 engines
 
-6 test(s) are not implemented in some engines, but all implemented tests pass.
+One engine fails all 6 tests, suggesting it may not implement trim.

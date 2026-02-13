@@ -37,18 +37,25 @@ If the input collection contains multiple items, the evaluation of the expressio
 28 tests found for `lowBoundary` (LowBoundaryDecimalDefault, LowBoundaryDecimal1, LowBoundaryDecimal2, LowBoundaryDecimal3, LowBoundaryDecimal4, LowBoundaryDecimal5, LowBoundaryNegDecimalDefault, LowBoundaryNegDecimal1, LowBoundaryNegDecimal2, LowBoundaryNegDecimal3, LowBoundaryNegDecimal4, LowBoundaryNegDecimal5, LowBoundaryDecimal6, LowBoundaryDecimal7, LowBoundaryDecimal8, LowBoundaryDecimal9, LowBoundaryDecimal10, LowBoundaryDecimal11, LowBoundaryDecimal12, LowBoundaryDecimal13, LowBoundaryDecimal14, LowBoundaryDecimal15, LowBoundaryQuantity, LowBoundaryDateMonth, LowBoundaryDateTimeMillisecond1, LowBoundaryDateTimeMillisecond2, LowBoundaryDateTimeMillisecond3, LowBoundaryTimeMillisecond).
 
 **Covered:**
-- ✅ Decimal with default and explicit precision, including zero precision (LowBoundaryDecimalDefault, LowBoundaryDecimal1, LowBoundaryDecimal2, LowBoundaryDecimal4, LowBoundaryDecimal7, LowBoundaryDecimal8, LowBoundaryDecimal9, LowBoundaryDecimal10, LowBoundaryDecimal11, LowBoundaryDecimal12, LowBoundaryDecimal14, LowBoundaryDecimal15)
-- ✅ Negative decimal values with default and explicit precision (LowBoundaryNegDecimalDefault, LowBoundaryNegDecimal1, LowBoundaryNegDecimal2, LowBoundaryNegDecimal4, LowBoundaryDecimal13)
-- ✅ Precision exceeding max implementation precision returns empty (LowBoundaryDecimal5, LowBoundaryDecimal6, LowBoundaryNegDecimal5)
+- ✅ Least possible value for Decimal with default precision (LowBoundaryDecimalDefault)
+- ✅ Least possible value for Decimal with specified precision (LowBoundaryDecimal1, LowBoundaryDecimal2, LowBoundaryDecimal4, LowBoundaryDecimal10, LowBoundaryDecimal11)
 - ✅ Negative precision returns empty (LowBoundaryDecimal3, LowBoundaryNegDecimal3)
-- ✅ Quantity type support (LowBoundaryQuantity)
-- ✅ Date type with month precision (LowBoundaryDateMonth)
-- ✅ DateTime type with millisecond precision and timezone handling (LowBoundaryDateTimeMillisecond1, LowBoundaryDateTimeMillisecond2, LowBoundaryDateTimeMillisecond3)
-- ✅ Time type with millisecond precision (LowBoundaryTimeMillisecond)
+- ✅ Precision exceeding implementation maximum returns empty (LowBoundaryDecimal5, LowBoundaryDecimal6, LowBoundaryNegDecimal5)
+- ✅ Least possible value for negative Decimal values (LowBoundaryNegDecimalDefault, LowBoundaryNegDecimal1, LowBoundaryNegDecimal2, LowBoundaryNegDecimal4)
+- ✅ Integer input via implicit conversion to Decimal (LowBoundaryDecimal7, LowBoundaryDecimal8, LowBoundaryDecimal9, LowBoundaryDecimal12, LowBoundaryDecimal13)
+- ✅ Small decimal values near zero (LowBoundaryDecimal14, LowBoundaryDecimal15)
+- ✅ Works with Quantity type (LowBoundaryQuantity)
+- ✅ Works with Date type with specified precision (LowBoundaryDateMonth)
+- ✅ Works with DateTime type, including timezone handling (LowBoundaryDateTimeMillisecond1, LowBoundaryDateTimeMillisecond2, LowBoundaryDateTimeMillisecond3)
+- ✅ Works with Time type with specified precision (LowBoundaryTimeMillisecond)
+- ✅ Returns same type as input value (LowBoundaryQuantity, LowBoundaryDateMonth, LowBoundaryTimeMillisecond)
 
 **Gaps:**
-- ❌ Empty input collection returning empty
-- ❌ Multiple items in input collection signaling error
+- ❌ Empty input returns empty
+- ❌ Multiple items in input collection signals error
+- ❌ Date with default precision (no precision argument)
+- ❌ DateTime with default precision (no precision argument)
+- ❌ Time with default precision (no precision argument)
 
 ### Test Results
 
@@ -85,4 +92,4 @@ If the input collection contains multiple items, the evaluation of the expressio
 
 **Summary:** 94/168 (56%) — 28 tests × 6 engines
 
-14 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification. 2 test(s) fail in multiple (but not all) engines, which may indicate differing interpretations of the specification. 12 additional test(s) are not yet implemented in some engines.
+Widespread failures across engines (56% pass rate). Many Decimal precision tests fail in multiple engines, and some Date/DateTime tests also fail, suggesting inconsistent lowBoundary implementations across engines.

@@ -25,15 +25,15 @@ _No examples found in specification._
 5 tests found for `convertsToInteger` (testIntegerLiteralConvertsToInteger, testStringLiteralConvertsToInteger, testStringLiteralConvertsToIntegerFalse, testStringDecimalConvertsToIntegerFalse, testBooleanLiteralConvertsToInteger).
 
 **Covered:**
-- ✅ Integer input is convertible (testIntegerLiteralConvertsToInteger)
-- ✅ Convertible String returns true (testStringLiteralConvertsToInteger)
-- ✅ Non-convertible String returns false (testStringLiteralConvertsToIntegerFalse, testStringDecimalConvertsToIntegerFalse)
-- ✅ Boolean input is convertible (testBooleanLiteralConvertsToInteger)
+- ✅ Integer item returns true (testIntegerLiteralConvertsToInteger)
+- ✅ Convertible string returns true (testStringLiteralConvertsToInteger)
+- ✅ Non-convertible alphabetic string returns false (testStringLiteralConvertsToIntegerFalse)
+- ✅ Decimal string is not convertible to integer (testStringDecimalConvertsToIntegerFalse)
+- ✅ Boolean item returns true (testBooleanLiteralConvertsToInteger)
 
 **Gaps:**
-- ❌ Empty input collection returns empty
-- ❌ Multiple items in input collection signals an error
-- ❌ Non-convertible types (Date, Quantity) return false
+- ❌ Multiple items in input signal an error not tested
+- ❌ Empty input collection returns empty not tested
 
 ### Test Results
 
@@ -46,6 +46,3 @@ _No examples found in specification._
 | testBooleanLiteralConvertsToInteger | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 30/30 (100%) — 5 tests × 6 engines
-- Overall pass rate: 30/30 (100%)
-- Tests: 5
-- All engines pass all tests — fully consistent.

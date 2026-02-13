@@ -44,11 +44,20 @@ Questionnaire.repeatAll('item') // this is a common mistake where the "expressio
 0 tests found for `repeatAll`.
 
 **Covered:**
-(none)
+- (none)
 
 **Gaps:**
-- ❌ All specification requirements lack test coverage
+- ❌ Version of repeat that allows duplicate items in the output collection
+- ❌ Does not check whether items are already present before adding
+- ❌ Evaluated via input queue and iteration queue approach
+- ❌ Better performance than repeat by eliminating equality comparisons
+- ❌ Order of items returned is undefined
+- ❌ Safety mechanisms for infinite loop prevention
+- ❌ Safe expressions reference element accessors returning child elements
 
 ### Test Results
 
-No tests exist for this function yet. Test results will be added once tests are created.
+| Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
+|------|------|------|------|------|------|------|
+
+**Summary:** 0/0 (0%) — 0 tests × 6 engines

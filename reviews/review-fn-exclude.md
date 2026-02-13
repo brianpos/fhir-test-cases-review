@@ -17,13 +17,13 @@ _No examples found in specification._
 4 tests found for `exclude` (testExclude1, testExclude2, testExclude3, testExclude4).
 
 **Covered:**
-- ✅ Excluding items present in other collection (testExclude1)
-- ✅ Excluding when no items match other collection (testExclude2)
-- ✅ Excluding empty collection leaves input unchanged (testExclude3)
-- ✅ Duplicate items preserved after exclude (testExclude4)
+- ✅ Returns items not in the other collection (testExclude1, testExclude2)
+- ✅ Excluding empty collection returns original collection (testExclude3)
+- ✅ Duplicate items are not eliminated (testExclude4)
+- ✅ Order is preserved in result (testExclude1)
 
 **Gaps:**
-- ❌ No test for empty input collection
+- (none)
 
 ### Test Results
 
@@ -35,5 +35,3 @@ _No examples found in specification._
 | testExclude4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 24/24 (100%) — 4 tests × 6 engines
-
-All tests pass across all engines.

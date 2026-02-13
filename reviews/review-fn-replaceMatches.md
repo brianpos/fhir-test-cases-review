@@ -37,14 +37,20 @@ This example locates all the instances of `aa` and surrounds them with double qu
 7 tests found for `replaceMatches` (testReplaceMatches1, testReplaceMatches2, testReplaceMatches3, testReplaceMatches4, testReplaceMatches5, testReplaceMatches6, testReplaceMatches7).
 
 **Covered:**
-- ✅ Basic regex pattern replacement and character class patterns (testReplaceMatches1, testReplaceMatches7)
-- ✅ Empty regex and empty substitution behavior (testReplaceMatches2, testReplaceMatches3)
-- ✅ Empty input, empty regex arg, or empty substitution arg returns empty (testReplaceMatches4, testReplaceMatches5, testReplaceMatches6)
+- ✅ Matches input using regex and replaces each match with substitution (testReplaceMatches1)
+- ✅ Regex character class matching replaces all occurrences (testReplaceMatches7)
+- ✅ Empty substitution removes matched patterns (testReplaceMatches3)
+- ✅ Empty input returns empty (testReplaceMatches4)
+- ✅ Empty regex parameter returns empty (testReplaceMatches5)
+- ✅ Empty substitution parameter returns empty (testReplaceMatches6)
+- ✅ Empty regex pattern behavior (testReplaceMatches2)
 
 **Gaps:**
-- ❌ Capture group references in substitution string (e.g. named groups ${day}-${month}-${year})
-- ❌ Optional flags parameter (`i` for case-insensitive, `m` for multi-line)
-- ❌ Error on multiple items in input collection
+- ❌ Substitution with match group references (named capture groups)
+- ❌ Optional flags parameter: case-insensitive (i)
+- ❌ Optional flags parameter: multiline (m)
+- ❌ Multiple items in input signals error
+- ❌ Date format conversion example with named capture groups
 
 ### Test Results
 
@@ -60,4 +66,4 @@ This example locates all the instances of `aa` and surrounds them with double qu
 
 **Summary:** 37/42 (88%) — 7 tests × 6 engines
 
-2 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification. 1 test(s) fail in multiple (but not all) engines, which may indicate differing interpretations of the specification.
+testReplaceMatches2 (empty regex replacement) fails in 3 engines, suggesting spec ambiguity or inconsistent handling of empty regex patterns. testReplaceMatches5 and testReplaceMatches6 each fail in 1 engine, suggesting engine-specific bugs with empty parameter propagation.

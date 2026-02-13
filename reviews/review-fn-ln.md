@@ -24,12 +24,16 @@ If the input collection contains multiple items, the evaluation of the expressio
 3 tests found for `ln` (testLn1, testLn2, testLnEmpty).
 
 **Covered:**
-- ✅ Natural logarithm of 1 returns 0.0 for both Integer and Decimal input (testLn1, testLn2)
-- ✅ Empty input collection returns empty (testLnEmpty)
+- ✅ Returns natural logarithm of input (testLn1, testLn2)
+- ✅ Accepts Integer input via implicit conversion to Decimal (testLn1)
+- ✅ Accepts Decimal input (testLn2)
+- ✅ Empty collection returns empty (testLnEmpty)
 
 **Gaps:**
-- ❌ Multiple items in input collection signaling error
-- ❌ Non-trivial logarithm values (e.g., values other than 1)
+- ❌ Multiple items in input collection signals error
+- ❌ Logarithm of values other than 1 (e.g., e, e^2) to verify correctness
+- ❌ Behavior with negative input or zero (mathematically undefined, but not specified in spec)
+- ❌ Long type input via implicit conversion
 
 ### Test Results
 
@@ -40,5 +44,3 @@ If the input collection contains multiple items, the evaluation of the expressio
 | testLnEmpty | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 18/18 (100%) — 3 tests × 6 engines
-
-All tests pass across all engines.

@@ -28,18 +28,18 @@ _No examples found in specification._
 10 tests found for `convertsToBoolean` (testIntegerLiteralConvertsToBoolean, testIntegerLiteralConvertsToBooleanFalse, testNegativeIntegerLiteralConvertsToBooleanFalse, testIntegerLiteralFalseConvertsToBoolean, testDecimalLiteralConvertsToBoolean, testStringTrueLiteralConvertsToBoolean, testStringFalseLiteralConvertsToBoolean, testStringFalseLiteralAlsoConvertsToBoolean, testTrueLiteralConvertsToBoolean, testFalseLiteralConvertsToBoolean).
 
 **Covered:**
-- ✅ Boolean literal input returns true (testTrueLiteralConvertsToBoolean, testFalseLiteralConvertsToBoolean)
-- ✅ Integer 0 and 1 are convertible (testIntegerLiteralConvertsToBoolean, testIntegerLiteralFalseConvertsToBoolean)
-- ✅ Non-convertible Integer returns false (testIntegerLiteralConvertsToBooleanFalse, testNegativeIntegerLiteralConvertsToBooleanFalse)
-- ✅ Decimal 1.0 is convertible (testDecimalLiteralConvertsToBoolean)
-- ✅ String representations are convertible, case-insensitive (testStringTrueLiteralConvertsToBoolean, testStringFalseLiteralConvertsToBoolean, testStringFalseLiteralAlsoConvertsToBoolean)
+- ✅ Boolean input returns true (testTrueLiteralConvertsToBoolean, testFalseLiteralConvertsToBoolean)
+- ✅ Integer equal to Boolean representation returns true (testIntegerLiteralConvertsToBoolean, testIntegerLiteralFalseConvertsToBoolean)
+- ✅ Integer not equal to Boolean representation returns false (testIntegerLiteralConvertsToBooleanFalse, testNegativeIntegerLiteralConvertsToBooleanFalse)
+- ✅ Decimal equal to Boolean representation returns true (testDecimalLiteralConvertsToBoolean)
+- ✅ String equal to Boolean representation returns true (testStringTrueLiteralConvertsToBoolean, testStringFalseLiteralConvertsToBoolean)
+- ✅ Case-insensitive string matching for Boolean values (testStringFalseLiteralAlsoConvertsToBoolean)
 
 **Gaps:**
-- ❌ Empty input collection returns empty
-- ❌ Multiple items in input collection signals an error
-- ❌ Decimal 0.0 convertibility not tested
-- ❌ Non-convertible String returns false (e.g. 'hello'.convertsToBoolean())
-- ❌ Non-convertible types (Date, Quantity) return false
+- ❌ Empty input collection returns empty not tested
+- ❌ Multiple items in input collection signals error not tested
+- ❌ Decimal value that does not convert to Boolean (e.g., 2.0) returns false not tested
+- ❌ String that does not convert to Boolean (e.g., 'abc') returns false not tested
 
 ### Test Results
 
@@ -57,5 +57,5 @@ _No examples found in specification._
 | testFalseLiteralConvertsToBoolean | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 57/60 (95%) — 10 tests × 6 engines
-- Overall pass rate: 57/60 (95%)
-- Tests: 10
+
+Three tests each fail in 1 engine, suggesting engine-specific bugs with integer and string Boolean conversion edge cases.

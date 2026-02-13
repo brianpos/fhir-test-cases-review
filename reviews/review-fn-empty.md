@@ -15,10 +15,10 @@ _No examples found in specification._
 1 tests found for `empty` (testEmpty).
 
 **Covered:**
-- ✅ Empty returns true for element with no items (testEmpty)
+- ✅ Returns true when input collection is empty (testEmpty)
 
 **Gaps:**
-- ❌ No test for non-empty collection returning false
+- ❌ Returns false when input collection is not empty
 
 ### Test Results
 
@@ -27,5 +27,3 @@ _No examples found in specification._
 | testEmpty | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 6/6 (100%) — 1 tests × 6 engines
-
-All tests pass across all engines.

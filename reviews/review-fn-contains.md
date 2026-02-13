@@ -28,19 +28,20 @@ If the input collection contains multiple items, the evaluation of the expressio
 21 tests found for `contains` (testContainsString1, testContainsString2, testContainsString3, testContainsString4, testContainsString5, testContainsString6, testContainsString7, testContainsString8, testContainsString9, testContainsString10, testContainsString10a, testContainsNonString1, testContainsCollection1, testContainsCollection2, testContainsCollection3, testContainsCollection4, testContainsCollectionEmpty1, testContainsCollectionEmpty2, testContainsCollectionEmpty3, testContainsCollectionEmpty4, testContainsCollectionEmptyDateTime).
 
 **Covered:**
-- ✅ Substring found in string (testContainsString2, testContainsString3, testContainsString5)
-- ✅ Substring not found in string (testContainsString1, testContainsString4, testContainsString6)
+- ✅ Returns true when substring is found in input string (testContainsString2, testContainsString3, testContainsString5)
+- ✅ Returns false when substring is not found in input string (testContainsString1, testContainsString4, testContainsString6)
 - ✅ Empty substring returns true (testContainsString7)
 - ✅ Empty input collection returns empty (testContainsString8, testContainsString9)
-- ✅ Non-string input type signals semantic error (testContainsNonString1)
-- ✅ String contains used in select context (testContainsString10)
-- ✅ Invalid usage signals semantic error (testContainsString10a)
-- ✅ Contains operator with integers and strings (testContainsCollection1, testContainsCollection2, testContainsCollection3, testContainsCollection4)
-- ✅ Contains operator with empty collection (testContainsCollectionEmpty1, testContainsCollectionEmpty2, testContainsCollectionEmpty3, testContainsCollectionEmpty4, testContainsCollectionEmptyDateTime)
+- ✅ Non-string input type signals error (testContainsNonString1)
+- ✅ Static type checking for contains argument (testContainsString10a)
+- ✅ Contains function used within select scope (testContainsString10)
+- ✅ Contains operator tests membership in collection with integers (testContainsCollection1, testContainsCollection2)
+- ✅ Contains operator tests membership in collection with strings (testContainsCollection3, testContainsCollection4)
+- ✅ Contains operator with empty collection returns false (testContainsCollectionEmpty1, testContainsCollectionEmpty2, testContainsCollectionEmpty3, testContainsCollectionEmptyDateTime)
+- ✅ Contains operator with empty right operand returns empty (testContainsCollectionEmpty4)
 
 **Gaps:**
-- ❌ Multiple items in input collection signals an error (string function)
-- ❌ Case sensitivity behavior not tested
+- (none)
 
 ### Test Results
 
@@ -69,5 +70,5 @@ If the input collection contains multiple items, the evaluation of the expressio
 | testContainsCollectionEmptyDateTime | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 124/126 (98%) — 21 tests × 6 engines
-- Overall pass rate: 124/126 (98%)
-- Tests: 21
+
+Two tests each fail in 1 engine, suggesting engine-specific bugs with semantic error handling and empty collection containership.

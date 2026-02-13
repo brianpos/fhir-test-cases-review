@@ -24,15 +24,18 @@ If the input collection contains multiple items, the evaluation of the expressio
 14 tests found for `startsWith` (testStartsWith1, testStartsWith2, testStartsWith3, testStartsWith4, testStartsWith5, testStartsWith6, testStartsWith7, testStartsWith8, testStartsWith9, testStartsWith10, testStartsWith11, testStartsWith12, testStartsWith12a, testStartsWithNonString1).
 
 **Covered:**
-- ✅ Prefix matching returning true and false (testStartsWith1, testStartsWith2, testStartsWith3, testStartsWith4)
-- ✅ Exact full-string match and prefix longer than input (testStartsWith5, testStartsWith6)
+- ✅ Returns true when input starts with given prefix (testStartsWith2, testStartsWith3, testStartsWith5)
+- ✅ Returns false when input does not start with prefix (testStartsWith1, testStartsWith4, testStartsWith6)
 - ✅ Empty prefix returns true (testStartsWith7, testStartsWith10)
 - ✅ Empty input collection returns empty (testStartsWith8, testStartsWith9, testStartsWith11)
-- ✅ Dynamic prefix via nested expression in select context (testStartsWith12)
-- ✅ Semantic error on non-string input type and on non-literal argument outside select (testStartsWith12a, testStartsWithNonString1)
+- ✅ Prefix longer than input string returns false (testStartsWith6)
+- ✅ Exact match returns true (testStartsWith5)
+- ✅ Scoped function usage with select (testStartsWith12)
+- ✅ Semantic error when using non-scoped context ambiguously (testStartsWith12a)
+- ✅ Non-string input type signals semantic error (testStartsWithNonString1)
 
 **Gaps:**
-- ❌ Error on multiple items in input collection
+- ❌ Multiple items in input signals error
 
 ### Test Results
 
@@ -55,4 +58,4 @@ If the input collection contains multiple items, the evaluation of the expressio
 
 **Summary:** 83/84 (99%) — 14 tests × 6 engines
 
-1 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification.
+testStartsWith12a fails in 1 engine (Aidbox), suggesting an engine-specific bug with semantic checking for non-scoped parameter resolution.

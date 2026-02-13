@@ -25,11 +25,13 @@ contained.where(criteria).trace('unmatched', id).empty()
 2 tests found for `trace` (testTrace1, testTrace2).
 
 **Covered:**
-- ✅ Returns input collection unchanged when called without projection (testTrace1)
-- ✅ Returns input collection unchanged when called with projection argument (testTrace2)
+- ✅ Returns input collection unchanged without projection (testTrace1)
+- ✅ With projection argument, returns input collection unchanged (testTrace2)
+- ✅ Name parameter accepted as string argument (testTrace1, testTrace2)
 
 **Gaps:**
-- ❌ Behavior with empty input collection is not tested
+- ❌ $this and $index parameter usage in projection expression not tested
+- ❌ Diagnostic log output behavior is inherently untestable via expressions
 
 ### Test Results
 
@@ -39,5 +41,3 @@ contained.where(criteria).trace('unmatched', id).empty()
 | testTrace2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 12/12 (100%) — 2 tests × 6 engines
-
-All tests pass across all engines.

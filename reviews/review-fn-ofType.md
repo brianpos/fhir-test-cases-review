@@ -20,14 +20,18 @@ Bundle.entry.resource.ofType(Patient)
 10 tests found for `ofType` (testType20, testType21, testType23, testFHIRPathAsFunction16, testFHIRPathAsFunction17, testFHIRPathAsFunction18, testFHIRPathAsFunction19, testFHIRPathAsFunction20, testFHIRPathAsFunction22, testFHIRPathAsFunction24).
 
 **Covered:**
-- ✅ Filtering by same type with unqualified, qualified, and backtick-quoted type names (testType20, testType21, testType23)
-- ✅ Primitive type discrimination: code vs string vs id (testFHIRPathAsFunction16, testFHIRPathAsFunction17, testFHIRPathAsFunction18, testFHIRPathAsFunction19, testFHIRPathAsFunction20)
-- ✅ Complex type filtering with HumanName (testFHIRPathAsFunction22)
-- ✅ Error on unknown/invalid type name (testFHIRPathAsFunction24)
+- ✅ Returns items matching the given type (testType20, testFHIRPathAsFunction17, testFHIRPathAsFunction19)
+- ✅ Returns empty when items do not match the given type (testFHIRPathAsFunction18, testFHIRPathAsFunction20)
+- ✅ Type argument resolves to a type name in a model (testType20, testType21, testType23)
+- ✅ Qualified type names with namespace prefix (testType21, testType23)
+- ✅ Subtype filtering behavior — code is not a subclass of string (testFHIRPathAsFunction16, testFHIRPathAsFunction17)
+- ✅ Complex type matching with HumanName (testFHIRPathAsFunction22)
+- ✅ Error signaled for invalid/unknown type name (testFHIRPathAsFunction24)
+- ✅ Backtick-quoted type identifiers in qualified names (testType23)
 
 **Gaps:**
 - ❌ Empty input collection returns empty
-- ❌ Subclass/subtype filtering (returning items that are a subclass of the given type)
+- ❌ Compile-time typing special-case handling for type specifier vs identifier expression
 
 ### Test Results
 
@@ -46,4 +50,4 @@ Bundle.entry.resource.ofType(Patient)
 
 **Summary:** 51/60 (85%) — 10 tests × 6 engines
 
-4 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification. 1 test(s) fail in multiple (but not all) engines, which may indicate differing interpretations of the specification. 2 additional test(s) are not yet implemented in some engines.
+Multiple tests fail in 1-2 engines each, suggesting engine-specific bugs in type resolution. testFHIRPathAsFunction16 (code vs string subtyping) fails in 2 engines, reflecting a contested area of type hierarchy interpretation.

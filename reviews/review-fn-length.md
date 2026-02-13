@@ -19,12 +19,13 @@ _No examples found in specification._
 6 tests found for `length` (testLength1, testLength2, testLength3, testLength4, testLength5, testLength6).
 
 **Covered:**
-- ✅ Returns correct character count for various string lengths (testLength1, testLength2, testLength3, testLength4)
+- ✅ Returns number of characters in input string (testLength1, testLength2, testLength3, testLength4)
 - ✅ Empty string returns 0 (testLength5)
-- ✅ Empty input collection returns empty (testLength6)
+- ✅ Empty collection returns empty (testLength6)
 
 **Gaps:**
-- ❌ Multiple items in input collection signaling error
+- ❌ Counts Unicode scalar values, not grapheme clusters (no test with combining characters)
+- ❌ Multiple items in input collection signals error
 
 ### Test Results
 
@@ -38,5 +39,3 @@ _No examples found in specification._
 | testLength6 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 36/36 (100%) — 6 tests × 6 engines
-
-All tests pass across all engines.

@@ -29,14 +29,18 @@ If the input collection contains multiple items, the evaluation of the expressio
 5 tests found for `log` (testLog1, testLog2, testLogEmpty, testLogEmpty2, testLogEmpty3).
 
 **Covered:**
-- ✅ Logarithm with Integer and Decimal base (testLog1, testLog2)
-- ✅ Empty input collection returns empty (testLogEmpty, testLogEmpty2)
-- ✅ Empty base returns empty (testLogEmpty3, testLogEmpty2)
+- ✅ Returns logarithm with given base (testLog1, testLog2)
+- ✅ Accepts Integer input via implicit conversion to Decimal (testLog1)
+- ✅ Accepts Decimal input (testLog2)
+- ✅ Empty input returns empty (testLogEmpty)
+- ✅ Empty base returns empty (testLogEmpty3)
+- ✅ Both input and base empty returns empty (testLogEmpty2)
 
 **Gaps:**
-- ❌ Input of 0 or negative signaling error
-- ❌ Base of 0 or negative signaling error
-- ❌ Multiple items in input collection signaling error
+- ❌ Input is 0 or negative signals error
+- ❌ Base is 0 or negative signals error
+- ❌ Multiple items in input collection signals error
+- ❌ Long type input via implicit conversion
 
 ### Test Results
 
@@ -50,4 +54,4 @@ If the input collection contains multiple items, the evaluation of the expressio
 
 **Summary:** 29/30 (97%) — 5 tests × 6 engines
 
-1 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification.
+testLogEmpty3 fails in 1 engine (5/6), suggesting an engine-specific bug with empty base handling.

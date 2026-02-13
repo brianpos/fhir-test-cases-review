@@ -31,14 +31,14 @@ If the input collection contains multiple items, the evaluation of the expressio
 4 tests found for `floor` (testFloor1, testFloor2, testFloor3, testFloorEmpty).
 
 **Covered:**
-- ✅ Floor of integer returns same value (testFloor1)
-- ✅ Floor of positive decimal rounds down (testFloor2)
+- ✅ Floor of integer value returns same value (testFloor1)
+- ✅ Floor of positive decimal returns next lower integer (testFloor2)
 - ✅ Floor of negative decimal rounds toward negative infinity (testFloor3)
 - ✅ Empty input returns empty (testFloorEmpty)
 
 **Gaps:**
-- ❌ No test for Quantity input returning Quantity with same units
-- ❌ No test for error when input collection contains multiple items
+- ❌ Quantity input returns Quantity with floored value and same units
+- ❌ Multiple items in input signals error
 
 ### Test Results
 
@@ -51,4 +51,4 @@ If the input collection contains multiple items, the evaluation of the expressio
 
 **Summary:** 22/24 (92%) — 4 tests × 6 engines
 
-2 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification.
+testFloor2 and testFloor3 each fail in 1 engine, likely the same engine, suggesting an engine-specific issue with decimal floor computation.

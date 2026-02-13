@@ -21,11 +21,17 @@ If the input collection contains multiple items, the evaluation of the expressio
 0 tests found for `secondOf`.
 
 **Covered:**
-(none)
+- (none)
 
 **Gaps:**
-- ❌ All specification requirements lack test coverage
+- ❌ Returns second component from DateTime or Time input
+- ❌ Empty input returns empty
+- ❌ Second not present in value returns empty
+- ❌ Multiple items in input signals error
 
 ### Test Results
 
-No tests exist for this function yet. Test results will be added once tests are created.
+| Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
+|------|------|------|------|------|------|------|
+
+**Summary:** 0/0 (0%) — 0 tests × 6 engines

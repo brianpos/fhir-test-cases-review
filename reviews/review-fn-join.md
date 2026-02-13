@@ -24,11 +24,12 @@ The following example illustrates the behavior of the `.join` operator:
 1 tests found for `join` (testJoin).
 
 **Covered:**
-- ✅ Joins strings with a separator (testJoin)
+- ✅ Joins collection of strings with given separator (testJoin)
 
 **Gaps:**
-- ❌ Empty input collection returning empty
-- ❌ Join with no separator (direct concatenation)
+- ❌ Join without separator directly concatenates strings
+- ❌ Empty input returns empty
+- ❌ Single item collection
 
 ### Test Results
 
@@ -37,5 +38,3 @@ The following example illustrates the behavior of the `.join` operator:
 | testJoin | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 6/6 (100%) — 1 tests × 6 engines
-
-All tests pass across all engines.

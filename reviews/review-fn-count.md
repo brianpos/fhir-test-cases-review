@@ -15,11 +15,11 @@ _No examples found in specification._
 5 tests found for `count` (testCount1, testCount2, testCount3, testCount4, testWhere1).
 
 **Covered:**
-- ✅ Count of multi-item collection returns correct integer (testCount1, testCount2, testWhere1)
-- ✅ Count of single-item collection returns 1 (testCount3, testCount4)
+- ✅ Returns integer count of items in a multi-item collection (testCount1, testCount2, testWhere1)
+- ✅ Returns count of 1 for a single item (testCount3, testCount4)
 
 **Gaps:**
-- ❌ No test for empty collection returning 0
+- ❌ Returns 0 when the input collection is empty
 
 ### Test Results
 
@@ -32,5 +32,3 @@ _No examples found in specification._
 | testWhere1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 30/30 (100%) — 5 tests × 6 engines
-
-All tests pass across all engines.

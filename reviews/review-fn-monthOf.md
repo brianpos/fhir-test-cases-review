@@ -28,11 +28,16 @@ If the component isn't present in the value, then the result is empty
 0 tests found for `monthOf`.
 
 **Covered:**
-(none)
+- (none)
 
 **Gaps:**
-- ❌ All specification requirements lack test coverage
+- ❌ Single Date or DateTime input returns the month component
+- ❌ Empty input or month not present in value returns empty
+- ❌ Multiple items in input signals error
 
 ### Test Results
 
-No tests exist for this function yet. Test results will be added once tests are created.
+| Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
+|------|------|------|------|------|------|------|
+
+**Summary:** 0/0 (0%) — 0 tests × 6 engines

@@ -35,18 +35,22 @@ If the input collection contains multiple items, the evaluation of the expressio
 12 tests found for `substring` (testSubstring1, testSubstring2, testSubstring3, testSubstring4, testSubstring5, testSubstring7, testSubstring8, testSubstring9, testSubstring10, testSubstring10a, testSubstring11, testSubstring12).
 
 **Covered:**
-- ✅ Basic substring without length parameter (testSubstring1)
-- ✅ Substring with explicit length, including length exceeding remaining characters (testSubstring2, testSubstring3, testSubstring7, testSubstring8)
-- ✅ Start position beyond string length returns empty (testSubstring4, testSubstring5)
-- ✅ Empty input collection returns empty (testSubstring9)
-- ✅ Empty start or length parameter returns empty (testSubstring11, testSubstring12)
-- ✅ Semantic error when length() used outside select() context (testSubstring10a)
-- ✅ Substring used within select() scoped context (testSubstring10)
+- ✅ Returns part of string starting at zero-based position (testSubstring1, testSubstring7)
+- ✅ Length parameter limits number of characters returned (testSubstring2, testSubstring7, testSubstring8)
+- ✅ Fewer remaining characters than length returns just remaining characters (testSubstring3)
+- ✅ Start position outside string length returns empty (testSubstring4)
+- ✅ Negative start position returns empty (testSubstring5)
+- ✅ Empty input returns empty (testSubstring9, testSubstring11)
+- ✅ Empty start parameter returns empty (testSubstring11, testSubstring12)
+- ✅ Dynamic length calculation using indexOf (testSubstring8)
+- ✅ Scoped usage with select for relative parameter resolution (testSubstring10)
+- ✅ Semantic error for non-scoped ambiguous parameter (testSubstring10a)
 
 **Gaps:**
-- ❌ Negative or zero `length` returning empty string (`''`) is not tested
-- ❌ Multiple items in input collection signaling an error is not tested
-- ❌ Unicode scalar value measurement (multi-byte characters) is not tested
+- ❌ Unicode scalar value measurement (no test with multi-byte characters)
+- ❌ Empty length behaves as if length had not been provided
+- ❌ Negative or zero length returns empty string
+- ❌ Multiple items in input signals error
 
 ### Test Results
 
@@ -67,4 +71,4 @@ If the input collection contains multiple items, the evaluation of the expressio
 
 **Summary:** 69/72 (96%) — 12 tests × 6 engines
 
-3 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification.
+testSubstring5, testSubstring10a, and testSubstring12 each fail in 1 engine, suggesting engine-specific bugs with negative start handling, semantic checking, and empty start parameter handling respectively.

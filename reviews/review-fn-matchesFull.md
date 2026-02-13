@@ -32,15 +32,20 @@ The optional `flags` parameter can be set to:
 5 tests found for `matchesFull` (testMatchesFullWithinUrl1, testMatchesFullWithinUrl3, testMatchesFullWithinUrl4, testMatchesFullWithinUrl1a, testMatchesFullWithinUrl2).
 
 **Covered:**
-- ✅ Full match required: partial matches return false (testMatchesFullWithinUrl1, testMatchesFullWithinUrl3, testMatchesFullWithinUrl2)
-- ✅ Explicit `^`/`$` anchors with partial match still returns false (testMatchesFullWithinUrl4)
-- ✅ Full match with `.*` wildcard returns true (testMatchesFullWithinUrl1a)
+- ✅ Returns true only when value completely matches regex (testMatchesFullWithinUrl1a)
+- ✅ Returns false when regex only partially matches the value (testMatchesFullWithinUrl3)
+- ✅ Case-sensitive matching by default (testMatchesFullWithinUrl1)
+- ✅ Explicit ^/$ anchors behave correctly with full matching (testMatchesFullWithinUrl4)
+- ✅ Returns false when regex does not match at all (testMatchesFullWithinUrl2)
 
 **Gaps:**
-- ❌ Empty input or empty regex returning empty
-- ❌ Multiple items in input collection signaling error
-- ❌ Optional `flags` parameter (`i` for case-insensitive, `m` for multi-line)
-- ❌ Single-line mode behavior with newlines
+- ❌ Empty input or regex returns empty
+- ❌ Multiple items in input collection signals error
+- ❌ Optional 'i' flag for case-insensitive search
+- ❌ Optional 'm' flag for multi-line mode
+- ❌ Single line mode behavior (dot matches newlines)
+- ❌ Unicode character handling
+- ❌ Successful full match with a simple exact-string pattern (e.g., 'FHIR'.matchesFull('FHIR') = true)
 
 ### Test Results
 
@@ -54,4 +59,4 @@ The optional `flags` parameter can be set to:
 
 **Summary:** 15/30 (50%) — 5 tests × 6 engines
 
-5 test(s) are not implemented in some engines, but all implemented tests pass.
+All tests show 3/6 pass rate with 0 explicit failures, indicating approximately half of engines have not yet implemented matchesFull (STU function). Engines that do implement it pass consistently.

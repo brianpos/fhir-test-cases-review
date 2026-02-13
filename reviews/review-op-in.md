@@ -19,14 +19,16 @@ The following example returns `true` if `'Joe'` is in the list of given names fo
 8 tests found for `in` (testIn1, testIn2, testIn3, testIn4, testIn5, testInEmptyCollection, testInEmptyValue, testInEmptyBoth).
 
 **Covered:**
-- ✅ Single item found in collection (testIn1, testIn3)
-- ✅ Single item not found in collection (testIn2, testIn4)
-- ✅ Multi-item left operand throws error (testIn5)
-- ✅ Empty left operand returns empty (testInEmptyValue, testInEmptyBoth)
-- ✅ Empty right operand returns false (testInEmptyCollection)
+- ✅ Single item found in collection returns true (testIn1, testIn3)
+- ✅ Single item not found in collection returns false (testIn2, testIn4)
+- ✅ Multiple items on left side throws exception (testIn5)
+- ✅ Right side empty returns false (testInEmptyCollection)
+- ✅ Left side empty returns empty (testInEmptyValue)
+- ✅ Both sides empty returns empty (testInEmptyBoth)
 
 **Gaps:**
-- ❌ No test verifying equality semantics (not equivalence) for membership, e.g. case-sensitive string matching
+- ❌ Equality semantics with implicit type conversion (e.g., Integer in Decimal collection)
+- ❌ Quantity membership with unit conversion
 
 ### Test Results
 
@@ -43,4 +45,4 @@ The following example returns `true` if `'Joe'` is in the list of given names fo
 
 **Summary:** 46/48 (96%) — 8 tests × 6 engines
 
-2 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification.
+Two tests fail on a single engine (testInEmptyValue, testInEmptyBoth), suggesting an engine-specific bug in empty collection handling.

@@ -51,16 +51,22 @@ Patient.maritalStatus.type()
 10 tests found for `type` (testType1, testType1a, testType2, testType2a, testType3, testType4, testType9, testType10, testType15, testType16).
 
 **Covered:**
-- ✅ System primitive types return namespace 'System' (testType1, testType2, testType3)
-- ✅ Correct type name for Integer, String, Boolean (testType1a, testType2a, testType4)
-- ✅ FHIR element types return namespace 'FHIR' and correct name (testType9, testType10)
-- ✅ FHIR resource type returns namespace 'FHIR' and resource name (testType15, testType16)
+- ✅ SimpleTypeInfo namespace is System for Integer (testType1)
+- ✅ SimpleTypeInfo name is Integer for integer literal (testType1a)
+- ✅ SimpleTypeInfo namespace is System for String (testType2)
+- ✅ SimpleTypeInfo name is String for string literal (testType2a)
+- ✅ SimpleTypeInfo namespace is System for Boolean (testType3)
+- ✅ SimpleTypeInfo name is Boolean for boolean literal (testType4)
+- ✅ ClassInfo namespace is FHIR for FHIR element (testType9)
+- ✅ ClassInfo name matches FHIR element type (testType10)
+- ✅ ClassInfo namespace is FHIR for FHIR resource (testType15)
+- ✅ ClassInfo name matches FHIR resource type (testType16)
 
 **Gaps:**
-- ❌ No test for empty input returning empty
-- ❌ No test for complex types returning ClassInfo (e.g. CodeableConcept)
-- ❌ No test for multi-item collections (e.g. ('John' | 'Mary').type())
-- ❌ No test for baseType property of TypeInfo
+- ❌ baseType property for SimpleTypeInfo (expected System.Any) not tested
+- ❌ baseType property for ClassInfo (expected FHIR.Element) not tested
+- ❌ Empty input returns empty
+- ❌ Type information unavailable returns empty
 
 ### Test Results
 
@@ -79,4 +85,4 @@ Patient.maritalStatus.type()
 
 **Summary:** 41/60 (68%) — 10 tests × 6 engines
 
-9 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification. 1 additional test(s) are not yet implemented in some engines.
+One engine fails 9 of 10 tests and another engine does not report results for any, indicating incomplete type() support in multiple engines.

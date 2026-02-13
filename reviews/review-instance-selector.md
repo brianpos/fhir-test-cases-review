@@ -78,11 +78,24 @@ code { value: 'final' }
 0 tests found for `Instance Selector`.
 
 **Covered:**
-(none)
+- (none)
 
 **Gaps:**
-- ❌ All specification requirements lack test coverage
+- ❌ Creates new object of specified type
+- ❌ Child elements set from value expressions
+- ❌ Empty value expression omits element from object
+- ❌ Empty object creation with {:} syntax
+- ❌ Multiple items in input signals error
+- ❌ Element selectors returning multiples for supported elements
+- ❌ Empty input returns empty
+- ❌ Namespace-prefixed type names (e.g. FHIR.Identifier)
+- ❌ Nested instance selectors
+- ❌ Primitive type creation with special value element name
+- ❌ Usage within select for data transformation
 
 ### Test Results
 
-No tests exist for this function yet. Test results will be added once tests are created.
+| Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
+|------|------|------|------|------|------|------|
+
+**Summary:** 0/0 (0%) — 0 tests × 6 engines

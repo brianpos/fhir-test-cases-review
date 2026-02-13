@@ -19,11 +19,11 @@ Patient.name.single()
 2 tests found for `single` (testSingle1, testSingle2).
 
 **Covered:**
-- ✅ Single item in collection returns successfully (testSingle1)
-- ✅ Multiple items signals error (testSingle2)
+- ✅ Returns single item when input has exactly one item (testSingle1)
+- ✅ Multiple items signals error to evaluation environment (testSingle2)
 
 **Gaps:**
-- ❌ Empty input collection returns empty
+- ❌ Empty input returns empty
 
 ### Test Results
 
@@ -33,5 +33,3 @@ Patient.name.single()
 | testSingle2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 12/12 (100%) — 2 tests × 6 engines
-
-All tests pass across all engines.

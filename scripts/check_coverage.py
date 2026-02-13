@@ -37,6 +37,7 @@ Reads:
 
 import json
 import os
+import re
 import sys
 
 # Ensure Unicode output on Windows
@@ -65,12 +66,46 @@ def _resolve_file_arg():
     return filepath, feature_name
 
 
+def _parse_existing_analysis(content):
+    """Extract existing covered/gaps/summary_text from a review file."""
+    result = {"covered": [], "gaps": [], "summary_text": ""}
+
+    cov_idx = content.find("### Coverage")
+    if cov_idx < 0:
+        return result
+
+    # Limit to between ### Coverage and ### Test Results
+    tr_idx = content.find("### Test Results", cov_idx)
+    section = content[cov_idx:tr_idx] if tr_idx >= 0 else content[cov_idx:]
+
+    # Extract Covered items (lines starting with "- ✅")
+    for m in re.finditer(r'^- ✅\s*(.+)$', section, re.MULTILINE):
+        result["covered"].append(m.group(1))
+
+    # Extract Gaps items (lines starting with "- ❌")
+    for m in re.finditer(r'^- ❌\s*(.+)$', section, re.MULTILINE):
+        result["gaps"].append(m.group(1))
+
+    # Extract summary_text: text after **Summary:** line (skip the stats line itself)
+    sm = re.search(r'^\*\*Summary:\*\*.*$', content, re.MULTILINE)
+    if sm:
+        after = content[sm.end():].lstrip('\n')
+        # Take text up to next section or end, stop at ### or end of file
+        end = re.search(r'^###|\Z', after, re.MULTILINE)
+        summary_text = after[:end.start()].strip() if end else after.strip()
+        result["summary_text"] = summary_text
+
+    return result
+
+
+def _extract_spec_header(content):
+    """Extract the 'Header in specification:' value from review file content."""
+    m = re.search(r'^Header in specification:\s*(.+)$', content, re.MULTILINE)
+    return m.group(1).strip() if m else None
+
+
 def _build_json_entry(filename, feature, tests, content):
     """Build a JSON-serializable dict for a single review file."""
-    # Get content before ### Coverage (spec + examples only)
-    idx = content.find("### Coverage")
-    pre_coverage = content[:idx].rstrip() if idx >= 0 else content.rstrip()
-
     # Strip redundant 'testing' key from test dicts
     clean_tests = []
     for t in tests:
@@ -78,12 +113,19 @@ def _build_json_entry(filename, feature, tests, content):
         ct.pop("testing", None)
         clean_tests.append(ct)
 
-    return {
+    entry = {
         "filename": filename,
         "feature": feature,
-        "pre_coverage": pre_coverage,
+        "spec_header": _extract_spec_header(content),
         "tests": clean_tests,
     }
+
+    # Include existing analysis so LLM can review/update rather than regenerate
+    existing = _parse_existing_analysis(content)
+    if existing["covered"] or existing["gaps"] or existing["summary_text"]:
+        entry["existing_analysis"] = existing
+
+    return entry
 
 
 def main():

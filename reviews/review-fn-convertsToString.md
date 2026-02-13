@@ -26,17 +26,19 @@ _No examples found in specification._
 6 tests found for `convertsToString` (testIntegerLiteralConvertsToString, testNegativeIntegerLiteralConvertsToString, testDecimalLiteralConvertsToString, testStringLiteralConvertsToString, testBooleanLiteralConvertsToString, testQuantityLiteralConvertsToString).
 
 **Covered:**
-- ✅ Integer input returns true, including negative integers (testIntegerLiteralConvertsToString, testNegativeIntegerLiteralConvertsToString)
-- ✅ Decimal input returns true (testDecimalLiteralConvertsToString)
-- ✅ String input returns true (testStringLiteralConvertsToString)
-- ✅ Boolean input returns true (testBooleanLiteralConvertsToString)
-- ✅ Quantity input returns true (testQuantityLiteralConvertsToString)
+- ✅ String item returns true (testStringLiteralConvertsToString)
+- ✅ Integer item returns true (testIntegerLiteralConvertsToString, testNegativeIntegerLiteralConvertsToString)
+- ✅ Decimal item returns true (testDecimalLiteralConvertsToString)
+- ✅ Boolean item returns true (testBooleanLiteralConvertsToString)
+- ✅ Quantity item returns true (testQuantityLiteralConvertsToString)
 
 **Gaps:**
-- ❌ No test for Date, Time, or DateTime input returning true
-- ❌ No test returning false for a non-convertible type
-- ❌ No test for empty input returning empty
-- ❌ No test for error when input collection contains multiple items
+- ❌ Date item returns true — not tested
+- ❌ Time item returns true — not tested
+- ❌ DateTime item returns true — not tested
+- ❌ Non-convertible type returns false
+- ❌ Multiple items in input signal an error
+- ❌ Empty input collection returns empty
 
 ### Test Results
 
@@ -50,5 +52,3 @@ _No examples found in specification._
 | testQuantityLiteralConvertsToString | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 36/36 (100%) — 6 tests × 6 engines
-
-All tests pass across all engines.

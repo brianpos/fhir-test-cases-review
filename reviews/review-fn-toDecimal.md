@@ -27,17 +27,19 @@ _No examples found in specification._
 8 tests found for `toDecimal` (testIntegerLiteralToDecimal, testDecimalLiteralToDecimal, testDecimalLiteralToDecimalEqual, testBooleanLiteralToDecimal, testToDecimal1, testToDecimal3, testToDecimal4, testToDecimal5).
 
 **Covered:**
-- ✅ Integer to Decimal conversion (testIntegerLiteralToDecimal)
-- ✅ Decimal identity conversion (testDecimalLiteralToDecimal)
-- ✅ String to Decimal conversion for valid strings (testDecimalLiteralToDecimalEqual, testToDecimal1, testToDecimal3, testToDecimal4)
-- ✅ Boolean true to Decimal 1.0 (testBooleanLiteralToDecimal)
+- ✅ Integer input converts to Decimal (testIntegerLiteralToDecimal)
+- ✅ Decimal input returns itself (testDecimalLiteralToDecimal)
+- ✅ String with decimal point converts to Decimal (testDecimalLiteralToDecimalEqual, testToDecimal4)
+- ✅ Boolean true converts to 1.0 (testBooleanLiteralToDecimal)
+- ✅ String integer converts to Decimal (testToDecimal1, testToDecimal3)
 - ✅ Non-convertible string returns empty (testToDecimal5)
 
 **Gaps:**
-- ❌ Boolean `false` converting to `0.0` is not tested
-- ❌ Negative decimal string conversion is not tested
-- ❌ Empty input collection returning empty is not tested
-- ❌ Multiple items in input collection signaling an error is not tested
+- ❌ Boolean false converts to 0.0
+- ❌ String with sign prefix converts to Decimal (e.g., '+1.0', '-1.5')
+- ❌ Non-matching type (e.g., Date) returns empty
+- ❌ Multiple items in input signals an error
+- ❌ Empty input collection returns empty
 
 ### Test Results
 
@@ -53,5 +55,3 @@ _No examples found in specification._
 | testToDecimal5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 48/48 (100%) — 8 tests × 6 engines
-
-All tests pass across all engines.

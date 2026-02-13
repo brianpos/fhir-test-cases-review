@@ -41,18 +41,24 @@ birthDate.iif(exists(), toString(), '(unknown)')
 19 tests found for `iif` (testCollectionBoolean1, testCollectionBoolean2, testCollectionBoolean3, testCollectionBoolean4, testCollectionBoolean5, testCollectionBoolean6, testIif1, testIif2, testIif3, testIif4, testIif5, testIif6, testIif7, testIif8, testIif9, testIif10, testIif11, testIif12, testIndex).
 
 **Covered:**
-- ✅ Criterion true returns true-result (testCollectionBoolean3, testIif1)
-- ✅ Criterion false or empty returns otherwise-result (testCollectionBoolean2, testIif2, testIif5)
-- ✅ Otherwise-result omitted returns empty when criterion is false (testIif5)
-- ✅ Short-circuit behavior: unevaluated branch not executed (testCollectionBoolean5, testCollectionBoolean6, testIif3, testIif4)
-- ✅ Non-boolean criterion signals semantic error (testCollectionBoolean1, testIif6)
-- ✅ Called with no context, empty context, and single-item context (testCollectionBoolean3, testIif7, testIif8)
-- ✅ Multiple items in input collection signals execution error (testIif10)
-- ✅ `$this` set to input value in criterion and true-result (testIif9, testIif11, testIif12)
-- ✅ `$index` available during evaluation (testIndex)
+- ✅ Scoped function: criterion evaluated with $this set to input value (testIif11, testIif9)
+- ✅ $index variable accessible during iif evaluation within iteration context (testIndex)
+- ✅ If criterion is true, returns the true-result argument (testCollectionBoolean3, testIif1, testIif8)
+- ✅ If criterion is false, returns the otherwise-result argument (testIif2)
+- ✅ If criterion is empty collection, returns otherwise-result (testCollectionBoolean2)
+- ✅ If otherwise-result is not given and criterion is false, returns empty collection (testIif5)
+- ✅ Short-circuit: true-result only evaluated when criterion is true (testCollectionBoolean5, testIif3)
+- ✅ Short-circuit: otherwise-result only evaluated when criterion is false/empty (testCollectionBoolean6, testIif4)
+- ✅ Can be called with no context (testIif7)
+- ✅ Can be called with single item context (testIif8, testIif9)
+- ✅ Multiple items in input collection signals error (testIif10)
+- ✅ Criterion expected to evaluate to Boolean; multi-item collection as criterion signals error (testCollectionBoolean1)
+- ✅ Union with empty resolves to single-item collection for criterion (testCollectionBoolean4)
+- ✅ Non-boolean criterion behavior — contested (testIif6)
+- ✅ Real-world usage with FHIR resource data in criterion and results (testIif1, testIif2, testIif12)
 
 **Gaps:**
-- ❌ `$index` explicitly verified as `0` when called directly (not inside `select`)
+- ❌ $this and $index set to 0 specifically in otherwise-result evaluation (only true-result tested with $this)
 
 ### Test Results
 
@@ -80,4 +86,4 @@ birthDate.iif(exists(), toString(), '(unknown)')
 
 **Summary:** 99/114 (87%) — 19 tests × 6 engines
 
-6 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification. 3 test(s) fail in multiple (but not all) engines, which may indicate differing interpretations of the specification.
+testCollectionBoolean1 (3/6) and testIif10 (2/6) show inconsistent error-signaling behavior across engines for multi-item input/criterion. Short-circuit tests (testCollectionBoolean5, testCollectionBoolean6, testIif3, testIif4) each fail in 1 engine. testIif6 (4/6) is explicitly contested — non-boolean criterion handling varies.

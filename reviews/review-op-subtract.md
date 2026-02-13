@@ -21,15 +21,16 @@ When subtracting quantities, the dimensions of each quantity must be the same, b
 **Covered:**
 - ✅ Integer subtraction (testMinus1, testMinus2)
 - ✅ Decimal subtraction (testMinus3)
-- ✅ Mixed precision decimal - integer (testMixedPrecisionArithmetic4)
-- ✅ String subtraction returns execution error (testMinus4)
-- ✅ Date - duration quantity (testMinus5)
-- ✅ Time - duration with wrapping past midnight (testMinus7, testMinus8)
-- ✅ Date - incompatible unit returns execution error (testMinus6)
-- ✅ Empty collection propagation (testMinusEmpty1, testMinusEmpty2, testMinusEmpty3)
+- ✅ Mixed precision Integer/Decimal subtraction (testMixedPrecisionArithmetic4)
+- ✅ Date minus duration quantity (testMinus5)
+- ✅ Incompatible quantity subtraction from date signals error (testMinus6)
+- ✅ String subtraction signals error (testMinus4)
+- ✅ Time minus duration wraps around (testMinus7, testMinus8)
+- ✅ Empty operand returns empty (testMinusEmpty1, testMinusEmpty2, testMinusEmpty3)
 
 **Gaps:**
-- ❌ No test for quantity - quantity with same dimensions (spec example: `3 'm' - 3 'cm'`)
+- ❌ Quantity subtraction with same dimensions but different units (e.g. 3 'm' - 3 'cm' = 297 'cm')
+- ❌ Arithmetic overflow/underflow returning empty
 
 ### Test Results
 
@@ -50,4 +51,4 @@ When subtracting quantities, the dimensions of each quantity must be the same, b
 
 **Summary:** 63/72 (88%) — 12 tests × 6 engines
 
-1 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification. 3 test(s) fail in multiple (but not all) engines, which may indicate differing interpretations of the specification.
+4 of 12 tests fail in 1-3 engines — date minus month and time minus hours wrapping have the most failures (3/6 pass), suggesting possible spec ambiguity or inconsistent engine implementations for temporal arithmetic edge cases.

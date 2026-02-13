@@ -19,17 +19,16 @@ Observation.component.where(value as Quantity > 30 'mg')
 11 tests found for `as` (testPolymorphismAsA, testPolymorphismAsAFunction, testPolymorphismAsB, testPolymorphismAsBFunction, testFHIRPathAsFunction11, testFHIRPathAsFunction12, testFHIRPathAsFunction13, testFHIRPathAsFunction14, testFHIRPathAsFunction15, testFHIRPathAsFunction21, testFHIRPathAsFunction23).
 
 **Covered:**
-- ✅ Keyword form (value as Type) returns value when type matches (testPolymorphismAsAFunction)
-- ✅ Function form value.as(Type) returns value when type matches (testPolymorphismAsA)
-- ✅ Returns empty when type does not match (testPolymorphismAsB, testPolymorphismAsBFunction)
-- ✅ Type checking for FHIR primitive types: code, string, id (testFHIRPathAsFunction11, testFHIRPathAsFunction12, testFHIRPathAsFunction13, testFHIRPathAsFunction14, testFHIRPathAsFunction15)
-- ✅ Type checking for FHIR complex type HumanName (testFHIRPathAsFunction21)
-- ✅ Unresolvable type identifier behavior (testFHIRPathAsFunction23)
+- ✅ Returns value when left operand matches specified type (testPolymorphismAsA, testPolymorphismAsAFunction, testFHIRPathAsFunction12, testFHIRPathAsFunction14)
+- ✅ Returns empty collection when left operand is not of specified type (testPolymorphismAsB, testPolymorphismAsBFunction, testFHIRPathAsFunction11, testFHIRPathAsFunction13, testFHIRPathAsFunction15)
+- ✅ Error when identifier cannot be resolved to valid type (testFHIRPathAsFunction23)
+- ✅ Error when more than one item in input collection (testFHIRPathAsFunction21)
+- ✅ Both keyword syntax (as) and function syntax (.as()) supported (testPolymorphismAsA vs testPolymorphismAsAFunction)
+- ✅ Primitive type discrimination between code, string, id types (testFHIRPathAsFunction11, testFHIRPathAsFunction12, testFHIRPathAsFunction13, testFHIRPathAsFunction14, testFHIRPathAsFunction15)
 
 **Gaps:**
-- ❌ No test for qualified type specifiers (e.g. FHIR.Patient)
-- ❌ No test for subclass type matching (returns value if input is subclass of specified type)
-- ❌ No test for multiple items in input collection (should signal error)
+- ❌ Subclass type matching -- returning value when left operand is a subclass of specified type
+- ❌ Qualified type specifiers with model qualifier (e.g. FHIR.Patient)
 
 ### Test Results
 
@@ -49,4 +48,4 @@ Observation.component.where(value as Quantity > 30 'mg')
 
 **Summary:** 57/66 (86%) — 11 tests × 6 engines
 
-4 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification. 2 test(s) fail in multiple (but not all) engines, which may indicate differing interpretations of the specification.
+testFHIRPathAsFunction21 (multi-item error) fails on 3/6 engines, suggesting disagreement on error handling semantics. testFHIRPathAsFunction11 (code as string) fails on 2 engines.

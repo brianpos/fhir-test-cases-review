@@ -15,11 +15,11 @@ _No examples found in specification._
 1 tests found for `first` (testFirstLast1).
 
 **Covered:**
-- ✅ First item from multi-item collection (testFirstLast1)
+- ✅ Returns first item from non-empty collection (testFirstLast1)
 
 **Gaps:**
-- ❌ No test for empty input returning empty collection
-- ❌ No test for single-item collection
+- ❌ Empty input returns empty collection
+- ❌ Equivalence to item[0]
 
 ### Test Results
 
@@ -29,4 +29,4 @@ _No examples found in specification._
 
 **Summary:** 5/6 (83%) — 1 tests × 6 engines
 
-1 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification.
+One engine fails, suggesting an engine-specific bug.

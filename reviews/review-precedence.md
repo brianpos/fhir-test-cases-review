@@ -52,17 +52,23 @@ Use parentheses to ensure the unary negation applies to the `7`:
 6 tests found for `precedence` (testPrecedence1, testPrecedence2, testPrecedence3, testPrecedence4, testPrecedence5, testPrecedence6).
 
 **Covered:**
-- ✅ Invocation `.` binds tighter than unary `-` (testPrecedence1)
-- ✅ `*` binds tighter than `+` (testPrecedence2)
-- ✅ `>` binds tighter than `is` (testPrecedence3)
-- ✅ `is` binds tighter than `|` (testPrecedence4)
-- ✅ `and` binds tighter than `in` is not the case — `in` binds tighter than `and` (testPrecedence5)
-- ✅ Complex nested precedence with `and`, `in`, `|`, `.` in real-world expression (testPrecedence6)
+- ✅ Invocation (.) has higher precedence than unary - (testPrecedence1)
+- ✅ Multiplication has higher precedence than addition (testPrecedence2)
+- ✅ is/as type testing has higher precedence than comparison operators (testPrecedence3)
+- ✅ is type testing has higher precedence than union | (testPrecedence4)
+- ✅ in/contains has higher precedence than and (testPrecedence5)
+- ✅ Complex nested precedence with and, in, exists (testPrecedence6)
 
 **Gaps:**
-- ❌ No test for `div`/`mod` precedence vs `+`/`-` (level #04 vs #05)
-- ❌ No test for `as` precedence (level #06)
-- ❌ No test for `xor`/`or` vs `implies` precedence (level #12 vs #13)
+- ❌ Precedence of [] (indexer) relative to other operators
+- ❌ Precedence of div and mod relative to + and -
+- ❌ Precedence of & (string concatenation) relative to other operators
+- ❌ Precedence of >=, <= relative to = and ~
+- ❌ Precedence of !=, !~ operators
+- ❌ Precedence of contains operator
+- ❌ Precedence of xor relative to or
+- ❌ Precedence of implies (lowest precedence)
+- ❌ Parentheses explicitly overriding precedence
 
 ### Test Results
 
@@ -77,4 +83,4 @@ Use parentheses to ensure the unary negation applies to the `7`:
 
 **Summary:** 31/36 (86%) — 6 tests × 6 engines
 
-1 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification. 2 test(s) fail in multiple (but not all) engines, which may indicate differing interpretations of the specification.
+3 of 6 tests fail in 1-2 engines each — invocation vs unary precedence, comparison vs is/as, and union vs is, suggesting engine-specific bugs in precedence handling.

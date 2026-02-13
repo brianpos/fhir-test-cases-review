@@ -46,11 +46,18 @@ wasNotGiven ~ true implies reasonNotGiven.exists()
 9 tests found for `implies` (testBooleanImplies1, testBooleanImplies2, testBooleanImplies3, testBooleanImplies4, testBooleanImplies5, testBooleanImplies6, testBooleanImplies7, testBooleanImplies8, testBooleanImplies9).
 
 **Covered:**
-- ✅ Complete truth table: true/true, true/false, true/empty, false/true, false/false, false/empty, empty/true, empty/false, empty/empty (testBooleanImplies1, testBooleanImplies2, testBooleanImplies3, testBooleanImplies4, testBooleanImplies5, testBooleanImplies6, testBooleanImplies7, testBooleanImplies8, testBooleanImplies9)
+- ✅ true implies true = true (testBooleanImplies1)
+- ✅ true implies false = false (testBooleanImplies2)
+- ✅ true implies empty = empty (testBooleanImplies3)
+- ✅ false implies true = true (testBooleanImplies4)
+- ✅ false implies false = true (testBooleanImplies5)
+- ✅ false implies empty = true (testBooleanImplies6)
+- ✅ empty implies true = true (testBooleanImplies7)
+- ✅ empty implies false = empty (testBooleanImplies8)
+- ✅ empty implies empty = empty (testBooleanImplies9)
 
 **Gaps:**
-- ❌ No test for short-circuit evaluation when left operand is `false`
-- ❌ No test with non-boolean operands requiring implicit boolean conversion
+- ❌ Singleton evaluation of non-boolean collections as implies operands (e.g., collection with single node converted to boolean)
 
 ### Test Results
 
@@ -67,5 +74,3 @@ wasNotGiven ~ true implies reasonNotGiven.exists()
 | testBooleanImplies9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 54/54 (100%) — 9 tests × 6 engines
-
-All tests pass across all engines.

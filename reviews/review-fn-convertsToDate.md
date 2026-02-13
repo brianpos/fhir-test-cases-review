@@ -30,18 +30,18 @@ _No examples found in specification._
 3 tests found for `convertsToDate` (testStringYearConvertsToDate, testStringMonthConvertsToDate, testStringDayConvertsToDate).
 
 **Covered:**
-- ✅ String with year-only converts to Date (testStringYearConvertsToDate)
-- ✅ String with year-month converts to Date (testStringMonthConvertsToDate)
-- ✅ String with full date converts to Date (testStringDayConvertsToDate)
+- ✅ String convertible to Date returns true (testStringYearConvertsToDate, testStringMonthConvertsToDate, testStringDayConvertsToDate)
+- ✅ Partial date strings are accepted - year-only and year-month (testStringYearConvertsToDate, testStringMonthConvertsToDate)
 
 **Gaps:**
-- ❌ Date input type returns true
-- ❌ DateTime input type returns true
-- ❌ Non-convertible String returns false
-- ❌ Non-convertible types (Integer, Boolean) return false
-- ❌ Empty input collection returns empty
-- ❌ Multiple items in input collection signals an error
-- ❌ Optional format parameter not tested
+- ❌ Date item returns true not tested with an actual Date value
+- ❌ DateTime item returns true not tested with a DateTime value
+- ❌ Non-convertible type returns false not tested
+- ❌ Non-convertible string returns false not tested
+- ❌ Optional format parameter overrides default format not tested
+- ❌ Format parameter is ignored for non-string input not tested
+- ❌ Multiple items in input signal an error not tested
+- ❌ Empty input collection returns empty not tested
 
 ### Test Results
 
@@ -52,6 +52,3 @@ _No examples found in specification._
 | testStringDayConvertsToDate | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 18/18 (100%) — 3 tests × 6 engines
-- Overall pass rate: 18/18 (100%)
-- Tests: 3
-- All engines pass all tests — fully consistent.

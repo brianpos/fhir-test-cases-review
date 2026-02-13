@@ -15,10 +15,11 @@ _No examples found in specification._
 1 tests found for `last` (testFirstLast2).
 
 **Covered:**
-- ✅ Returns last item from a multi-item collection (testFirstLast2)
+- ✅ Returns last item in input collection (testFirstLast2)
 
 **Gaps:**
-- ❌ Empty input collection returning empty
+- ❌ Empty collection returns empty
+- ❌ Single item collection returns that item
 
 ### Test Results
 
@@ -28,4 +29,4 @@ _No examples found in specification._
 
 **Summary:** 5/6 (83%) — 1 tests × 6 engines
 
-1 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification.
+testFirstLast2 fails in 1 engine (5/6), suggesting an engine-specific bug.

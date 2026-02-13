@@ -30,13 +30,17 @@ If the input collection contains multiple items, the evaluation of the expressio
 6 tests found for `power` (testPower1, testPower2, testPower3, testPowerEmpty, testPowerEmpty2, testPowerEmpty3).
 
 **Covered:**
-- ✅ Integer and Decimal base raised to positive exponent (testPower1, testPower2)
-- ✅ Unrepresentable result returns empty, e.g. (-1).power(0.5) (testPower3)
-- ✅ Empty input and/or empty exponent returns empty (testPowerEmpty, testPowerEmpty2, testPowerEmpty3)
+- ✅ Raises a number to the exponent power with Integer input (testPower1)
+- ✅ Raises a number to the exponent power with Decimal input (testPower2)
+- ✅ If power cannot be represented, result is empty (testPower3)
+- ✅ Empty input returns empty (testPowerEmpty, testPowerEmpty2)
+- ✅ Empty exponent returns empty (testPowerEmpty3, testPowerEmpty2)
 
 **Gaps:**
-- ❌ Negative exponent producing Decimal result (e.g. 2.power(-1) = 0.5)
-- ❌ Error on multiple items in input collection
+- ❌ Accepts Long input type
+- ❌ Result is always Decimal (not explicitly verified)
+- ❌ Negative exponent producing Decimal result (e.g., 2.power(-1) = 0.5)
+- ❌ Multiple items in input signals error
 
 ### Test Results
 
@@ -51,4 +55,4 @@ If the input collection contains multiple items, the evaluation of the expressio
 
 **Summary:** 35/36 (97%) — 6 tests × 6 engines
 
-1 test(s) fail in only one engine, suggesting engine-specific implementation issues rather than problems with the tests or specification.
+testPowerEmpty3 fails in 1 engine (5/6 pass), suggesting an engine-specific bug with empty exponent handling.

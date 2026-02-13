@@ -43,18 +43,20 @@ Patient.telecom.sort(system, use desc) // sort by system ascending, then by use 
 10 tests found for `sort` (testSort1, testSort2, testSort3, testSort4, testSort5, testSort6, testSort7, testSort8, testSort9, testSort10).
 
 **Covered:**
-- ✅ Default numeric ordering without key selector (testSort1, testSort2)
-- ✅ Explicit $this key selector ascending (testSort3, testSort4)
-- ✅ Descending sort via negation (testSort5, testSort8)
-- ✅ String sorting ascending and descending (testSort6, testSort7)
-- ✅ Sorting actual resource data by field (testSort9)
-- ✅ Multi-key descending sort on complex resource (testSort10)
+- ✅ Returns sorted collection with no key selector using default ordering (testSort1, testSort2)
+- ✅ Explicit key selector with $this for ascending sort (testSort3, testSort4)
+- ✅ Descending sort using negation of key selector (testSort5, testSort8)
+- ✅ String sorting with default ordering (testSort6, testSort7)
+- ✅ Sorting FHIR resource element values (testSort9)
+- ✅ Multi-key sorting with multiple selectors (testSort10)
 
 **Gaps:**
-- ❌ Empty input collection returns empty
-- ❌ Empty values sorted before others (lowest value ordering)
-- ❌ Error on incompatible types in collection
-- ❌ Error when key selector returns multiple items
+- ❌ asc/desc keyword qualifiers on key selectors
+- ❌ Empty value is considered lower than all other values in sort order
+- ❌ Key selector returning multiple items signals error (singleton evaluation semantics)
+- ❌ Incompatible types in sort results in error
+- ❌ Empty input returns empty
+- ❌ $index is undefined in sort context
 
 ### Test Results
 
@@ -73,4 +75,4 @@ Patient.telecom.sort(system, use desc) // sort by system ascending, then by use 
 
 **Summary:** 30/60 (50%) — 10 tests × 6 engines
 
-10 test(s) are not implemented in some engines, but all implemented tests pass.
+3 of 6 engines (Aidbox, fhirpath.js, Firely) do not support sort(), accounting for all non-passing results. All tests pass in the 3 engines that support the function.
