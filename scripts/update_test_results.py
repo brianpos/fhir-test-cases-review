@@ -5,7 +5,8 @@ Reads engine test result JSON files from the fhirpath-lab results directory,
 cross-references them with the FHIRPath test XML, and updates:
   - Each reviews/review-*.md file: replaces the test results table and
     ``**Summary:**`` line, preserving any descriptive text below the summary
-  - The readme.md summary tables: ``# Checks`` column
+  - The readme.md summary tables: ``# Checks`` column, ``Gaps`` column
+    (count of gap lines), and clears ``Reviewed`` if gaps exist
 
 Usage: python scripts/update_test_results.py
 """
@@ -178,6 +179,27 @@ def update_review_file(filepath, test_names, engine_names, engines):
 
 
 # ---------------------------------------------------------------------------
+# Gap counting
+# ---------------------------------------------------------------------------
+
+def count_gaps(filepath):
+    """Count the number of gap lines (starting with '- ❌') in a review file."""
+    count = 0
+    in_gaps = False
+    with open(filepath, "r", encoding="utf-8") as f:
+        for line in f:
+            if line.strip() == "**Gaps:**":
+                in_gaps = True
+                continue
+            if in_gaps:
+                if line.startswith("- ❌"):
+                    count += 1
+                elif line.strip() and not line.startswith("- "):
+                    break
+    return count
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
@@ -211,19 +233,25 @@ def main():
         test_names = testing_map.get(func_name, [])
         num_tests = len(test_names)
 
-        if num_tests > 0:
-            pass_pct = update_review_file(
-                filepath, test_names, engine_names, engines,
-            )
-        else:
-            pass_pct = 0
+        pass_pct = update_review_file(
+            filepath, test_names, engine_names, engines,
+        )
 
         # Update readme # Checks column
         checks_val = f"{num_tests} ({pass_pct:.0f}%)" if num_tests > 0 else "0"
         readme_content = update_summary_table(readme_content, rf, "# Checks", checks_val)
 
+        # Update readme Gaps column
+        gap_count = count_gaps(filepath)
+        gaps_val = str(gap_count) if gap_count > 0 else ""
+        readme_content = update_summary_table(readme_content, rf, "Gaps", gaps_val)
+
+        # Clear Reviewed column if there are gaps
+        if gap_count > 0:
+            readme_content = update_summary_table(readme_content, rf, "Reviewed", "")
+
         status = f"{num_tests} tests, {pass_pct:.0f}% pass" if num_tests > 0 else "0 tests"
-        print(f"  {rf}: {func_name} -> {status}")
+        print(f"  {rf}: {func_name} -> {status}, {gap_count} gaps")
 
     # 5. Write updated readme
     with open(README_FILE, "w", encoding="utf-8") as f:

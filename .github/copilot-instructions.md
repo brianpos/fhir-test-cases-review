@@ -71,13 +71,14 @@ Prompts are run via the Copilot CLI (`copilot` command) with Claude — the `.ps
 | `review_set_all_testnames_and_count.py` | Updates `Test Count:` header and coverage line (count + test names in XML document order) in all review files |
 | `check_coverage.py` | Extracts FHIRPath tests for coverage analysis. Use `--feature <name>` or `--file <review.md>` for text output, `--list` for feature summary, `--json` for batch JSON |
 | `review_set_covered_and_gaps.py` | Updates Covered/Gaps sub-sections, optional summary text after the Summary line, and optional Reviewed column in `readme.md`. Input via `--stdin` or `--json-file` |
-| `update_test_results.py` | Reads engine result JSON files, updates the `### Test Results` table and `**Summary:**` line in each review file, and updates the `# Checks` column in `readme.md` |
+| `update_test_results.py` | Reads engine result JSON files, updates the `### Test Results` table and `**Summary:**` line in each review file, and updates the `# Checks`, `Gaps`, and `Reviewed` columns in `readme.md` |
 
 
 ## Summary Table Conventions (readme.md)
 
 - **# Checks**: `N (P%)` — N tests directly targeting this feature, P% passing across all engines
-- **Reviewed ✅**: Only set when coverage has no gaps AND all tests pass on all engines
+- **Gaps**: Count of `- ❌` gap lines in the review file's `**Gaps:**` section (empty when 0)
+- **Reviewed ✅**: Only set when coverage has no gaps AND all tests pass on all engines; cleared automatically by `update_test_results.py` if gaps exist
 - **Filename**: Links to the review file in `reviews/`
 - Tables are grouped by FHIRPath spec sections (5.1–5.11, 6.1–6.9, 7, 10.2)
 - and can use the Function/operation lists mentioned above for completeness (to review when updating/refreshing the table contents when new functions/operators are added to the spec)

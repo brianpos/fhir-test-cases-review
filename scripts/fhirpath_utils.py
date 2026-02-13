@@ -92,7 +92,8 @@ def update_summary_table(content, review_filename, column, value):
 
     Supported *column* values and their offsets (from end of ``split('|')``):
 
-    * ``"# Checks"`` — 4th from end
+    * ``"# Checks"`` — 5th from end
+    * ``"Gaps"`` — 4th from end
     * ``"Reviewed"`` — 3rd from end
 
     Args:
@@ -105,7 +106,8 @@ def update_summary_table(content, review_filename, column, value):
         Updated content string, or the original content if the row was not found.
     """
     column_offsets = {
-        "# Checks": -4,
+        "# Checks": -5,
+        "Gaps": -4,
         "Reviewed": -3,
     }
     if column not in column_offsets:
