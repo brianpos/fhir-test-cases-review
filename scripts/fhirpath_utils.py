@@ -82,6 +82,50 @@ def get_feature_name_from_review(filepath):
     return None
 
 
+def update_summary_table(content, review_filename, column, value):
+    """Update a column in a markdown summary table row identified by review filename.
+
+    Locates the table row containing `review_filename`, then updates the
+    specified column.  Columns are identified by negative offset from the
+    right-hand side of the pipe-delimited row so that escaped pipes in
+    earlier columns (e.g. the ``|`` union operator) do not cause mis-alignment.
+
+    Supported *column* values and their offsets (from end of ``split('|')``):
+
+    * ``"# Checks"`` — 4th from end
+    * ``"Reviewed"`` — 3rd from end
+
+    Args:
+        content: Full markdown file text.
+        review_filename: Filename to match in the row (e.g. ``"review-fn-empty.md"``).
+        column: Column name to update.
+        value: New cell text (spaces are added around it automatically).
+
+    Returns:
+        Updated content string, or the original content if the row was not found.
+    """
+    column_offsets = {
+        "# Checks": -4,
+        "Reviewed": -3,
+    }
+    if column not in column_offsets:
+        raise ValueError(f"Unknown column: {column!r}")
+
+    offset = column_offsets[column]
+    lines = content.split("\n")
+
+    for i, line in enumerate(lines):
+        if review_filename in line and line.strip().startswith("|"):
+            parts = line.split("|")
+            idx = len(parts) + offset
+            if 0 < idx < len(parts):
+                parts[idx] = f" {value} "
+                lines[i] = "|".join(parts)
+            break
+
+    return "\n".join(lines)
+
+
 def format_tests(tests):
     """Format test dicts into a readable text block.
 
