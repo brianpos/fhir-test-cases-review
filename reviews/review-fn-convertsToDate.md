@@ -51,7 +51,7 @@ _No examples found in specification._
 | testStringMonthConvertsToDate | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testStringDayConvertsToDate | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-**Summary:**
+**Summary:** 18/18 (100%) — 3 tests × 6 engines
 - Overall pass rate: 18/18 (100%)
 - Tests: 3
 - All engines pass all tests — fully consistent.

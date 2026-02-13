@@ -58,8 +58,8 @@ _No examples found in specification._
 | testIntegerLiteralToBoolean | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testIntegerLiteralToBooleanEmpty | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testIntegerLiteralToBooleanFalse | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testStringFalseToBoolean | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testStringTrueToBoolean | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testStringFalseToBoolean | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 30/30 (100%) — 5 tests × 6 engines
 

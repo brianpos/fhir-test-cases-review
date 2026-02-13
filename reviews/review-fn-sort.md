@@ -61,7 +61,6 @@ Patient.telecom.sort(system, use desc) // sort by system ascending, then by use 
 | Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
 |------|------|------|------|------|------|------|
 | testSort1 | N/A | N/A | N/A | ✅ | ✅ | ✅ |
-| testSort10 | N/A | N/A | N/A | ✅ | ✅ | ✅ |
 | testSort2 | N/A | N/A | N/A | ✅ | ✅ | ✅ |
 | testSort3 | N/A | N/A | N/A | ✅ | ✅ | ✅ |
 | testSort4 | N/A | N/A | N/A | ✅ | ✅ | ✅ |
@@ -70,6 +69,7 @@ Patient.telecom.sort(system, use desc) // sort by system ascending, then by use 
 | testSort7 | N/A | N/A | N/A | ✅ | ✅ | ✅ |
 | testSort8 | N/A | N/A | N/A | ✅ | ✅ | ✅ |
 | testSort9 | N/A | N/A | N/A | ✅ | ✅ | ✅ |
+| testSort10 | N/A | N/A | N/A | ✅ | ✅ | ✅ |
 
 **Summary:** 30/60 (50%) — 10 tests × 6 engines
 

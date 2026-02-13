@@ -49,9 +49,9 @@ The optional `flags` parameter can be set to:
 | testMatchesEmpty3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testMatchesSingleLineMode1 | ❌ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | testMatchesWithinUrl1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testMatchesWithinUrl1a | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testMatchesWithinUrl2 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testMatchesWithinUrl3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testMatchesWithinUrl1a | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testMatchesWithinUrl4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 62/66 (94%) — 11 tests × 6 engines

@@ -33,6 +33,9 @@ Bundle.entry.resource.ofType(Patient)
 
 | Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
 |------|------|------|------|------|------|------|
+| testType20 | ✅ | ✅ | N/A | ✅ | ✅ | ✅ |
+| testType21 | ✅ | ✅ | N/A | ✅ | ✅ | ✅ |
+| testType23 | ❌ | ✅ | N/A | ✅ | ✅ | ✅ |
 | testFHIRPathAsFunction16 | ❌ | ✅ | ✅ | ❌ | ✅ | ✅ |
 | testFHIRPathAsFunction17 | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
 | testFHIRPathAsFunction18 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -40,9 +43,6 @@ Bundle.entry.resource.ofType(Patient)
 | testFHIRPathAsFunction20 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testFHIRPathAsFunction22 | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
 | testFHIRPathAsFunction24 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testType20 | ✅ | ✅ | N/A | ✅ | ✅ | ✅ |
-| testType21 | ✅ | ✅ | N/A | ✅ | ✅ | ✅ |
-| testType23 | ❌ | ✅ | N/A | ✅ | ✅ | ✅ |
 
 **Summary:** 51/60 (85%) — 10 tests × 6 engines
 

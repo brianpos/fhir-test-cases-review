@@ -47,10 +47,10 @@ The optional `flags` parameter can be set to:
 | Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
 |------|------|------|------|------|------|------|
 | testMatchesFullWithinUrl1 | N/A | N/A | N/A | ✅ | ✅ | ✅ |
-| testMatchesFullWithinUrl1a | N/A | N/A | N/A | ✅ | ✅ | ✅ |
-| testMatchesFullWithinUrl2 | N/A | N/A | N/A | ✅ | ✅ | ✅ |
 | testMatchesFullWithinUrl3 | N/A | N/A | N/A | ✅ | ✅ | ✅ |
 | testMatchesFullWithinUrl4 | N/A | N/A | N/A | ✅ | ✅ | ✅ |
+| testMatchesFullWithinUrl1a | N/A | N/A | N/A | ✅ | ✅ | ✅ |
+| testMatchesFullWithinUrl2 | N/A | N/A | N/A | ✅ | ✅ | ✅ |
 
 **Summary:** 15/30 (50%) — 5 tests × 6 engines
 

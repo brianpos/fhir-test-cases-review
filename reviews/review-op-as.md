@@ -35,6 +35,10 @@ Observation.component.where(value as Quantity > 30 'mg')
 
 | Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
 |------|------|------|------|------|------|------|
+| testPolymorphismAsA | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
+| testPolymorphismAsAFunction | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
+| testPolymorphismAsB | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testPolymorphismAsBFunction | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testFHIRPathAsFunction11 | ❌ | ✅ | ✅ | ❌ | ✅ | ✅ |
 | testFHIRPathAsFunction12 | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
 | testFHIRPathAsFunction13 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -42,10 +46,6 @@ Observation.component.where(value as Quantity > 30 'mg')
 | testFHIRPathAsFunction15 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testFHIRPathAsFunction21 | ❌ | ✅ | ❌ | ✅ | ❌ | ✅ |
 | testFHIRPathAsFunction23 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testPolymorphismAsA | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
-| testPolymorphismAsAFunction | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
-| testPolymorphismAsB | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testPolymorphismAsBFunction | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 57/66 (86%) — 11 tests × 6 engines
 

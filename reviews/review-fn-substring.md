@@ -53,10 +53,6 @@ If the input collection contains multiple items, the evaluation of the expressio
 | Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
 |------|------|------|------|------|------|------|
 | testSubstring1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testSubstring10 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testSubstring10a | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testSubstring11 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testSubstring12 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testSubstring2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testSubstring3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testSubstring4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -64,6 +60,10 @@ If the input collection contains multiple items, the evaluation of the expressio
 | testSubstring7 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testSubstring8 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testSubstring9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testSubstring10 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testSubstring10a | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testSubstring11 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testSubstring12 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 69/72 (96%) — 12 tests × 6 engines
 

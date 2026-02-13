@@ -36,12 +36,12 @@ _No examples found in specification._
 | Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
 |------|------|------|------|------|------|------|
 | testCollectionNotEmpty | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testIntegerBooleanNotFalse | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testIntegerBooleanNotTrue | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testLiteralNotFalse | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testNotEmpty | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testLiteralNotOnEmpty | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testLiteralNotTrue | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testNotEmpty | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testLiteralNotFalse | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testIntegerBooleanNotTrue | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testIntegerBooleanNotFalse | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testNotInvalid | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 48/48 (100%) — 8 tests × 6 engines

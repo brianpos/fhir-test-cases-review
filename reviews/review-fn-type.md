@@ -67,15 +67,15 @@ Patient.maritalStatus.type()
 | Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
 |------|------|------|------|------|------|------|
 | testType1 | ❌ | ✅ | N/A | ✅ | ✅ | ✅ |
-| testType10 | ✅ | ✅ | N/A | ✅ | ✅ | ❌ |
-| testType15 | ✅ | ✅ | N/A | ✅ | ✅ | ❌ |
-| testType16 | ✅ | ✅ | N/A | ✅ | ✅ | ✅ |
 | testType1a | ❌ | ✅ | N/A | ✅ | ✅ | ✅ |
 | testType2 | ❌ | ✅ | N/A | ✅ | ✅ | ✅ |
 | testType2a | ❌ | ✅ | N/A | ✅ | ✅ | ✅ |
 | testType3 | ❌ | ✅ | N/A | ✅ | ✅ | ✅ |
 | testType4 | ❌ | ✅ | N/A | ✅ | ✅ | ✅ |
 | testType9 | ✅ | ✅ | N/A | ✅ | ✅ | ❌ |
+| testType10 | ✅ | ✅ | N/A | ✅ | ✅ | ❌ |
+| testType15 | ✅ | ✅ | N/A | ✅ | ✅ | ❌ |
+| testType16 | ✅ | ✅ | N/A | ✅ | ✅ | ✅ |
 
 **Summary:** 41/60 (68%) — 10 tests × 6 engines
 

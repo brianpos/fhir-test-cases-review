@@ -109,8 +109,23 @@ Additional functions to support more sophisticated timezone offset comparison (s
 
 | Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
 |------|------|------|------|------|------|------|
+| testLiteralIntegerEqual | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testDateEqual | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testLiteralDateTimeTZEqualFalse | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testLiteralDateTimeTZEqualTrue | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testExpressionsEqual | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testQuantity1 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testQuantity5 | ❌ | ✅ | ❌ | ✅ | ✅ | ✅ |
+| testQuantity6 | ❌ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | testEquality1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testEquality2 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testEquality3 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testEquality4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testEquality5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testEquality6 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testEquality7 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testEquality8 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testEquality9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testEquality10 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testEquality11 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testEquality12 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -121,7 +136,6 @@ Additional functions to support more sophisticated timezone offset comparison (s
 | testEquality17 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testEquality18 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testEquality19 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testEquality2 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testEquality20 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testEquality21 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testEquality22 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -131,23 +145,9 @@ Additional functions to support more sophisticated timezone offset comparison (s
 | testEquality26 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testEquality27 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testEquality28 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testEquality3 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testEquality4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testEquality5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testEquality6 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testEquality7 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testEquality8 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testEquality9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testExpressionsEqual | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testLiteralDateTimeTZEqualFalse | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testLiteralDateTimeTZEqualTrue | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testLiteralIntegerEqual | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testMixedPrecisionEquals1 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testMixedPrecisionEquals2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testMixedPrecisionEquals3 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testQuantity1 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testQuantity5 | ❌ | ✅ | ❌ | ✅ | ✅ | ✅ |
-| testQuantity6 | ❌ | ✅ | ❌ | ✅ | ✅ | ✅ |
 
 **Summary:** 217/234 (93%) — 39 tests × 6 engines
 

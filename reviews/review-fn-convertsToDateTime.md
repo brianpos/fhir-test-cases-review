@@ -54,7 +54,7 @@ _No examples found in specification._
 | testStringUTCConvertsToDateTime | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testStringTZConvertsToDateTime | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-**Summary:**
+**Summary:** 54/54 (100%) — 9 tests × 6 engines
 - Overall pass rate: 54/54 (100%)
 - Tests: 9
 - All engines pass all tests — fully consistent.

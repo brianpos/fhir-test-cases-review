@@ -54,7 +54,17 @@ The less or equal operator (`<=`) returns `true` if the first operand is less th
 
 | Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
 |------|------|------|------|------|------|------|
+| testMixedPrecisionLessOrEqual1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testMixedPrecisionLessOrEqual2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testLessOrEqual1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testLessOrEqual2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testLessOrEqual3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testLessOrEqual4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testLessOrEqual5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testLessOrEqual6 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testLessOrEqual7 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testLessOrEqual8 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testLessOrEqual9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testLessOrEqual10 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testLessOrEqual11 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testLessOrEqual12 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -65,7 +75,6 @@ The less or equal operator (`<=`) returns `true` if the first operand is less th
 | testLessOrEqual17 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testLessOrEqual18 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testLessOrEqual19 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testLessOrEqual2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testLessOrEqual20 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testLessOrEqual21 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testLessOrEqual22 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -74,18 +83,9 @@ The less or equal operator (`<=`) returns `true` if the first operand is less th
 | testLessOrEqual25 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testLessOrEqual26 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testLessOrEqual27 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testLessOrEqual3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testLessOrEqual4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testLessOrEqual5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testLessOrEqual6 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testLessOrEqual7 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testLessOrEqual8 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testLessOrEqual9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testLessOrEqualEmpty1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testLessOrEqualEmpty2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testLessOrEqualEmpty3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testMixedPrecisionLessOrEqual1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testMixedPrecisionLessOrEqual2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 189/192 (98%) — 32 tests × 6 engines
 

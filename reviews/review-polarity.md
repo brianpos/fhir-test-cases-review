@@ -49,9 +49,9 @@ examples:
 
 | Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
 |------|------|------|------|------|------|------|
-| testLiteralIntegerLessThanPolarityFalse | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testLiteralIntegerLessThanPolarityTrue | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testPolarityPrecedence | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testLiteralIntegerLessThanPolarityTrue | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testLiteralIntegerLessThanPolarityFalse | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 16/18 (89%) — 3 tests × 6 engines
 

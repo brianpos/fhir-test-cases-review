@@ -33,6 +33,14 @@ _No examples found in specification._
 | Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
 |------|------|------|------|------|------|------|
 | testNotEquivalent1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testNotEquivalent2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testNotEquivalent3 | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
+| testNotEquivalent4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testNotEquivalent5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testNotEquivalent6 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testNotEquivalent7 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testNotEquivalent8 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testNotEquivalent9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testNotEquivalent10 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testNotEquivalent11 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testNotEquivalent12 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -43,17 +51,9 @@ _No examples found in specification._
 | testNotEquivalent17 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testNotEquivalent18 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testNotEquivalent19 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testNotEquivalent2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testNotEquivalent20 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testNotEquivalent21 | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ |
 | testNotEquivalent22 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testNotEquivalent3 | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
-| testNotEquivalent4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testNotEquivalent5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testNotEquivalent6 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testNotEquivalent7 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testNotEquivalent8 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testNotEquivalent9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 128/132 (97%) — 22 tests × 6 engines
 

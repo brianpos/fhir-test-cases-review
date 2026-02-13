@@ -90,7 +90,18 @@ For strings, equivalence returns `true` if the strings are the same value while 
 
 | Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
 |------|------|------|------|------|------|------|
+| testIntegerLiteralToDeciamlEquivalent | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testQuantity2 | N/A | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testQuantity4 | ❌ | ❌ | ❌ | ✅ | ✅ | ✅ |
 | testEquivalent1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testEquivalent2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testEquivalent3 | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
+| testEquivalent4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testEquivalent5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testEquivalent6 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testEquivalent7 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testEquivalent8 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testEquivalent9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testEquivalent10 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testEquivalent11 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testEquivalent12 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -101,22 +112,11 @@ For strings, equivalence returns `true` if the strings are the same value while 
 | testEquivalent17 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testEquivalent18 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testEquivalent19 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testEquivalent2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testEquivalent20 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testEquivalent21 | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ |
 | testEquivalent22 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testEquivalent23 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testEquivalent24 | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
-| testEquivalent3 | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
-| testEquivalent4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testEquivalent5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testEquivalent6 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testEquivalent7 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testEquivalent8 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testEquivalent9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testIntegerLiteralToDeciamlEquivalent | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testQuantity2 | N/A | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testQuantity4 | ❌ | ❌ | ❌ | ✅ | ✅ | ✅ |
 
 **Summary:** 151/162 (93%) — 27 tests × 6 engines
 

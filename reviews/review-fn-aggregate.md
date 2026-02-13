@@ -56,7 +56,7 @@ value.aggregate($total + $this, 0) / value.count()
 | testAggregate3 | N/A | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testAggregate4 | N/A | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-**Summary:**
+**Summary:** 20/24 (83%) — 4 tests × 6 engines
 - Overall pass rate: 20/20 (100%)
 - Tests: 4
 - All implementing engines pass all tests. 1 engine(s) have not implemented this feature.

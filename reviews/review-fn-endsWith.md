@@ -40,8 +40,6 @@ If the input collection contains multiple items, the evaluation of the expressio
 | Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
 |------|------|------|------|------|------|------|
 | testEndsWith1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testEndsWith10 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testEndsWith10a | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testEndsWith2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testEndsWith3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testEndsWith4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -50,6 +48,8 @@ If the input collection contains multiple items, the evaluation of the expressio
 | testEndsWith7 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testEndsWith8 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testEndsWith9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testEndsWith10 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testEndsWith10a | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testEndsWithNonString1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 71/72 (99%) — 12 tests × 6 engines

@@ -33,6 +33,7 @@ Performs truncated division of the left operand by the right operand (supported 
 
 | Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
 |------|------|------|------|------|------|------|
+| testMixedPrecisionArithmetic5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testDiv1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testDiv2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testDiv3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -42,7 +43,6 @@ Performs truncated division of the left operand by the right operand (supported 
 | testDivEmpty1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testDivEmpty2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testDivEmpty3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testMixedPrecisionArithmetic5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 58/60 (97%) — 10 tests × 6 engines
 

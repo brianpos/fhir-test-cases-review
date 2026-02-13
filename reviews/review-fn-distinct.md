@@ -34,10 +34,10 @@ Patient.meta.tag.distinct()
 
 | Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
 |------|------|------|------|------|------|------|
+| testExpressions | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ |
 | testDistinct4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testDistinct5 | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | testDistinct6 | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
-| testExpressions | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 20/24 (83%) — 4 tests × 6 engines
 

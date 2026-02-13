@@ -35,6 +35,7 @@ When subtracting quantities, the dimensions of each quantity must be the same, b
 
 | Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
 |------|------|------|------|------|------|------|
+| testMixedPrecisionArithmetic4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testMinus1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testMinus2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testMinus3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -46,7 +47,6 @@ When subtracting quantities, the dimensions of each quantity must be the same, b
 | testMinusEmpty1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testMinusEmpty2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testMinusEmpty3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testMixedPrecisionArithmetic4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 63/72 (88%) — 12 tests × 6 engines
 

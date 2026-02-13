@@ -44,6 +44,6 @@ If the input collection contains multiple items, the evaluation of the expressio
 | testAbs3 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testAbsEmpty | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-**Summary:**
+**Summary:** 23/24 (96%) — 4 tests × 6 engines
 - Overall pass rate: 23/24 (96%)
 - Tests: 4

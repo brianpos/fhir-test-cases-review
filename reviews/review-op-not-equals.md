@@ -33,18 +33,25 @@ _No examples found in specification._
 
 | Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
 |------|------|------|------|------|------|------|
-| testCollectionNotEqualEmpty | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testDateNotEqual | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testDateNotEqualTimeMinute | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testDateNotEqualTimeSecond | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testDateNotEqualTimezoneOffsetAfter | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testDateNotEqualTimezoneOffsetBefore | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testDateNotEqualUTC | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testLiteralIntegerCountNotEqual | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testLiteralIntegerNotEqual | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testMixedPrecisionNotEquals1 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testMixedPrecisionNotEquals2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testLiteralIntegerCountNotEqual | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testDateNotEqual | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testDateNotEqualTimezoneOffsetBefore | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testDateNotEqualTimezoneOffsetAfter | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testDateNotEqualUTC | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testDateNotEqualTimeSecond | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testDateNotEqualTimeMinute | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testCollectionNotEqualEmpty | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testQuantity3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testNEquality1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testNEquality2 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testNEquality3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testNEquality4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testNEquality5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testNEquality6 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testNEquality7 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testNEquality8 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testNEquality9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testNEquality10 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testNEquality11 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testNEquality12 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -55,20 +62,13 @@ _No examples found in specification._
 | testNEquality17 | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ |
 | testNEquality18 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testNEquality19 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testNEquality2 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testNEquality20 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testNEquality21 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testNEquality22 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testNEquality23 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testNEquality24 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testNEquality3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testNEquality4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testNEquality5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testNEquality6 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testNEquality7 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testNEquality8 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testNEquality9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testQuantity3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testMixedPrecisionNotEquals1 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testMixedPrecisionNotEquals2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 204/216 (94%) — 36 tests × 6 engines
 

@@ -45,8 +45,15 @@ When adding quantities, the dimensions of each quantity must be the same, but no
 | testPlus3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testPlus4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testPlus5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testPlus6 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testPlusDate1 | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
+| testPlusDate2 | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
+| testPlusDate3 | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
+| testPlusDate4 | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
+| testPlusDate5 | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
+| testPlusDate6 | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ |
+| testPlusDate7 | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
+| testPlusDate8 | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
+| testPlusDate9 | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
 | testPlusDate10 | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
 | testPlusDate11 | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ |
 | testPlusDate12 | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
@@ -57,23 +64,16 @@ When adding quantities, the dimensions of each quantity must be the same, but no
 | testPlusDate17 | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ |
 | testPlusDate18 | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ |
 | testPlusDate19 | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ |
-| testPlusDate2 | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
 | testPlusDate20 | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ |
 | testPlusDate21 | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ |
 | testPlusDate22 | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ |
-| testPlusDate3 | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
-| testPlusDate4 | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
-| testPlusDate5 | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
-| testPlusDate6 | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ |
-| testPlusDate7 | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
-| testPlusDate8 | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
-| testPlusDate9 | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
-| testPlusEmpty1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testPlusEmpty2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testPlusEmpty3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testPlus6 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testPlusTime1 | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ |
 | testPlusTime2 | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ |
 | testPlusTime3 | ✅ | ❌ | ❌ | ✅ | ✅ | ✅ |
+| testPlusEmpty1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testPlusEmpty2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testPlusEmpty3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 173/210 (82%) — 35 tests × 6 engines
 

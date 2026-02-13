@@ -54,8 +54,24 @@ The less than operator (`<`) returns `true` if the first operand is strictly les
 
 | Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
 |------|------|------|------|------|------|------|
+| testLiteralIntegerLessThanTrue | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testLiteralIntegerLessThanFalse | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testLiteralDecimalLessThanInteger | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testLiteralDecimalLessThanInvalid | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testDateNotEqualToday | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testLiteralDateTimeTZLess | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testQuantity7 | ❌ | ✅ | ❌ | ✅ | ✅ | ✅ |
+| testMixedPrecisionLessThan1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testMixedPrecisionLessThan2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testLessThan1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testLessThan2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testLessThan3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testLessThan4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testLessThan5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testLessThan6 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testLessThan7 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testLessThan8 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testLessThan9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testLessThan10 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testLessThan11 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testLessThan12 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -66,7 +82,6 @@ The less than operator (`<`) returns `true` if the first operand is strictly les
 | testLessThan17 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testLessThan18 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testLessThan19 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testLessThan2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testLessThan20 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testLessThan21 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testLessThan22 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -75,24 +90,9 @@ The less than operator (`<`) returns `true` if the first operand is strictly les
 | testLessThan25 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testLessThan26 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testLessThan27 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testLessThan3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testLessThan4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testLessThan5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testLessThan6 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testLessThan7 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testLessThan8 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testLessThan9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testLessThanEmpty1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testLessThanEmpty2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testLessThanEmpty3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testLiteralDateTimeTZLess | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testLiteralDecimalLessThanInteger | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testLiteralDecimalLessThanInvalid | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testLiteralIntegerLessThanFalse | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testLiteralIntegerLessThanTrue | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testMixedPrecisionLessThan1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testMixedPrecisionLessThan2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testQuantity7 | ❌ | ✅ | ❌ | ✅ | ✅ | ✅ |
 
 **Summary:** 228/234 (97%) — 39 tests × 6 engines
 

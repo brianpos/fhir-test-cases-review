@@ -60,6 +60,6 @@ If the `unit` argument is provided, it must be the string representation of a UC
 | testStringDecimalLiteralConvertsToQuantity | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testBooleanLiteralConvertsToQuantity | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-**Summary:**
+**Summary:** 52/54 (96%) — 9 tests × 6 engines
 - Overall pass rate: 52/54 (96%)
 - Tests: 9

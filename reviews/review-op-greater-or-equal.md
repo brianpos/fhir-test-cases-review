@@ -50,7 +50,17 @@ The greater or equal operator (`>=`) returns `true` if the first operand is grea
 
 | Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
 |------|------|------|------|------|------|------|
+| testMixedPrecisionGreaterOrEqual1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testMixedPrecisionGreaterOrEqual2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testGreatorOrEqual1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testGreatorOrEqual2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testGreatorOrEqual3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testGreatorOrEqual4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testGreatorOrEqual5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testGreatorOrEqual6 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testGreatorOrEqual7 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testGreatorOrEqual8 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testGreatorOrEqual9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testGreatorOrEqual10 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testGreatorOrEqual11 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testGreatorOrEqual12 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -61,7 +71,6 @@ The greater or equal operator (`>=`) returns `true` if the first operand is grea
 | testGreatorOrEqual17 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testGreatorOrEqual18 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testGreatorOrEqual19 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testGreatorOrEqual2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testGreatorOrEqual20 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testGreatorOrEqual21 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testGreatorOrEqual22 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -70,18 +79,9 @@ The greater or equal operator (`>=`) returns `true` if the first operand is grea
 | testGreatorOrEqual25 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testGreatorOrEqual26 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testGreatorOrEqual27 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testGreatorOrEqual3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testGreatorOrEqual4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testGreatorOrEqual5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testGreatorOrEqual6 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testGreatorOrEqual7 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testGreatorOrEqual8 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testGreatorOrEqual9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testGreatorOrEqualEmpty1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testGreatorOrEqualEmpty2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testGreatorOrEqualEmpty3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testMixedPrecisionGreaterOrEqual1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testMixedPrecisionGreaterOrEqual2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 189/192 (98%) — 32 tests × 6 engines
 

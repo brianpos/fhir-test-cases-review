@@ -38,9 +38,9 @@ _No examples found in specification._
 | Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
 |------|------|------|------|------|------|------|
 | testStringHourConvertsToTime | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testStringMillisecondConvertsToTime | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testStringMinuteConvertsToTime | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testStringSecondConvertsToTime | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testStringMillisecondConvertsToTime | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 23/24 (96%) — 4 tests × 6 engines
 

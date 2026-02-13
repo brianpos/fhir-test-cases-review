@@ -37,7 +37,7 @@ generalPractitioner.all($this.resolve() is Practitioner)
 | testAllTrue3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testAllTrue4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-**Summary:**
+**Summary:** 12/12 (100%) — 2 tests × 6 engines
 - Overall pass rate: 12/12 (100%)
 - Tests: 2
 - All engines pass all tests — fully consistent.

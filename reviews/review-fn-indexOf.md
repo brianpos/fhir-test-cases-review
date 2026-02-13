@@ -40,8 +40,8 @@ If the input collection contains multiple items, the evaluation of the expressio
 | testIndexOf1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testIndexOf2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testIndexOf3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testIndexOf4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testIndexOf5 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testIndexOf4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testIndexOf6 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 35/36 (97%) — 6 tests × 6 engines

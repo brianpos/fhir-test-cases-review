@@ -54,19 +54,8 @@ If the input collection contains multiple items, the evaluation of the expressio
 
 | Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
 |------|------|------|------|------|------|------|
-| HighBoundaryDateMonth | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
-| HighBoundaryDateTimeMillisecond1 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
-| HighBoundaryDateTimeMillisecond2 | ❌ | N/A | ✅ | ✅ | ✅ | ✅ |
-| HighBoundaryDateTimeMillisecond3 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
-| HighBoundaryDecimal | N/A | N/A | ✅ | ✅ | ✅ | ✅ |
+| HighBoundaryDecimalDefault | N/A | N/A | ✅ | ✅ | ✅ | ✅ |
 | HighBoundaryDecimal1 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
-| HighBoundaryDecimal10 | N/A | N/A | ✅ | ✅ | ✅ | ✅ |
-| HighBoundaryDecimal11 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
-| HighBoundaryDecimal12 | N/A | N/A | ✅ | ✅ | ✅ | ✅ |
-| HighBoundaryDecimal13 | N/A | N/A | ✅ | ✅ | ✅ | ✅ |
-| HighBoundaryDecimal14 | N/A | N/A | ✅ | ✅ | ✅ | ✅ |
-| HighBoundaryDecimal15 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
-| HighBoundaryDecimal16 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
 | HighBoundaryDecimal2 | N/A | N/A | ✅ | ✅ | ✅ | ✅ |
 | HighBoundaryDecimal3 | N/A | N/A | ❌ | ❌ | ✅ | ✅ |
 | HighBoundaryDecimal4 | N/A | N/A | ✅ | ✅ | ✅ | ✅ |
@@ -75,8 +64,19 @@ If the input collection contains multiple items, the evaluation of the expressio
 | HighBoundaryDecimal7 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
 | HighBoundaryDecimal8 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
 | HighBoundaryDecimal9 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
-| HighBoundaryDecimalDefault | N/A | N/A | ✅ | ✅ | ✅ | ✅ |
+| HighBoundaryDecimal10 | N/A | N/A | ✅ | ✅ | ✅ | ✅ |
+| HighBoundaryDecimal11 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
+| HighBoundaryDecimal12 | N/A | N/A | ✅ | ✅ | ✅ | ✅ |
+| HighBoundaryDecimal13 | N/A | N/A | ✅ | ✅ | ✅ | ✅ |
+| HighBoundaryDecimal14 | N/A | N/A | ✅ | ✅ | ✅ | ✅ |
+| HighBoundaryDecimal15 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
+| HighBoundaryDecimal16 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
+| HighBoundaryDecimal | N/A | N/A | ✅ | ✅ | ✅ | ✅ |
 | HighBoundaryQuantity | N/A | N/A | ✅ | ✅ | ✅ | ✅ |
+| HighBoundaryDateMonth | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
+| HighBoundaryDateTimeMillisecond1 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
+| HighBoundaryDateTimeMillisecond2 | ❌ | N/A | ✅ | ✅ | ✅ | ✅ |
+| HighBoundaryDateTimeMillisecond3 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
 | HighBoundaryTimeMillisecond | N/A | N/A | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 83/144 (58%) — 24 tests × 6 engines

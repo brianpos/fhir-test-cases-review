@@ -35,6 +35,6 @@ Observation.select(component.value > 90 'mm[Hg]').allTrue()
 | testAllTrue2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | from-zulip-2 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-**Summary:**
+**Summary:** 17/18 (94%) — 3 tests × 6 engines
 - Overall pass rate: 17/18 (94%)
 - Tests: 3

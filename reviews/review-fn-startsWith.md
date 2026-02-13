@@ -39,10 +39,6 @@ If the input collection contains multiple items, the evaluation of the expressio
 | Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
 |------|------|------|------|------|------|------|
 | testStartsWith1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testStartsWith10 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testStartsWith11 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testStartsWith12 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testStartsWith12a | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testStartsWith2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testStartsWith3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testStartsWith4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -51,6 +47,10 @@ If the input collection contains multiple items, the evaluation of the expressio
 | testStartsWith7 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testStartsWith8 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testStartsWith9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testStartsWith10 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testStartsWith11 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testStartsWith12 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testStartsWith12a | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testStartsWithNonString1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 83/84 (99%) — 14 tests × 6 engines

@@ -31,7 +31,6 @@ _No examples found in specification._
 
 | Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
 |------|------|------|------|------|------|------|
-| from-zulip-1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testBooleanLogicAnd1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testBooleanLogicAnd2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testBooleanLogicAnd3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -41,6 +40,7 @@ _No examples found in specification._
 | testBooleanLogicAnd7 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testBooleanLogicAnd8 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testBooleanLogicAnd9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| from-zulip-1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 60/60 (100%) — 10 tests × 6 engines
 

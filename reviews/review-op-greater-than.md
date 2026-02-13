@@ -51,10 +51,26 @@ The greater than operator (`>`) returns `true` if the first operand is strictly 
 
 | Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
 |------|------|------|------|------|------|------|
-| testDateGreaterThanDate | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testLiteralIntegerGreaterThan | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testLiteralDecimalGreaterThanNonZeroTrue | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testLiteralDecimalGreaterThanZeroTrue | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testLiteralDecimalGreaterThanIntegerTrue | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testDateTimeGreaterThanDate1 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testDateGreaterThanDate | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testDateTimeGreaterThanDate2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testLiteralDateTimeTZGreater | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testQuantity8 | ❌ | ✅ | ❌ | ✅ | ✅ | ✅ |
+| testMixedPrecisionGreaterThan1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testMixedPrecisionGreaterThan2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testGreaterThan1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testGreaterThan2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testGreaterThan3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testGreaterThan4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testGreaterThan5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testGreaterThan6 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testGreaterThan7 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testGreaterThan8 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testGreaterThan9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testGreaterThan10 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testGreaterThan11 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testGreaterThan12 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -65,7 +81,6 @@ The greater than operator (`>`) returns `true` if the first operand is strictly 
 | testGreaterThan17 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testGreaterThan18 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testGreaterThan19 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testGreaterThan2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testGreaterThan20 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testGreaterThan21 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testGreaterThan22 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -74,24 +89,9 @@ The greater than operator (`>`) returns `true` if the first operand is strictly 
 | testGreaterThan25 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testGreaterThan26 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testGreaterThan27 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testGreaterThan3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testGreaterThan4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testGreaterThan5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testGreaterThan6 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testGreaterThan7 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testGreaterThan8 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testGreaterThan9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testGreaterThanEmpty1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testGreaterThanEmpty2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testGreaterThanEmpty3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testLiteralDateTimeTZGreater | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testLiteralDecimalGreaterThanIntegerTrue | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testLiteralDecimalGreaterThanNonZeroTrue | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testLiteralDecimalGreaterThanZeroTrue | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testLiteralIntegerGreaterThan | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testMixedPrecisionGreaterThan1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testMixedPrecisionGreaterThan2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testQuantity8 | ❌ | ✅ | ❌ | ✅ | ✅ | ✅ |
 
 **Summary:** 239/246 (97%) — 41 tests × 6 engines
 

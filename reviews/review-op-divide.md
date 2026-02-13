@@ -36,6 +36,9 @@ For division involving quantities, the resulting quantity will have an appropria
 
 | Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
 |------|------|------|------|------|------|------|
+| testQuantity10 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testQuantity11 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testMixedPrecisionArithmetic3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testDivide1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testDivide2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testDivide3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -45,9 +48,6 @@ For division involving quantities, the resulting quantity will have an appropria
 | testDivideEmpty1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testDivideEmpty2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testDivideEmpty3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testMixedPrecisionArithmetic3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testQuantity10 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testQuantity11 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 67/72 (93%) — 12 tests × 6 engines
 

@@ -65,9 +65,6 @@ birthDate.iif(exists(), toString(), '(unknown)')
 | testCollectionBoolean5 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testCollectionBoolean6 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testIif1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testIif10 | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
-| testIif11 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testIif12 | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
 | testIif2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testIif3 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testIif4 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -76,6 +73,9 @@ birthDate.iif(exists(), toString(), '(unknown)')
 | testIif7 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testIif8 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testIif9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testIif10 | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ |
+| testIif11 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testIif12 | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
 | testIndex | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 99/114 (87%) — 19 tests × 6 engines

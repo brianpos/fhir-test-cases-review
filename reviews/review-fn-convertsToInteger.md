@@ -45,7 +45,7 @@ _No examples found in specification._
 | testStringDecimalConvertsToIntegerFalse | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testBooleanLiteralConvertsToInteger | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-**Summary:**
+**Summary:** 30/30 (100%) — 5 tests × 6 engines
 - Overall pass rate: 30/30 (100%)
 - Tests: 5
 - All engines pass all tests — fully consistent.

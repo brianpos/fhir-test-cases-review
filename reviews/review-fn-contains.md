@@ -68,6 +68,6 @@ If the input collection contains multiple items, the evaluation of the expressio
 | testContainsCollectionEmpty4 | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | testContainsCollectionEmptyDateTime | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-**Summary:**
+**Summary:** 124/126 (98%) — 21 tests × 6 engines
 - Overall pass rate: 124/126 (98%)
 - Tests: 21

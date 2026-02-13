@@ -13,7 +13,8 @@ The unit tests (cloned locally) are from:
 https://github.com/FHIR/fhir-test-cases/tree/master/r5/fhirpath
 
 > The `# Checks` column in the summary tables reports the number of unit tests in the test file that are directly focusing on testing the specific feature, and the number after (in brackets) it is the percentage of those that pass when evaluated on the fhirpath-lab's test engine, results available here:
-https://dev.fhirpath-lab.com/FhirPath-engines
+https://dev.fhirpath-lab.com/FhirPath-engines<br/>
+> *It is programatically updated using the `scripts/update_test_results.py` script.*
 
 > The `Reviewed` column has a check if the review filename has no gaps reported in it, and all tests pass over all engines, indicating that the feature is very mature and well supported.
 

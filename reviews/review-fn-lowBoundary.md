@@ -54,33 +54,33 @@ If the input collection contains multiple items, the evaluation of the expressio
 
 | Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
 |------|------|------|------|------|------|------|
-| LowBoundaryDateMonth | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
-| LowBoundaryDateTimeMillisecond1 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
-| LowBoundaryDateTimeMillisecond2 | N/A | N/A | ✅ | ✅ | ✅ | ✅ |
-| LowBoundaryDateTimeMillisecond3 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
+| LowBoundaryDecimalDefault | N/A | N/A | ✅ | ✅ | ✅ | ✅ |
 | LowBoundaryDecimal1 | N/A | N/A | ✅ | ✅ | ✅ | ✅ |
+| LowBoundaryDecimal2 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
+| LowBoundaryDecimal3 | N/A | N/A | ❌ | ❌ | ✅ | ✅ |
+| LowBoundaryDecimal4 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
+| LowBoundaryDecimal5 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
+| LowBoundaryNegDecimalDefault | N/A | N/A | ✅ | ✅ | ✅ | ✅ |
+| LowBoundaryNegDecimal1 | N/A | N/A | ✅ | ✅ | ✅ | ✅ |
+| LowBoundaryNegDecimal2 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
+| LowBoundaryNegDecimal3 | N/A | N/A | ❌ | ❌ | ✅ | ✅ |
+| LowBoundaryNegDecimal4 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
+| LowBoundaryNegDecimal5 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
+| LowBoundaryDecimal6 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
+| LowBoundaryDecimal7 | N/A | N/A | ✅ | ✅ | ✅ | ✅ |
+| LowBoundaryDecimal8 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
+| LowBoundaryDecimal9 | N/A | N/A | ✅ | ✅ | ✅ | ✅ |
 | LowBoundaryDecimal10 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
 | LowBoundaryDecimal11 | N/A | N/A | ✅ | ✅ | ✅ | ✅ |
 | LowBoundaryDecimal12 | N/A | N/A | ✅ | ✅ | ✅ | ✅ |
 | LowBoundaryDecimal13 | N/A | N/A | ✅ | ✅ | ✅ | ✅ |
 | LowBoundaryDecimal14 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
 | LowBoundaryDecimal15 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
-| LowBoundaryDecimal2 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
-| LowBoundaryDecimal3 | N/A | N/A | ❌ | ❌ | ✅ | ✅ |
-| LowBoundaryDecimal4 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
-| LowBoundaryDecimal5 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
-| LowBoundaryDecimal6 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
-| LowBoundaryDecimal7 | N/A | N/A | ✅ | ✅ | ✅ | ✅ |
-| LowBoundaryDecimal8 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
-| LowBoundaryDecimal9 | N/A | N/A | ✅ | ✅ | ✅ | ✅ |
-| LowBoundaryDecimalDefault | N/A | N/A | ✅ | ✅ | ✅ | ✅ |
-| LowBoundaryNegDecimal1 | N/A | N/A | ✅ | ✅ | ✅ | ✅ |
-| LowBoundaryNegDecimal2 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
-| LowBoundaryNegDecimal3 | N/A | N/A | ❌ | ❌ | ✅ | ✅ |
-| LowBoundaryNegDecimal4 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
-| LowBoundaryNegDecimal5 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
-| LowBoundaryNegDecimalDefault | N/A | N/A | ✅ | ✅ | ✅ | ✅ |
 | LowBoundaryQuantity | N/A | N/A | ✅ | ✅ | ✅ | ✅ |
+| LowBoundaryDateMonth | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
+| LowBoundaryDateTimeMillisecond1 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
+| LowBoundaryDateTimeMillisecond2 | N/A | N/A | ✅ | ✅ | ✅ | ✅ |
+| LowBoundaryDateTimeMillisecond3 | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
 | LowBoundaryTimeMillisecond | N/A | N/A | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 94/168 (56%) — 28 tests × 6 engines

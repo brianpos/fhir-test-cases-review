@@ -76,15 +76,15 @@ q.toQuantity('g') // changes the value and units in the quantity according to UC
 
 | Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
 |------|------|------|------|------|------|------|
-| testDecimalLiteralToQuantity | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testIntegerLiteralToQuantity | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testStringDecimalLiteralToQuantity | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testDecimalLiteralToQuantity | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testStringIntegerLiteralToQuantity | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ |
-| testStringQuantityDayLiteralToQuantity | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testStringQuantityLiteralToQuantity | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testStringQuantityMonthLiteralToQuantity | ❌ | ✅ | ✅ | ❌ | ✅ | ✅ |
+| testStringQuantityDayLiteralToQuantity | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testStringQuantityWeekLiteralToQuantity | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testStringQuantityMonthLiteralToQuantity | ❌ | ✅ | ✅ | ❌ | ✅ | ✅ |
 | testStringQuantityYearLiteralToQuantity | ❌ | ✅ | ✅ | ❌ | ✅ | ✅ |
+| testStringDecimalLiteralToQuantity | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 45/54 (83%) — 9 tests × 6 engines
 

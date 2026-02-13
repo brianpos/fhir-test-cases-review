@@ -41,17 +41,17 @@ _No examples found in specification._
 
 | Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
 |------|------|------|------|------|------|------|
-| testBooleanLiteralToInteger | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testDecimalLiteralToInteger | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testDecimalLiteralToIntegerIsEmpty | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testIntegerLiteralToInteger | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testStringIntegerLiteralToInteger | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testToDecimal2 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testDecimalLiteralToInteger | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testDecimalLiteralToIntegerIsEmpty | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testBooleanLiteralToInteger | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testToInteger1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testToInteger2 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testToInteger3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testToInteger4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testToInteger5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testToDecimal2 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testToString2 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 68/72 (94%) — 12 tests × 6 engines

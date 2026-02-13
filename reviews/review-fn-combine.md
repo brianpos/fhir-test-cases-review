@@ -46,6 +46,6 @@ A.combine( {} ) // 1, 1, 2, 3 - combining an empty collection with a non-empty c
 | testUnion6 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testUnion7 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-**Summary:**
+**Summary:** 28/30 (93%) — 5 tests × 6 engines
 - Overall pass rate: 28/30 (93%)
 - Tests: 5

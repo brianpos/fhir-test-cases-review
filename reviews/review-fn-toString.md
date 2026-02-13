@@ -57,13 +57,13 @@ _No examples found in specification._
 
 | Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
 |------|------|------|------|------|------|------|
-| testBooleanLiteralToString | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testDecimalLiteralToString | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
 | testIntegerLiteralToString | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testNegativeIntegerLiteralToString | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testQuantityLiteralWeekToString | ❌ | ✅ | ❌ | ✅ | ✅ | ✅ |
-| testQuantityLiteralWkToString | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testDecimalLiteralToString | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
 | testStringLiteralToString | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testBooleanLiteralToString | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testQuantityLiteralWkToString | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testQuantityLiteralWeekToString | ❌ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | testToString1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testToString3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testToString4 | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |

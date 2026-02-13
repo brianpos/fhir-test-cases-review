@@ -49,6 +49,6 @@ If the input collection contains multiple items, the evaluation of the expressio
 | testCeiling3 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testCeilingEmpty | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-**Summary:**
+**Summary:** 22/24 (92%) — 4 tests × 6 engines
 - Overall pass rate: 22/24 (92%)
 - Tests: 4

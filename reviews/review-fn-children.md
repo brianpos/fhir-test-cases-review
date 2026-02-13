@@ -27,7 +27,7 @@ _No examples found in specification._
 |------|------|------|------|------|------|------|
 | testRepeat4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-**Summary:**
+**Summary:** 6/6 (100%) — 1 tests × 6 engines
 - Overall pass rate: 6/6 (100%)
 - Tests: 1
 - All engines pass all tests — fully consistent.

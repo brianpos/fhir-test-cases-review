@@ -37,6 +37,18 @@ Patient.name.given contains 'Joe'
 
 | Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
 |------|------|------|------|------|------|------|
+| testContainsString1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testContainsString2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testContainsString3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testContainsString4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testContainsString5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testContainsString6 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testContainsString7 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testContainsString8 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testContainsString9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testContainsString10 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testContainsString10a | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testContainsNonString1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testContainsCollection1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testContainsCollection2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testContainsCollection3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -46,18 +58,6 @@ Patient.name.given contains 'Joe'
 | testContainsCollectionEmpty3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testContainsCollectionEmpty4 | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | testContainsCollectionEmptyDateTime | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testContainsNonString1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testContainsString1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testContainsString10 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testContainsString10a | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testContainsString2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testContainsString3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testContainsString4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testContainsString5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testContainsString6 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testContainsString7 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testContainsString8 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testContainsString9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 124/126 (98%) — 21 tests × 6 engines
 

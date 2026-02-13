@@ -47,7 +47,7 @@ _No examples found in specification._
 | testStringDecimalLiteralConvertsToDecimal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testBooleanLiteralConvertsToDecimal | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-**Summary:**
+**Summary:** 36/36 (100%) — 6 tests × 6 engines
 - Overall pass rate: 36/36 (100%)
 - Tests: 6
 - All engines pass all tests — fully consistent.

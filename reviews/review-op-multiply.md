@@ -32,6 +32,7 @@ Multiplies both arguments (supported for Integer, Decimal, and Quantity). For mu
 
 | Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
 |------|------|------|------|------|------|------|
+| testQuantity9 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testMixedPrecisionArithmetic2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testMultiply1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testMultiply2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -39,7 +40,6 @@ Multiplies both arguments (supported for Integer, Decimal, and Quantity). For mu
 | testMultiplyEmpty1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testMultiplyEmpty2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testMultiplyEmpty3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testQuantity9 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 47/48 (98%) — 8 tests × 6 engines
 

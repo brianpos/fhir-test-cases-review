@@ -48,12 +48,12 @@ For Date and DateTime values, the function returns the number of digits of preci
 
 | Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
 |------|------|------|------|------|------|------|
-| PrecisionDateTimeMilliseconds | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
 | PrecisionDecimal | N/A | N/A | ❌ | ❌ | ✅ | ✅ |
-| PrecisionEmpty | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
-| PrecisionTimeMilliseconds | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
-| PrecisionTimeMinutes | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
 | PrecisionYear | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
+| PrecisionDateTimeMilliseconds | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
+| PrecisionTimeMinutes | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
+| PrecisionTimeMilliseconds | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
+| PrecisionEmpty | N/A | N/A | ❌ | ✅ | ✅ | ✅ |
 
 **Summary:** 17/36 (47%) — 6 tests × 6 engines
 

@@ -56,6 +56,6 @@ _No examples found in specification._
 | testTrueLiteralConvertsToBoolean | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testFalseLiteralConvertsToBoolean | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-**Summary:**
+**Summary:** 57/60 (95%) — 10 tests × 6 engines
 - Overall pass rate: 57/60 (95%)
 - Tests: 10

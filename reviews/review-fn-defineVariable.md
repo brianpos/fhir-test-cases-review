@@ -64,13 +64,6 @@ group.select(
 | Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
 |------|------|------|------|------|------|------|
 | defineVariable1 | N/A | ✅ | ✅ | ✅ | ✅ | ✅ |
-| defineVariable10 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| defineVariable12 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| defineVariable13 | N/A | ✅ | ✅ | ✅ | ✅ | ✅ |
-| defineVariable14 | N/A | ✅ | ✅ | ✅ | ✅ | ✅ |
-| defineVariable15 | N/A | ✅ | ✅ | ✅ | ✅ | ✅ |
-| defineVariable16 | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ |
-| defineVariable19 | N/A | ✅ | ✅ | ✅ | ✅ | ✅ |
 | defineVariable2 | N/A | ❌ | ✅ | ✅ | ✅ | ✅ |
 | defineVariable3 | N/A | ❌ | ✅ | ✅ | ✅ | ✅ |
 | defineVariable4 | N/A | ❌ | ✅ | ✅ | ✅ | ✅ |
@@ -79,10 +72,17 @@ group.select(
 | defineVariable7 | N/A | ❌ | ✅ | ✅ | ✅ | ✅ |
 | defineVariable8 | N/A | ✅ | ✅ | ✅ | ✅ | ✅ |
 | defineVariable9 | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ |
+| defineVariable10 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| dvRedefiningVariableThrowsError | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| defineVariable12 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| defineVariable13 | N/A | ✅ | ✅ | ✅ | ✅ | ✅ |
+| defineVariable14 | N/A | ✅ | ✅ | ✅ | ✅ | ✅ |
+| defineVariable15 | N/A | ✅ | ✅ | ✅ | ✅ | ✅ |
+| defineVariable16 | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ |
 | dvCantOverwriteSystemVar | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | dvConceptMapExample | N/A | ✅ | ✅ | ✅ | ✅ | ✅ |
+| defineVariable19 | N/A | ✅ | ✅ | ✅ | ✅ | ✅ |
 | dvParametersDontColide | N/A | ✅ | ✅ | ✅ | ✅ | ✅ |
-| dvRedefiningVariableThrowsError | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | dvUsageOutsideScopeThrows | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ |
 
 **Summary:** 103/126 (82%) — 21 tests × 6 engines

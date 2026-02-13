@@ -40,11 +40,11 @@ A.union( { } ) // 1, 2, 3
 
 | Test | Aidbox | fhirpath.js-4.8.3 | Firely-5.12.2 | Helios-0.1.32 | Ignixa-0.0.151 | Java-6.7.8 |
 |------|------|------|------|------|------|------|
-| testUnion10 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testUnion11 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testUnion4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testUnion5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testUnion8 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testUnion10 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| testUnion11 | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 **Summary:** 28/30 (93%) — 5 tests × 6 engines
 

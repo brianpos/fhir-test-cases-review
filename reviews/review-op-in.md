@@ -37,9 +37,9 @@ The following example returns `true` if `'Joe'` is in the list of given names fo
 | testIn3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testIn4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testIn5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| testInEmptyBoth | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | testInEmptyCollection | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | testInEmptyValue | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
+| testInEmptyBoth | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
 
 **Summary:** 46/48 (96%) — 8 tests × 6 engines
 
