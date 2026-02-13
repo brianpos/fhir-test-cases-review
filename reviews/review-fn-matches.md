@@ -26,7 +26,7 @@ The optional `flags` parameter can be set to:
 ```
 
 ### Coverage
-11 tests found for `matches` (testMatchesCaseSensitive1, testMatchesCaseSensitive2, testMatchesEmpty, testMatchesEmpty2, testMatchesEmpty3, testMatchesSingleLineMode1, testMatchesWithinUrl1, testMatchesWithinUrl1a, testMatchesWithinUrl2, testMatchesWithinUrl3, testMatchesWithinUrl4).
+11 tests found for `matches` (testMatchesCaseSensitive1, testMatchesCaseSensitive2, testMatchesEmpty, testMatchesEmpty2, testMatchesEmpty3, testMatchesSingleLineMode1, testMatchesWithinUrl1, testMatchesWithinUrl2, testMatchesWithinUrl3, testMatchesWithinUrl1a, testMatchesWithinUrl4).
 
 **Covered:**
 - ✅ Case-sensitive matching (testMatchesCaseSensitive1, testMatchesCaseSensitive2)

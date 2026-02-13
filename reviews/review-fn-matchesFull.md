@@ -29,7 +29,7 @@ The optional `flags` parameter can be set to:
 ```
 
 ### Coverage
-5 tests found for `matchesFull` (testMatchesFullWithinUrl1, testMatchesFullWithinUrl1a, testMatchesFullWithinUrl2, testMatchesFullWithinUrl3, testMatchesFullWithinUrl4).
+5 tests found for `matchesFull` (testMatchesFullWithinUrl1, testMatchesFullWithinUrl3, testMatchesFullWithinUrl4, testMatchesFullWithinUrl1a, testMatchesFullWithinUrl2).
 
 **Covered:**
 - ✅ Full match required: partial matches return false (testMatchesFullWithinUrl1, testMatchesFullWithinUrl3, testMatchesFullWithinUrl2)

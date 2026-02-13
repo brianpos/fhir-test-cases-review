@@ -22,7 +22,7 @@ If the input collection contains multiple items, the evaluation of the expressio
 ```
 
 ### Coverage
-6 tests found for `indexOf` (testIndexOf1, testIndexOf2, testIndexOf3, testIndexOf4, testIndexOf5, testIndexOf6).
+6 tests found for `indexOf` (testIndexOf1, testIndexOf2, testIndexOf3, testIndexOf5, testIndexOf4, testIndexOf6).
 
 **Covered:**
 - ✅ Returns 0-based index of first occurrence (testIndexOf1)

@@ -9,7 +9,8 @@ This repository contains **AI-generated, human-reviewed analyses** of FHIRPath R
 | Path | Purpose |
 |---|---|
 | `reviews/` | Individual review files (`review-fn-*.md`, `review-op-*.md`, etc.) — one per function/operator |
-| `scripts/` | Python scripts and PowerShell prompts for batch processing reviews |
+| `scripts/` | Python scripts for batch processing reviews |
+| `prompts/` | PowerShell prompts for running batch operations via Copilot CLI |
 | `readme.md` | Summary tables linking all reviews with check counts and pass rates |
 | `test-plan.md` | Master test plan with coverage tracking |
 
@@ -62,7 +63,7 @@ Header in specification: << exact header text from index.md that matches the fun
 
 ## Key Scripts
 
-Scripts are run via the Copilot CLI (`copilot` command) with Claude — the `.ps1` files contain prompts, not traditional scripts. The Python scripts can also be run directly:
+Prompts are run via the Copilot CLI (`copilot` command) with Claude — the `.ps1` files in `prompts/` contain prompts, not traditional scripts. The Python scripts in `scripts/` can also be run directly:
 
 | Script | Purpose |
 |---|---|
