@@ -8,7 +8,7 @@ Both are set to the actual count from the test XML. The coverage line
 also includes the comma-separated list of test names (in XML document order).
 
 Usage:
-    python scripts/add_test_names_to_coverage.py
+    python scripts/review_set_all_testnames_and_count.py
 """
 
 import os

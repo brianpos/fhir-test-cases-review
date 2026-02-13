@@ -67,7 +67,8 @@ Prompts are run via the Copilot CLI (`copilot` command) with Claude — the `.ps
 
 | Script | Purpose |
 |---|---|
-| | |
+| `fhirpath_utils.py` | Shared utilities: constants, XML parsing (`_iter_tests`, `load_tests_by_testing`, `load_test_names_by_testing`), and review-file helpers |
+| `review_set_all_testnames_and_count.py` | Updates `Test Count:` header and coverage line (count + test names in XML document order) in all review files |
 
 
 ## Summary Table Conventions (readme.md)

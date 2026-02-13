@@ -2,7 +2,7 @@
 
 Provides common constants, XML parsing, and review-file helpers used
 across check_coverage, dump_all_coverage_data, gen_coverage_data,
-add_test_names_to_coverage, and update_test_results.
+review_set_all_testnames_and_count, and update_test_results.
 """
 
 import os
