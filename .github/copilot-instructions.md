@@ -175,6 +175,10 @@ Similarly: `<` → `&lt;`, `>` → `&gt;` in expressions.
 - test names should be unique across the entire file, and follow the pattern of existing tests in the same group (e.g. `testStartsWith1`, `testStartsWith2`, etc.) and should be descriptive enough to indicate what's being tested (e.g. `testStartsWith14` could be `testStartsWith14_caseInsensitive` if testing case sensitivity, but keep brief)
 
 
+## Git Usage
+
+Only perform **read-only** git operations. Do not commit, checkout, reset, revert, push, pull, merge, rebase, cherry-pick, or otherwise modify the repository state. Allowed operations include `git diff`, `git log`, `git status`, `git show`, `git blame`, and similar read-only commands.
+
 ## Important Notes
 
 - The `testing` attribute in the test XML (e.g., `testing="startsWith"`) is the key that links tests to review files
