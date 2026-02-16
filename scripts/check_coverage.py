@@ -67,8 +67,8 @@ def _resolve_file_arg():
 
 
 def _parse_existing_analysis(content):
-    """Extract existing covered/gaps/summary_text from a review file."""
-    result = {"covered": [], "gaps": [], "summary_text": ""}
+    """Extract existing covered/gaps/untestable/summary_text from a review file."""
+    result = {"covered": [], "gaps": [], "untestable": [], "summary_text": ""}
 
     cov_idx = content.find("### Coverage")
     if cov_idx < 0:
@@ -78,13 +78,22 @@ def _parse_existing_analysis(content):
     tr_idx = content.find("### Test Results", cov_idx)
     section = content[cov_idx:tr_idx] if tr_idx >= 0 else content[cov_idx:]
 
-    # Extract Covered items (lines starting with "- ✅")
-    for m in re.finditer(r'^- ✅\s*(.+)$', section, re.MULTILINE):
-        result["covered"].append(m.group(1))
+    # Split into Covered and Gaps sub-sections for section-aware parsing
+    covered_start = section.find("**Covered:**")
+    gaps_start = section.find("**Gaps:**")
 
-    # Extract Gaps items (lines starting with "- ❌")
-    for m in re.finditer(r'^- ❌\s*(.+)$', section, re.MULTILINE):
-        result["gaps"].append(m.group(1))
+    if covered_start >= 0:
+        covered_end = gaps_start if gaps_start >= 0 else len(section)
+        covered_section = section[covered_start:covered_end]
+        for m in re.finditer(r'^- ✅\s*(.+)$', covered_section, re.MULTILINE):
+            result["covered"].append(m.group(1))
+        for m in re.finditer(r'^- ⚠️\s*(.+)$', covered_section, re.MULTILINE):
+            result["untestable"].append(m.group(1))
+
+    if gaps_start >= 0:
+        gaps_section = section[gaps_start:]
+        for m in re.finditer(r'^- ❌\s*(.+)$', gaps_section, re.MULTILINE):
+            result["gaps"].append(m.group(1))
 
     # Extract summary_text: text after **Summary:** line (skip the stats line itself)
     sm = re.search(r'^\*\*Summary:\*\*.*$', content, re.MULTILINE)
@@ -122,7 +131,7 @@ def _build_json_entry(filename, feature, tests, content):
 
     # Include existing analysis so LLM can review/update rather than regenerate
     existing = _parse_existing_analysis(content)
-    if existing["covered"] or existing["gaps"] or existing["summary_text"]:
+    if existing["covered"] or existing["gaps"] or existing["untestable"] or existing["summary_text"]:
         entry["existing_analysis"] = existing
 
     return entry

@@ -23,6 +23,9 @@ Input JSON format (single item or array):
             "Absolute value of positive input returns same value",
             "Long input type not tested"
         ],
+        "untestable": [
+            "Diagnostic log output behavior is inherently untestable via expressions"
+        ],
         "summary_text": "1 test fails in only one engine, suggesting an engine bug.",
         "reviewed": false
     }
@@ -46,7 +49,7 @@ COVERAGE_COUNT_RE = re.compile(r"^\d+ tests? found for `[^`]+`")
 README_FILE = "readme.md"
 
 
-def update_covered_and_gaps(filename, covered, gaps, summary_text=None):
+def update_covered_and_gaps(filename, covered, gaps, untestable=None, summary_text=None):
     fp = os.path.join(TESTS_DIR, filename)
     with open(fp, "r", encoding="utf-8") as f:
         content = f.read()
@@ -81,7 +84,10 @@ def update_covered_and_gaps(filename, covered, gaps, summary_text=None):
     if covered:
         for item in covered:
             covered_text += f"- ✅ {item}\n"
-    else:
+    if untestable:
+        for item in untestable:
+            covered_text += f"- ⚠️ {item}\n"
+    if not covered and not untestable:
         covered_text += "- (none)\n"
 
     # Build gaps section
@@ -127,6 +133,7 @@ def _process_item(item, readme_content):
         filename,
         item.get("covered", []),
         item.get("gaps", []),
+        item.get("untestable"),
         item.get("summary_text"),
     )
     print(f"Updated {filename}")
@@ -170,6 +177,7 @@ def main():
                 item["filename"],
                 item.get("covered", []),
                 item.get("gaps", []),
+                item.get("untestable"),
                 item.get("summary_text"),
             )
             print(f"Updated {item['filename']}")

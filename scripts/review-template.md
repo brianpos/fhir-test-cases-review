@@ -16,6 +16,7 @@ Header in specification: << exact header text from index.md that matches the fun
 
 **Covered:**
 - << ✅ Feature tested (testName) >>
+- << ⚠️ Spec requirement that is inherently untestable via expressions >>
 
 **Gaps:**
 - << ❌ component of feature not covered by a test >>
